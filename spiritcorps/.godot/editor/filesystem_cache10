@@ -1,2 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1742586332
+::res://::1742591492
+icon.svg::CompressedTexture2D/CompressedTexture2D::9039918317273610360::1742586481::1742591379::1::::<><><>0<>0<>a7ebf7c64ce550e1ff8a0ae9c100db3b<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+interactable_element.tscn::PackedScene/PackedScene::6317623259658701502::1742591328::0::1::::<><><>0<>0<><>::
+::res://Assets/::1742597241
+assets.txt::TextFile/TextFile::-1::1742591309::0::1::::<><><>0<>0<><>::
+TilesFloor-Sheet.png::CompressedTexture2D::7757318758603906086::1742591648::1742591675::1::::<><><>0<>0<>ca0ba5e85d6b637176e5a6337156954d<>res://.godot/imported/TilesFloor-Sheet.png-36b504fc0cc1adbb9c241020383560ff.ctex::
+TilesPit.png::CompressedTexture2D::5934571097174883308::1742597362::1742597364::1::::<><><>0<>0<>dbd24e65f245e79030ce292f0cfdc440<>res://.godot/imported/TilesPit.png-c44ce6fb009fab2a7fd2b0f2e3f1333b.ctex::
+TilesWalls-Sheet.png::CompressedTexture2D/CompressedTexture2D::4175541308699839524::1742594498::1742594540::1::::<><><>0<>0<>001a1d490f90709ed2a3a96fd10745c4<>res://.godot/imported/TilesWalls-Sheet.png-c3b0bd111fc2fc83741e0b03e908b448.ctex::
+::res://Scenes/::1742591827
+scenes.txt::TextFile/TextFile::-1::1742591309::0::1::::<><><>0<>0<><>::
+TilesJas.tscn::PackedScene::4016979491494882172::1742591827::0::1::::<><><>0<>0<><>::uid://b0qws46rp7wsy::::res://Assets/TilesWalls-Sheet.png<>uid://dirx53a3sm1ne::::res://Assets/TilesFloor-Sheet.png
+::res://Scripts/::1742591492
+scripts.txt::TextFile/TextFile::-1::1742591309::0::1::::<><><>0<>0<><>::
