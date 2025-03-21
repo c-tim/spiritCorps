@@ -14,6 +14,24 @@ config/name="spiritCorps"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
+[file_customization]
+
+folder_colors={
+"res://Assets/": "orange",
+"res://Scenes/": "yellow",
+"res://Scripts/": "green"
+}
+
+[layer_names]
+
+2d_render/layer_1="Perso_Corps"
+2d_render/layer_2="Perso_Esprit"
+2d_render/layer_3="Mur_Corps"
+2d_render/layer_4="Mur_Esprit"
+2d_render/layer_5="Ennemi_Corps"
+2d_render/layer_6="Ennemi_Esprit"
+2d_render/layer_7="Esprit_A_Sauver"
+
 [rendering]
 
 renderer/rendering_method="mobile"
