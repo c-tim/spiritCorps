@@ -14,10 +14,6 @@ config/name="spiritCorps"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/script-ide/plugin.cfg")
-
 [file_customization]
 
 folder_colors={
