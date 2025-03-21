@@ -1,0 +1,8 @@
+# Godot 4+ specific ignores
+.godot/
+*.godot/
+/android/
+addons/
+spiritcorps/.godot/editor/filesystem_cache10
+spiritcorps/.godot/editor/project_metadata.cfg
+/spiritcorps/.godot
