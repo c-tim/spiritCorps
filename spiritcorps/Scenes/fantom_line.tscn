@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bb62k73dkvymt"]
 
-[ext_resource type="Script" uid="uid://bteugqhn2t8ln" path="res://fantom_line.gd" id="1_iqvjy"]
+[ext_resource type="Script" uid="uid://bteugqhn2t8ln" path="res://Scripts/fantom_line.gd" id="1_iqvjy"]
 
 [node name="FantomLine" type="Node2D"]
 script = ExtResource("1_iqvjy")
