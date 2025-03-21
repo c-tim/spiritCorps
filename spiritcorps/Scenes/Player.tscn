@@ -61,6 +61,8 @@ animations = [{
 script = ExtResource("1_dewec")
 
 [node name="Ame" type="CharacterBody2D" parent="."]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_gntrk")
 
 [node name="Collision_Ame" type="CollisionShape2D" parent="Ame"]

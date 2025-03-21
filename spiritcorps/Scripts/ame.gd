@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+@onready var collision_ame: CollisionShape2D = $Collision_Ame
+
 const SPEED = 300.0
 
 func _physics_process(delta: float) -> void:
@@ -17,3 +19,10 @@ func _physics_process(delta: float) -> void:
 		velocity.y = move_toward(velocity.y,0,SPEED)
 
 	move_and_slide()
+
+func is_moving(is_body:bool)->void:
+	if is_body:
+		collision_ame.disabled = true
+	else :
+		collision_ame.disabled = false
+	
