@@ -6,6 +6,31 @@
 [ext_resource type="Script" uid="uid://dw6i42ddajfy4" path="res://Scripts/corps.gd" id="4_5ixxa"]
 [ext_resource type="Texture2D" uid="uid://dubiqpmnd3omi" path="res://Assets/New Piskel(2).png" id="5_nn08x"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rpqav"]
+size = Vector2(43, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_52ee3"]
+atlas = ExtResource("5_nn08x")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bhhdu"]
+atlas = ExtResource("5_nn08x")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_megsn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_52ee3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bhhdu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qbkls"]
 radius = 29.0
 height = 58.0
@@ -32,47 +57,8 @@ animations = [{
 "speed": 6.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rpqav"]
-size = Vector2(43, 110)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_52ee3"]
-atlas = ExtResource("5_nn08x")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bhhdu"]
-atlas = ExtResource("5_nn08x")
-region = Rect2(0, 32, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_megsn"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_52ee3")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bhhdu")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
 [node name="Player" type="Node2D"]
 script = ExtResource("1_dewec")
-
-[node name="Ame" type="CharacterBody2D" parent="."]
-collision_layer = 2
-collision_mask = 2
-script = ExtResource("1_gntrk")
-
-[node name="Collision_Ame" type="CollisionShape2D" parent="Ame"]
-shape = SubResource("CapsuleShape2D_qbkls")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Ame"]
-position = Vector2(2.38419e-07, 3)
-scale = Vector2(2.34375, 2.15625)
-sprite_frames = SubResource("SpriteFrames_nn08x")
-autoplay = "default"
 
 [node name="Corps" type="CharacterBody2D" parent="."]
 motion_mode = 1
@@ -86,4 +72,18 @@ shape = SubResource("RectangleShape2D_rpqav")
 position = Vector2(-1, -7)
 scale = Vector2(2.125, 3.9375)
 sprite_frames = SubResource("SpriteFrames_megsn")
+autoplay = "default"
+
+[node name="Ame" type="CharacterBody2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_gntrk")
+
+[node name="Collision_Ame" type="CollisionShape2D" parent="Ame"]
+shape = SubResource("CapsuleShape2D_qbkls")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Ame"]
+position = Vector2(2.38419e-07, 3)
+scale = Vector2(2.34375, 2.15625)
+sprite_frames = SubResource("SpriteFrames_nn08x")
 autoplay = "default"
