@@ -14,12 +14,15 @@ config/name="spiritCorps"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/script-ide/plugin.cfg")
 
+=======
+>>>>>>> main
 [file_customization]
 
 folder_colors={
@@ -28,7 +31,10 @@ folder_colors={
 "res://Scripts/": "green"
 }
 
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> main
 [layer_names]
 
 2d_render/layer_1="Perso_Corps"
