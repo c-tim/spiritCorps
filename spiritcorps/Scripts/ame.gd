@@ -5,8 +5,12 @@ extends CharacterBody2D
 
 const SPEED = 500.0
 var real_SPEED= SPEED
+var moving = false
 
 func _physics_process(delta: float) -> void:
+
+	if !moving:
+		return
 
 	var direction_x := Input.get_axis("Gauche","Droite")
 	var direction_y := Input.get_axis("Haut","Bas")
@@ -28,6 +32,7 @@ func _physics_process(delta: float) -> void:
 func is_moving(is_body:bool)->void:
 	collision_ame.disabled=is_body
 	set_collision_layer_value(2,!is_body)
+	moving=!is_body
 
 func eloignement(k:float)->void:
 	real_SPEED=k*SPEED

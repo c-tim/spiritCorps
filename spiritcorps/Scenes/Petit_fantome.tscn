@@ -1,13 +1,13 @@
-[gd_scene load_steps=17 format=3 uid="uid://cjk1fq7d1w761"]
+[gd_scene load_steps=17 format=3 uid="uid://cmw4l44t6y50l"]
 
 [ext_resource type="Script" uid="uid://couvu8morwb08" path="res://Scripts/petit_fantome_main.gd" id="1_cjj6o"]
 [ext_resource type="Texture2D" uid="uid://c7kb6p6mtig8e" path="res://Assets/fantôme neutre.png" id="1_fy7ob"]
-[ext_resource type="Script" uid="uid://b1b8u0vakhm1p" path="res://Scripts/petit_fantome.gd" id="2_c210w"]
+[ext_resource type="Script" path="res://Scripts/petit_fantome.gd" id="2_c210w"]
 [ext_resource type="Texture2D" uid="uid://co3ihq6xl2s6q" path="res://Assets/fantôme1_sucette.png" id="2_cjj6o"]
 [ext_resource type="Texture2D" uid="uid://bxgk2ybo4yats" path="res://Assets/fantôme2_banane.png" id="3_c210w"]
 [ext_resource type="Texture2D" uid="uid://bno6tj3wlrmlv" path="res://Assets/fantôme capitaine.png" id="4_quwn4"]
 [ext_resource type="Texture2D" uid="uid://b6yiadytp0bsl" path="res://Assets/fantôme3_couteau.png" id="5_5myjd"]
-[ext_resource type="Script" uid="uid://dgj5h1klfnoxg" path="res://Scripts/detection_area_fantom.gd" id="8_quwn4"]
+[ext_resource type="Script" path="res://Scripts/detection_area_fantom.gd" id="8_quwn4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8pbnj"]
 radius = 36.0139
@@ -80,14 +80,13 @@ radius = 156.205
 
 [node name="PetitFantome" type="Node2D"]
 script = ExtResource("1_cjj6o")
-numerofantome = null
-postion_base = null
 
 [node name="Petit_fantome" type="CharacterBody2D" parent="."]
 script = ExtResource("2_c210w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Petit_fantome"]
 shape = SubResource("CircleShape2D_8pbnj")
+disabled = true
 debug_color = Color(0.640533, 0.477624, 0.58788, 0.42)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Petit_fantome"]
@@ -103,3 +102,5 @@ script = ExtResource("8_quwn4")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Petit_fantome/detection_area"]
 shape = SubResource("CircleShape2D_c210w")
 debug_color = Color(0.499489, 0.538509, 0.603078, 0.42)
+
+[connection signal="player_detected" from="Petit_fantome/detection_area" to="." method="_on_detection_area_player_detected"]
