@@ -16,7 +16,7 @@ var current_visible_ratio :float=0 :
 
 func _ready() -> void:
 	hide_dialogue_panel()
-	display_text("bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla")
+	#display_text("bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla")
 
 func _process(delta: float) -> void:
 	if current_visible_ratio <= 1 :
@@ -32,3 +32,7 @@ func hide_dialogue_panel():
 	showed_text.text = ""
 	visible = false
 	
+
+
+func _on_presentation_jeu_close_dialogue_panel() -> void:
+	hide_dialogue_panel()
