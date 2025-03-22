@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var zone_attaque: Area2D = $Zone_Attaque
 
-const SPEED = 600.0
+const SPEED = 400.0
 const attack_delay = 0.3
 var can_move = true
 var attacking = false

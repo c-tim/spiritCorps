@@ -3,6 +3,7 @@ extends Node2D
 @onready var corps: CharacterBody2D = $Corps
 @onready var ame: CharacterBody2D = $Ame
 
+const LIMIT_DIST = 400.0
 var is_body=true
 var ralentissement=1.0
 
@@ -26,8 +27,9 @@ func switching(is_body:bool) :
 		ame.position=corps.position
 
 func limit_ame(dist:float):
-	if dist >= 500:
-		ralentissement= 1-((dist-500)/dist)*1.25
+	if dist >= LIMIT_DIST:
+		var x = (dist-LIMIT_DIST)/dist
+		ralentissement= 1- (8 * x**4 if x < 0.5 else 1 - (-2 * x + 2)**4 / 2)
 		ame.eloignement(ralentissement)
 	if dist<500:
 		ame.eloignement(1)

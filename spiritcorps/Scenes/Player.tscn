@@ -7,7 +7,7 @@
 [ext_resource type="Script" uid="uid://dw6i42ddajfy4" path="res://Scripts/corps.gd" id="4_5ixxa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rpqav"]
-size = Vector2(90, 378)
+size = Vector2(63, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nn08x"]
 atlas = ExtResource("3_5ixxa")
@@ -25,11 +25,11 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5ixxa"]
-radius = 222.441
+radius = 145.121
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qbkls"]
-radius = 66.0
-height = 148.0
+radius = 36.0
+height = 72.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dewec"]
 atlas = ExtResource("3_gntrk")
@@ -61,12 +61,12 @@ motion_mode = 1
 script = ExtResource("4_5ixxa")
 
 [node name="Collision_Corps" type="CollisionShape2D" parent="Corps"]
-position = Vector2(-5, -5)
+position = Vector2(-1.5, -3)
 shape = SubResource("RectangleShape2D_rpqav")
 debug_color = Color(6.73831e-07, 0.565365, 0.865738, 0.42)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Corps"]
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.35, 0.35)
 sprite_frames = SubResource("SpriteFrames_52ee3")
 autoplay = "default"
 
@@ -75,7 +75,6 @@ collision_layer = 4
 collision_mask = 4
 
 [node name="Collision_attaque" type="CollisionShape2D" parent="Corps/Zone_Attaque"]
-position = Vector2(2, 2)
 shape = SubResource("CircleShape2D_5ixxa")
 debug_color = Color(0.588015, 0.535774, 0.337694, 0.42)
 
@@ -85,11 +84,11 @@ collision_mask = 2
 script = ExtResource("1_gntrk")
 
 [node name="Collision_Ame" type="CollisionShape2D" parent="Ame"]
-position = Vector2(2, -34)
+position = Vector2(-4, -44)
 shape = SubResource("CapsuleShape2D_qbkls")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Ame"]
-position = Vector2(4, -26)
-scale = Vector2(5.59375, 5.375)
+position = Vector2(-2, -39)
+scale = Vector2(2.96875, 2.65625)
 sprite_frames = SubResource("SpriteFrames_nn08x")
 autoplay = "default"
