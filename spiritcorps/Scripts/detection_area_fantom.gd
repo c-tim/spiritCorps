@@ -11,4 +11,6 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_body_entered(body):
-	emit_signal("player_detected",body)
+	print("detected ", body)
+	if body.get_parent() is Player:
+		emit_signal("player_detected",body)

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://lcfjww5w1o2f" path="res://Scripts/Player_launcher.gd" id="1_dewec"]
 [ext_resource type="Script" uid="uid://bhs657nddlqw2" path="res://Scripts/ame.gd" id="1_gntrk"]
-[ext_resource type="PackedScene" uid="uid://bie8ajbhnveoq" path="res://Scenes/fantom_line.tscn" id="2_nn08x"]
+[ext_resource type="PackedScene" uid="uid://b7q3kyh3decmk" path="res://Assets/fantom_line.tscn" id="2_nn08x"]
 [ext_resource type="Texture2D" uid="uid://cdudju41h1u4p" path="res://Assets/perso principal brouillon.png" id="3_5ixxa"]
 [ext_resource type="Script" uid="uid://dw6i42ddajfy4" path="res://Scripts/corps.gd" id="4_5ixxa"]
 [ext_resource type="Texture2D" uid="uid://dxvte6e5lx11j" path="res://Assets/perso principal avec pelle.png" id="4_megsn"]
