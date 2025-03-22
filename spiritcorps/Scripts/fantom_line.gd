@@ -2,7 +2,7 @@ class_name Phantom_line extends Node2D
 
 const SPACING_PHANTOM_IN_LINE = 25
 
-var list_markers : Array[Marker2D]
+@export var list_markers : Array[Marker2D]
 var number_phantom_following := 0
 
 func add_phantom_and_get_position() -> Vector2:
