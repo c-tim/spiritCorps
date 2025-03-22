@@ -1,3 +1,6 @@
-spiritcorps/.godot/global_script_class_cache.cfg
-spiritcorps/.godot/editor/project_metadata.cfg
-spiritcorps/.godot/editor/filesystem_cache10
+spiritcorps/.godot/
+spiritcorps/android/
+spiritcorps/addons/
+spiritcorps/.import/
+spiritcorps/export.cfg
+spiritcorps/export_credentials.cfg

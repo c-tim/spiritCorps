@@ -25,11 +25,15 @@ grow_vertical = 0
 [node name="TextureRect" type="TextureRect" parent="NinePatchRect"]
 self_modulate = Color(0, 0, 0, 1)
 layout_mode = 0
+offset_top = -30.0
 offset_right = 1148.0
 offset_bottom = 137.0
 texture = ExtResource("2_0se77")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="NinePatchRect/TextureRect"]
 layout_mode = 0
-offset_right = 783.0
-offset_bottom = 110.0
+offset_left = 21.0
+offset_top = 16.0
+offset_right = 1114.0
+offset_bottom = 142.0
+text = "lorem ipsum bla bla bla  bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
