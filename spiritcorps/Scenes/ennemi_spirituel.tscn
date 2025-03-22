@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://campp0up8i6pr"]
 
-[ext_resource type="Script" path="res://Scripts/ennemi_spirituel.gd" id="1_ia6gf"]
+[ext_resource type="Script" uid="uid://byduu20461tf" path="res://Scripts/ennemi_spirituel.gd" id="1_ia6gf"]
 [ext_resource type="Texture2D" uid="uid://cdudju41h1u4p" path="res://Assets/perso principal brouillon.png" id="1_lj4tk"]
 [ext_resource type="Script" path="res://Scenes/ennemi_spirituel_main.gd" id="1_pw8aj"]
 [ext_resource type="Script" path="res://Scripts/detection_area.gd" id="3_w8r6q"]
