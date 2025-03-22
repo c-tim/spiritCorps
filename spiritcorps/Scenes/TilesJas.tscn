@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b7tqxuvjbhs2j" path="res://Assets/Tiles/TilesFloor.png" id="1_riebr"]
 [ext_resource type="Texture2D" uid="uid://cqs0rv4t341ym" path="res://Assets/Tiles/TilesPit.png" id="3_riebr"]
 [ext_resource type="Texture2D" uid="uid://b0vxstjsrl43b" path="res://Assets/Tiles/TilesFog.png" id="4_v7kcv"]
-[ext_resource type="PackedScene" uid="uid://c7m5tdiptnkuc" path="res://Scenes/Player.tscn" id="5_5tuhi"]
+[ext_resource type="PackedScene" uid="uid://bs1u3mw0anqfw" path="res://Scenes/Player.tscn" id="5_5tuhi"]
 [ext_resource type="PackedScene" uid="uid://cd5yhmqsjr14r" path="res://Scenes/levier.tscn" id="6_watuw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_watuw"]
