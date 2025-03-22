@@ -1,12 +1,13 @@
-[gd_scene load_steps=31 format=4 uid="uid://bvff6y277bs5"]
+[gd_scene load_steps=32 format=4 uid="uid://bvff6y277bs5"]
 
 [ext_resource type="Texture2D" uid="uid://b7tqxuvjbhs2j" path="res://Assets/Tiles/TilesFloor.png" id="1_p770e"]
 [ext_resource type="Texture2D" uid="uid://b0qws46rp7wsy" path="res://Assets/Tiles/TilesWalls.png" id="2_y3fj8"]
 [ext_resource type="Texture2D" uid="uid://cqs0rv4t341ym" path="res://Assets/Tiles/TilesPit.png" id="3_ef3f6"]
 [ext_resource type="Texture2D" uid="uid://b0vxstjsrl43b" path="res://Assets/Tiles/TilesFog.png" id="4_tarqo"]
-[ext_resource type="PackedScene" uid="uid://c7m5tdiptnkuc" path="res://Scenes/Player.tscn" id="5_20oct"]
-[ext_resource type="PackedScene" uid="uid://dk1chvruaggdb" path="res://Scenes/interactable_levier.tscn" id="5_uhwdp"]
+[ext_resource type="PackedScene" uid="uid://bs1u3mw0anqfw" path="res://Scenes/Player.tscn" id="5_20oct"]
+[ext_resource type="PackedScene" path="res://Scenes/interactable_levier.tscn" id="5_uhwdp"]
 [ext_resource type="PackedScene" uid="uid://rdywgv5igbpo" path="res://Scenes/ennemi_spirituel.tscn" id="7_uhwdp"]
+[ext_resource type="PackedScene" uid="uid://cmw4l44t6y50l" path="res://Scenes/Petit_fantome.tscn" id="8_26bw2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_watuw"]
 texture = ExtResource("1_p770e")
@@ -225,11 +226,46 @@ position = Vector2(306, 496)
 [node name="EnnemiSpirituel" parent="." instance=ExtResource("7_uhwdp")]
 light_mask = 2
 visibility_layer = 2
-position = Vector2(296, 490)
+position = Vector2(294, 486)
+scale = Vector2(0.25, 0.25)
+
+[node name="EnnemiSpirituel2" parent="." instance=ExtResource("7_uhwdp")]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(1089, 236)
 scale = Vector2(0.25, 0.25)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Player" parent="CanvasLayer" instance=ExtResource("5_20oct")]
-position = Vector2(23, 66)
+position = Vector2(23, 23)
 scale = Vector2(0.25, 0.25)
+
+[node name="PetitFantome" parent="CanvasLayer" instance=ExtResource("8_26bw2")]
+position = Vector2(226, 229)
+scale = Vector2(0.35, 0.35)
+numerofantome = "1"
+position_base = Vector2(221, 229)
+
+[node name="PetitFantome2" parent="CanvasLayer" instance=ExtResource("8_26bw2")]
+position = Vector2(915, 148)
+scale = Vector2(0.35, 0.35)
+numerofantome = "2"
+position_base = Vector2(915, 148)
+
+[node name="PetitFantome3" parent="CanvasLayer" instance=ExtResource("8_26bw2")]
+position = Vector2(538, 577)
+scale = Vector2(0.35, 0.35)
+numerofantome = "3"
+position_base = Vector2(538, 577)
+
+[node name="PetitFantome4" parent="CanvasLayer" instance=ExtResource("8_26bw2")]
+position = Vector2(72.0001, 580)
+scale = Vector2(0.35, 0.35)
+numerofantome = "5"
+position_base = Vector2(72, 580)
+
+[connection signal="send_petitFantom_to_player" from="CanvasLayer/PetitFantome" to="CanvasLayer/Player" method="receive_new_fantom"]
+[connection signal="send_petitFantom_to_player" from="CanvasLayer/PetitFantome2" to="CanvasLayer/Player" method="receive_new_fantom"]
+[connection signal="send_petitFantom_to_player" from="CanvasLayer/PetitFantome3" to="CanvasLayer/Player" method="receive_new_fantom"]
+[connection signal="send_petitFantom_to_player" from="CanvasLayer/PetitFantome4" to="CanvasLayer/Player" method="receive_new_fantom"]
