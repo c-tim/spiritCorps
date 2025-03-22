@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckgtijybjo6at"]
+
+[ext_resource type="Script" uid="uid://c0mbf5c45sqwy" path="res://Scripts/dialogue_panel.gd" id="1_0g7dl"]
+[ext_resource type="Texture2D" uid="uid://c0hi1qwwkjq1h" path="res://white_square.png" id="2_0se77"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0g7dl")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -136.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect"]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_right = 1148.0
+offset_bottom = 137.0
+texture = ExtResource("2_0se77")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="NinePatchRect/TextureRect"]
+layout_mode = 0
+offset_right = 783.0
+offset_bottom = 110.0
