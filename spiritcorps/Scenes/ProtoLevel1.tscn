@@ -1,14 +1,14 @@
-[gd_scene load_steps=15 format=4 uid="uid://bxh4chsaaqsm3"]
+[gd_scene load_steps=15 format=4 uid="uid://bgykfom55toac"]
 
-[ext_resource type="Texture2D" uid="uid://b0qws46rp7wsy" path="res://Assets/Tiles/TilesWalls.png" id="1_7o35m"]
-[ext_resource type="Texture2D" uid="uid://b7tqxuvjbhs2j" path="res://Assets/Tiles/TilesFloor.png" id="1_riebr"]
-[ext_resource type="Texture2D" uid="uid://cqs0rv4t341ym" path="res://Assets/Tiles/TilesPit.png" id="3_riebr"]
-[ext_resource type="Texture2D" uid="uid://b0vxstjsrl43b" path="res://Assets/Tiles/TilesFog.png" id="4_v7kcv"]
-[ext_resource type="PackedScene" uid="uid://c7m5tdiptnkuc" path="res://Scenes/Player.tscn" id="5_5tuhi"]
-[ext_resource type="PackedScene" uid="uid://cd5yhmqsjr14r" path="res://Scenes/levier.tscn" id="6_watuw"]
+[ext_resource type="Texture2D" uid="uid://b7tqxuvjbhs2j" path="res://Assets/Tiles/TilesFloor.png" id="1_8w626"]
+[ext_resource type="Texture2D" uid="uid://b0qws46rp7wsy" path="res://Assets/Tiles/TilesWalls.png" id="2_uhwdp"]
+[ext_resource type="Texture2D" uid="uid://cqs0rv4t341ym" path="res://Assets/Tiles/TilesPit.png" id="3_26bw2"]
+[ext_resource type="Texture2D" uid="uid://b0vxstjsrl43b" path="res://Assets/Tiles/TilesFog.png" id="4_fnalx"]
+[ext_resource type="PackedScene" uid="uid://c7m5tdiptnkuc" path="res://Scenes/Player.tscn" id="5_jr06i"]
+[ext_resource type="PackedScene" uid="uid://cd5yhmqsjr14r" path="res://Scenes/levier.tscn" id="6_k5nvh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_watuw"]
-texture = ExtResource("1_riebr")
+texture = ExtResource("1_8w626")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -18,7 +18,7 @@ tile_size = Vector2i(32, 32)
 sources/0 = SubResource("TileSetAtlasSource_watuw")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v7kcv"]
-texture = ExtResource("1_7o35m")
+texture = ExtResource("2_uhwdp")
 texture_region_size = Vector2i(32, 32)
 1:0/0 = 0
 3:0/0 = 0
@@ -43,7 +43,7 @@ physics_layer_0/collision_mask = 3
 sources/0 = SubResource("TileSetAtlasSource_v7kcv")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5tuhi"]
-texture = ExtResource("3_riebr")
+texture = ExtResource("3_26bw2")
 texture_region_size = Vector2i(32, 32)
 3:0/0 = 0
 3:1/0 = 0
@@ -67,7 +67,7 @@ physics_layer_0/collision_layer = 1
 sources/2 = SubResource("TileSetAtlasSource_5tuhi")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hqnah"]
-texture = ExtResource("4_v7kcv")
+texture = ExtResource("4_fnalx")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -98,11 +98,11 @@ tile_set = SubResource("TileSet_watuw")
 tile_map_data = PackedByteArray("AAABAA0AAAAAAAEAAAACAA0AAAAAAAEAAAADAA0AAAAAAAAAAAADAA4AAAAAAAAAAAAEAA4AAAAAAAAAAAAEAA0AAAAAAAEAAAAFAA0AAAAAAAAAAAAEAAwAAAAAAAAAAAADAAwAAAAAAAEAAAACAAwAAAAAAAEAAAABAA4AAAACAAAAAAACAA4AAAAAAAEAAAAFAA4AAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_riebr")
 
-[node name="Player" parent="." instance=ExtResource("5_5tuhi")]
+[node name="Player" parent="." instance=ExtResource("5_jr06i")]
 position = Vector2(24, 66)
 scale = Vector2(0.25, 0.25)
 
-[node name="Levier" parent="." instance=ExtResource("6_watuw")]
+[node name="Levier" parent="." instance=ExtResource("6_k5nvh")]
 position = Vector2(163, 580)
 
 [node name="fantome" type="Node2D" parent="."]
