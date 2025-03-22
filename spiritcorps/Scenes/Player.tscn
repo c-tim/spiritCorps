@@ -59,7 +59,7 @@ size = Vector2(55.5, 80)
 radius = 145.121
 
 [sub_resource type="Gradient" id="Gradient_5ixxa"]
-offsets = PackedFloat32Array(0, 0.75)
+offsets = PackedFloat32Array(0.327381, 0.928571)
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_nn08x"]
@@ -151,6 +151,7 @@ energy = 2.0
 range_item_cull_mask = 5
 shadow_enabled = true
 shadow_filter = 1
+shadow_item_cull_mask = 5
 texture = SubResource("GradientTexture2D_nn08x")
 texture_scale = 50.0
 
