@@ -4,7 +4,6 @@ class_name Health_Component extends Node2D
 var current_healh : int
 
 @export var max_health : int
-
 signal update_health()
 signal player_died()
 

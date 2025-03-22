@@ -4,18 +4,6 @@ class_name Interactable_Element_Holder extends Node2D
 @export var child_interracted : Node2D
 
 @onready var area: Area2D = $Area2D
-
-
-func _ready() -> void:
-	pass
-	
-
-func _on_area_2d_test() -> void:
-	pass
-
-
-func _on_area_2d_area_entered(area: Area2D) -> void:
-	pass # Replace with function body.
 	
 func test_to_interract_with_body(player : Node):
 	if not is_interactable:
