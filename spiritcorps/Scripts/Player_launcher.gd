@@ -9,13 +9,15 @@ var ralentissement=1.0
 
 
 func _ready() -> void:
-	ame.visible=false
+	ame.animated_sprite_2d.visible=false
 	ame.position=corps.position
 	
 
 func _process(delta: float) -> void:
+	if is_body:
+		ame.position = corps.position
 	if Input.is_action_just_pressed("Switch"):
-		ame.visible=!ame.visible
+		ame.animated_sprite_2d.visible=!ame.animated_sprite_2d.visible
 		is_body=!is_body
 		switching(is_body)
 	limit_ame(ame.position.distance_to(corps.position))

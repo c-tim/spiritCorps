@@ -21,28 +21,31 @@ signal.svg::Image::3303164025475872126::1742591206::1742639214::1::::<><><>0<>0<
 ::res://addons/script-ide/quickopen/::1742591206
 quick_open_panel.gd::GDScript::2269374228508123561::1742591206::0::1::::<>PopupPanel<><>0<>1<><>::
 quick_open_panel.tscn::PackedScene::9086514164982529972::1742591206::0::1::::<><><>0<>0<><>::res://addons/script-ide/quickopen/quick_open_panel.gd
-::res://Assets/::1742640909
+::res://Assets/::1742644677
 assets.txt::TextFile::-1::1742591120::0::1::::<><><>0<>0<><>::
 New Piskel(1).png::CompressedTexture2D::5349606436450034998::1742639021::1742639214::1::::<><><>0<>0<>3048fe8d893ca48aa1e56bdae9b875bd<>res://.godot/imported/New Piskel(1).png-29a4070677fbbc0a23738fbe480f452c.ctex::
 New Piskel(2).png::CompressedTexture2D::8565618417222312456::1742639021::1742639214::1::::<><><>0<>0<>5a14b984b07fe287347bdf17c0e3bb87<>res://.godot/imported/New Piskel(2).png-002ea75bee21ddd9e1c1d162d6781a21.ctex::
 perso principal brouillon.png::CompressedTexture2D::5024894772962990585::1742639022::1742639214::1::::<><><>0<>0<>4e9b8e208b4913f471f4dcafecdc354f<>res://.godot/imported/perso principal brouillon.png-b113ae149d780c74775bdeb9b5488f9e.ctex::
 place_holder.png::CompressedTexture2D::5249402431014331358::1742639022::1742639214::1::::<><><>0<>0<>d7da3cd51b3de3f709a05331edf03c52<>res://.godot/imported/place_holder.png-4c8490e0cd4b7ebf4cdce01578a36fa7.ctex::
 place_holder_corps.png::CompressedTexture2D::4832250539010010133::1742639022::1742639214::1::::<><><>0<>0<>e8bf36ba8d2f04d5c55ecc50a9a9ba67<>res://.godot/imported/place_holder_corps.png-5d22c76f8dc105d46994054a02196f7d.ctex::
-Tentaclick.png::CompressedTexture2D::574819671309514691::1742640909::1742641103::1::::<><><>0<>0<>82722164cdd62b37270fededd3d8340f<>res://.godot/imported/Tentaclick.png-0529cfb48897aa0244a0267207bd99f6.ctex::
-::res://Assets/Tiles/::1742640909
-TilesFloor.png::CompressedTexture2D::4672700485899796751::1742640909::1742641103::1::::<><><>0<>0<>c4fd9d9fb959801ca6df4f37e5db7db3<>res://.godot/imported/TilesFloor.png-7582a1870562222495b92e207545d4ed.ctex::
-TilesFog.png::CompressedTexture2D::4185923355290997397::1742640909::1742641103::1::::<><><>0<>0<>ac65fdfe2beaa30b022e1575951a3b96<>res://.godot/imported/TilesFog.png-dd10e8bc4b51c41067c86b7cc8a93972.ctex::
-TilesPit.png::CompressedTexture2D::5934571097174883308::1742640909::1742641103::1::::<><><>0<>0<>ad0111c7df1704b86f19b950283cfc7b<>res://.godot/imported/TilesPit.png-c4b8b56870d7634dcf120107beb27d61.ctex::
-TilesWalls.png::CompressedTexture2D::4175541308699839524::1742640909::1742641103::1::::<><><>0<>0<>0e810ff10537eef59b43fb711324b26a<>res://.godot/imported/TilesWalls.png-318955c119940872d274cbf75c5421e8.ctex::
-::res://Scenes/::1742640909
+Tentaclick.png::CompressedTexture2D::574819671309514691::1742644677::1742644677::1::::<><><>0<>0<>82722164cdd62b37270fededd3d8340f<>res://.godot/imported/Tentaclick.png-0529cfb48897aa0244a0267207bd99f6.ctex::
+::res://Assets/Tiles/::1742644853
+TilesFloor.png::CompressedTexture2D::4672700485899796751::1742644677::1742644677::1::::<><><>0<>0<>c4fd9d9fb959801ca6df4f37e5db7db3<>res://.godot/imported/TilesFloor.png-7582a1870562222495b92e207545d4ed.ctex::
+TilesFog.png::CompressedTexture2D::4185923355290997397::1742644677::1742644677::1::::<><><>0<>0<>ac65fdfe2beaa30b022e1575951a3b96<>res://.godot/imported/TilesFog.png-dd10e8bc4b51c41067c86b7cc8a93972.ctex::
+TilesPit.png::CompressedTexture2D::5934571097174883308::1742644677::1742644677::1::::<><><>0<>0<>ad0111c7df1704b86f19b950283cfc7b<>res://.godot/imported/TilesPit.png-c4b8b56870d7634dcf120107beb27d61.ctex::
+TilesWalls.png::CompressedTexture2D::4175541308699839524::1742644853::1742645060::1::::<><><>0<>0<>0e810ff10537eef59b43fb711324b26a<>res://.godot/imported/TilesWalls.png-318955c119940872d274cbf75c5421e8.ctex::
+::res://Scenes/::1742644853
 dialogue_panel.tscn::PackedScene::5488284489348192431::1742639022::0::1::::<><><>0<>0<><>::uid://c0mbf5c45sqwy::::res://Scripts/dialogue_panel.gd<>uid://c0hi1qwwkjq1h::::res://white_square.png
 fantom_line.tscn::PackedScene::2522264178602981427::1742639022::0::1::::<><><>0<>0<><>::uid://bteugqhn2t8ln::::res://Scripts/fantom_line.gd
 interactable_element.tscn::PackedScene::8704658220517103170::1742639022::0::1::::<><><>0<>0<><>::uid://cf6vjabituiw8::::res://Scripts/interactable_element.gd
-levier.tscn::PackedScene::5046809595133458219::1742640909::0::1::::<><><>0<>0<><>::uid://m8a1mt277nm8::::res://Scripts/levier.gd
+levier.tscn::PackedScene::5046809595133458219::1742644853::0::1::::<><><>0<>0<><>::uid://m8a1mt277nm8::::res://Scripts/levier.gd
 Player.tscn::PackedScene::7045512507355073354::1742639022::0::1::::<><><>0<>0<><>::uid://lcfjww5w1o2f::::res://Scripts/Player_launcher.gd<>uid://bhs657nddlqw2::::res://Scripts/ame.gd<>uid://cdudju41h1u4p::::res://Assets/perso principal brouillon.png<>uid://cihnibkj7wkb3::::res://Assets/New Piskel(1).png<>uid://dw6i42ddajfy4::::res://Scripts/corps.gd
+ennemi_spirituel.tscn::PackedScene::4798552786940812987::1742644677::0::1::::<><><>0<>0<><>::uid://cdudju41h1u4p::::res://Assets/perso principal brouillon.png
+ProtoLevel1.tscn::PackedScene::-1::1742644853::0::1::::<><><>0<>0<><>::
+TestGillian.tscn::PackedScene::6472590637425771526::1742644677::0::1::::<><><>0<>0<><>::uid://b7tqxuvjbhs2j::::res://Assets/Tiles/TilesFloor.png<>uid://b0qws46rp7wsy::::res://Assets/Tiles/TilesWalls.png<>uid://cqs0rv4t341ym::::res://Assets/Tiles/TilesPit.png<>uid://b0vxstjsrl43b::::res://Assets/Tiles/TilesFog.png<>uid://c7m5tdiptnkuc::::res://Scenes/Player.tscn<>uid://cd5yhmqsjr14r::::res://Scenes/levier.tscn
 scenes.txt::TextFile::-1::1742591120::0::1::::<><><>0<>0<><>::
 Tests_celia.tscn::PackedScene::231194388675344573::1742639022::0::1::::<><><>0<>0<><>::uid://c7m5tdiptnkuc::::res://Scenes/Player.tscn<>uid://h7664i7r7fsk::::res://Scripts/camera_2d.gd
-TilesJas.tscn::PackedScene::4016979491494882172::1742640909::0::1::::<><><>0<>0<><>::uid://b0qws46rp7wsy::::res://Assets/TilesWalls.png<>uid://b7tqxuvjbhs2j::::res://Assets/TilesFloor.png<>uid://cqs0rv4t341ym::::res://Assets/TilesPit.png<>uid://b0vxstjsrl43b::::res://Assets/TilesFog.png
+TilesJas.tscn::PackedScene::4016979491494882172::1742644853::0::1::::<><><>0<>0<><>::uid://b0qws46rp7wsy::::res://Assets/TilesWalls.png<>uid://b7tqxuvjbhs2j::::res://Assets/TilesFloor.png<>uid://cqs0rv4t341ym::::res://Assets/TilesPit.png<>uid://b0vxstjsrl43b::::res://Assets/TilesFog.png
 ::res://Scripts/::1742639022
 ame.gd::GDScript::2916838890295739887::1742639022::0::1::::<>CharacterBody2D<><>0<>0<><>::
 camera_2d.gd::GDScript::559321116996456594::1742639022::0::1::::<>Camera2D<><>0<>0<><>::
