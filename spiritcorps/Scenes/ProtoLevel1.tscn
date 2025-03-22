@@ -114,7 +114,7 @@ texture_region_size = Vector2i(32, 32)
 [sub_resource type="TileSet" id="TileSet_5tuhi"]
 tile_size = Vector2i(32, 32)
 occlusion_layer_0/light_mask = 1
-physics_layer_0/collision_layer = 3
+physics_layer_0/collision_layer = 32
 physics_layer_0/collision_mask = 3
 sources/0 = SubResource("TileSetAtlasSource_v7kcv")
 
@@ -122,37 +122,56 @@ sources/0 = SubResource("TileSetAtlasSource_v7kcv")
 texture = ExtResource("3_ef3f6")
 texture_region_size = Vector2i(32, 32)
 3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 5:3/0 = 0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 
 [sub_resource type="TileSet" id="TileSet_watuw"]
 tile_size = Vector2i(32, 32)
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 8
 sources/2 = SubResource("TileSetAtlasSource_5tuhi")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hqnah"]
 texture = ExtResource("4_tarqo")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 
 [sub_resource type="TileSet" id="TileSet_riebr"]
 tile_size = Vector2i(32, 32)
-physics_layer_0/collision_layer = 2
+physics_layer_0/collision_layer = 16
 physics_layer_0/collision_mask = 2
 sources/0 = SubResource("TileSetAtlasSource_hqnah")
 
@@ -205,5 +224,5 @@ color = Color(0.489622, 0.489622, 0.489622, 1)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Player" parent="CanvasLayer" instance=ExtResource("5_20oct")]
-position = Vector2(32, 65)
+position = Vector2(32, 63)
 scale = Vector2(0.25, 0.25)
