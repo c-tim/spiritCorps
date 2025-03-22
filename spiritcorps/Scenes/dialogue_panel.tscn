@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://ckgtijybjo6at"]
 
-[ext_resource type="Script" uid="uid://c0mbf5c45sqwy" path="res://Scripts/dialogue_panel_player.gd" id="1_0g7dl"]
+[ext_resource type="Script" path="res://Scripts/dialogue_panel_player.gd" id="1_0g7dl"]
 [ext_resource type="Texture2D" uid="uid://c0hi1qwwkjq1h" path="res://white_square.png" id="2_0se77"]
-[ext_resource type="Shader" uid="uid://cwkafw6srtks2" path="res://Assets/wavy_text_shader.gdshader" id="3_0se77"]
-[ext_resource type="FontVariation" uid="uid://bm0ymlhjojuta" path="res://Assets/fonts/phantom_font_v1.tres" id="4_v5qby"]
+[ext_resource type="Shader" path="res://Assets/wavy_text_shader.gdshader" id="3_0se77"]
+[ext_resource type="FontFile" uid="uid://c4a6suybgehln" path="res://Assets/fonts/Spirit-Regular.otf" id="4_v5qby"]
 
 [sub_resource type="Theme" id="Theme_aqjh3"]
 
