@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="spiritCorps"
+run/main_scene="uid://bvff6y277bs5"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
@@ -72,6 +73,14 @@ Attaque={
 2d_render/layer_5="Ennemi_Corps"
 2d_render/layer_6="Ennemi_Esprit"
 2d_render/layer_7="Esprit_A_Sauver"
+2d_physics/layer_1="Corps"
+2d_physics/layer_2="Ame"
+2d_physics/layer_3="Attaque"
+2d_physics/layer_4="Gouffre"
+2d_physics/layer_5="Brume"
+2d_physics/layer_6="Mur"
+2d_physics/layer_7="Ennemis"
+2d_physics/layer_8="Attaque_Ennemi"
 
 [rendering]
 

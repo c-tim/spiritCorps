@@ -1,6 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://campp0up8i6pr"]
+[gd_scene load_steps=10 format=3 uid="uid://rdywgv5igbpo"]
 
+[ext_resource type="Script" uid="uid://byduu20461tf" path="res://Scripts/ennemi_spirituel.gd" id="1_ia6gf"]
 [ext_resource type="Texture2D" uid="uid://cdudju41h1u4p" path="res://Assets/perso principal brouillon.png" id="1_lj4tk"]
+[ext_resource type="Script" uid="uid://dxq0piw085h03" path="res://Scenes/ennemi_spirituel_main.gd" id="1_pw8aj"]
+[ext_resource type="Script" uid="uid://ykvagj4ypdr2" path="res://Scripts/detection_area.gd" id="3_w8r6q"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lj4tk"]
+radius = 31.5
+height = 115.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ia6gf"]
 atlas = ExtResource("1_lj4tk")
@@ -17,11 +24,46 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="EnnemiSpirituel" type="Node2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_ia6gf"]
+radius = 244.033
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[sub_resource type="CircleShape2D" id="CircleShape2D_w8r6q"]
+radius = 100.02
+
+[node name="EnnemiSpirituel" type="Node2D"]
+script = ExtResource("1_pw8aj")
+
+[node name="Ennemi_Spirituel" type="CharacterBody2D" parent="."]
+collision_layer = 64
+collision_mask = 49
+script = ExtResource("1_ia6gf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ennemi_Spirituel"]
+position = Vector2(0.5, 14.5)
+shape = SubResource("CapsuleShape2D_lj4tk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Ennemi_Spirituel"]
 rotation = 3.14159
 scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_w8r6q")
 
-[node name="DetectionArea" type="Area2D" parent="."]
+[node name="DetectionArea" type="Area2D" parent="Ennemi_Spirituel"]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("3_w8r6q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ennemi_Spirituel/DetectionArea"]
+position = Vector2(1, 0)
+shape = SubResource("CircleShape2D_ia6gf")
+debug_color = Color(0.8965, 0.301814, 0.258649, 0.42)
+
+[node name="AttackArea" type="Area2D" parent="Ennemi_Spirituel"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ennemi_Spirituel/AttackArea"]
+shape = SubResource("CircleShape2D_w8r6q")
+debug_color = Color(0.474505, 0.586133, 0.170654, 0.42)
+
+[connection signal="ame" from="Ennemi_Spirituel/DetectionArea" to="Ennemi_Spirituel" method="follow"]
+[connection signal="exited" from="Ennemi_Spirituel/DetectionArea" to="Ennemi_Spirituel" method="not_target"]
