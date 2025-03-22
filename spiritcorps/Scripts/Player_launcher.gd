@@ -3,7 +3,7 @@ extends Node2D
 @onready var corps: CharacterBody2D = $Corps
 @onready var ame: CharacterBody2D = $Ame
 
-const LIMIT_DIST = 400.0
+const LIMIT_DIST = 300.0
 var is_body=true
 var ralentissement=1.0
 

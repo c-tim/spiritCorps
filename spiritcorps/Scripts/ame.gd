@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var collision_ame: CollisionShape2D = $Collision_Ame
 
-const SPEED = 400.0
+const SPEED = 600.0
 var real_SPEED= SPEED
 
 func _physics_process(delta: float) -> void:
@@ -13,7 +13,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = (direction_x * real_SPEED)/2**(1/2)
 		velocity.y = (direction_y * real_SPEED)/2**(1/2)
 	elif direction_x:
-		velocity.x= direction_x* real_SPEED
+		velocity.x = direction_x * real_SPEED
 	elif direction_y:
 		velocity.y = direction_y * real_SPEED
 	else:

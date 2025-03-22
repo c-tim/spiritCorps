@@ -2,7 +2,7 @@ extends Camera2D
 
 
 func _ready() -> void:
-	zoom = Vector2(1, 1080.0 / 800.0)
+	pass
 	
 
 
