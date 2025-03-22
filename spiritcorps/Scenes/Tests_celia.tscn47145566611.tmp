@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://dj80c5vptv3j"]
+
+[ext_resource type="Script" uid="uid://cyqiyjvgyjg0t" path="res://Scripts/tests_celia.gd" id="1_4sw6q"]
+[ext_resource type="PackedScene" uid="uid://c7m5tdiptnkuc" path="res://Scenes/Player.tscn" id="1_485ms"]
+
+[sub_resource type="GDScript" id="GDScript_a275c"]
+script/source = "extends Camera2D
+
+
+func _ready() -> void:
+	zoom = Vector2(1, 1080.0 / 800.0)
+	
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="TestsCelia" type="Node2D"]
+script = ExtResource("1_4sw6q")
+
+[node name="Player" parent="." instance=ExtResource("1_485ms")]
+position = Vector2(133, 136)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+editor_draw_limits = true
+script = SubResource("GDScript_a275c")
