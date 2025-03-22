@@ -5,37 +5,30 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 var player:CharacterBody2D
-const DIST_MIN = 15.0
+const DIST_MIN = 30.0
 var targeting=false
-var target:Vector2
+var target
 const attack_time=0.3
-const DIST_ATT = 75.0
-var retreat=false
-var base:Vector2
+const DIST_ATT = 55.0
+const ATT_DELAY = 3.0
+var attacking=false
 
-signal must_return_to_base(body)
 
 func _physics_process(delta: float) -> void:
-	print(targeting)
-	if targeting and target.distance_to(position)>DIST_MIN:
-		var direction = (position-target).normalized()
-		velocity=direction*SPEED
+	if targeting :
+		if target.global_position.distance_to(global_position)<DIST_ATT and !attacking:
+			attack()
+		elif target.global_position.distance_to(global_position)>DIST_MIN:
+			var direction=(target.global_position - global_position).normalized()
+			velocity = direction * SPEED
 	else:
 		velocity=Vector2.ZERO
-	
-	if retreat:
-		if base.distance_to(position)>0.01:
-			var direction = (base-position).normalized()
-			velocity=direction*SPEED
-		else:
-			retreat=false
-			velocity=Vector2.ZERO
 
 
 	move_and_slide()
 
 func follow(body):
-	target=body.position
+	target=body
 	targeting=true
 
 func not_target(body):
@@ -43,17 +36,20 @@ func not_target(body):
 	emit_signal("must_return_to_base",body)
 
 func attack():
+	attacking=true
 	attack_area.monitoring=true
-	print("attaque")
+	print("attaque ennemie")
 	await get_tree().create_timer(attack_time).timeout
 	attack_area.monitoring=false
+	print("fin attaque")
+	await get_tree().create_timer(ATT_DELAY).timeout
+	attacking=false
+	
+	
+
 	
 func _is_targeting():
 	return targeting
 
 func _get_target():
 	return target
-
-func return_to_base(pos):
-	retreat=true
-	base=pos

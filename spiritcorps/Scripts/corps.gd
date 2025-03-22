@@ -41,6 +41,7 @@ func is_waiting(is_body:bool)->void:
 
 func attack():
 	attacking=true
+	print("attaque joueur")
 	zone_attaque.monitoring=true
 	await get_tree().create_timer(attack_delay).timeout
 	zone_attaque.monitoring=false
