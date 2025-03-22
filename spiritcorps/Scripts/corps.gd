@@ -3,7 +3,7 @@ extends CharacterBody2D
 @onready var zone_attaque: Area2D = $Zone_Attaque
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
 
-const SPEED = 250.0
+const SPEED = 500.0
 const attack_delay = 0.3
 var can_move = true
 var attacking = false

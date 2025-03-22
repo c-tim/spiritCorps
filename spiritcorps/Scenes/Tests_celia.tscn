@@ -2,15 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://bs1u3mw0anqfw" path="res://Scenes/Player.tscn" id="1_485ms"]
 [ext_resource type="Script" uid="uid://h7664i7r7fsk" path="res://Scripts/camera_2d.gd" id="2_4sw6q"]
-<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://campp0up8i6pr" path="res://Scenes/ennemi_spirituel.tscn" id="3_a275c"]
 [ext_resource type="PackedScene" uid="uid://ot7dirwhhmq" path="res://Scenes/EnnemiCorps.tscn" id="4_3iy6c"]
 [ext_resource type="PackedScene" uid="uid://cjk1fq7d1w761" path="res://Scenes/Petit_fantome.tscn" id="5_aiv6v"]
-=======
-[ext_resource type="PackedScene" uid="uid://rdywgv5igbpo" path="res://Scenes/ennemi_spirituel.tscn" id="3_a275c"]
-[ext_resource type="PackedScene" uid="uid://c4u3rrr7lleu1" path="res://Scenes/EnnemiCorps.tscn" id="4_3iy6c"]
-[ext_resource type="PackedScene" uid="uid://cmw4l44t6y50l" path="res://Scenes/Petit_fantome.tscn" id="5_aiv6v"]
->>>>>>> origin/Gillian=)
 
 [node name="TestsCelia" type="Node2D"]
 

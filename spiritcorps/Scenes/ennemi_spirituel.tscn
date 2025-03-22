@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://byduu20461tf" path="res://Scripts/ennemi_spirituel.gd" id="1_ia6gf"]
 [ext_resource type="Texture2D" uid="uid://cdudju41h1u4p" path="res://Assets/perso principal brouillon.png" id="1_lj4tk"]
-[ext_resource type="Script" uid="uid://dxq0piw085h03" path="res://Scripts/ennemi_spirituel_main.gd" id="1_pw8aj"]
+[ext_resource type="Script" path="res://Scenes/ennemi_spirituel_main.gd" id="1_pw8aj"]
 [ext_resource type="Texture2D" uid="uid://d4m252waqhxcn" path="res://Assets/monstre fantôme.png" id="3_3eav2"]
-[ext_resource type="Script" uid="uid://ykvagj4ypdr2" path="res://Scripts/detection_area.gd" id="3_w8r6q"]
-[ext_resource type="PackedScene" uid="uid://bs1u3mw0anqfw" path="res://Scenes/Player.tscn" id="5_3eav2"]
+[ext_resource type="Script" path="res://Scripts/detection_area.gd" id="3_w8r6q"]
+[ext_resource type="PackedScene" uid="uid://c7m5tdiptnkuc" path="res://Scenes/Player.tscn" id="5_3eav2"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lj4tk"]
 radius = 41.0
