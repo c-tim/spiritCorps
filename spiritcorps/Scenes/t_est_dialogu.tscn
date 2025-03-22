@@ -45,4 +45,6 @@ grow_vertical = 1
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(571, 326)
 
+[node name="CanvasGroup" type="CanvasGroup" parent="."]
+
 [connection signal="send_text_to_player" from="faux_joueur/Control/Presentation_Jeu" to="faux_joueur" method="_on_presentation_panel_send_text_to_player"]
