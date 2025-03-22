@@ -39,7 +39,7 @@ script = ExtResource("1_pw8aj")
 
 [node name="Ennemi_Spirituel" type="CharacterBody2D" parent="."]
 collision_layer = 64
-collision_mask = 49
+collision_mask = 304
 script = ExtResource("1_ia6gf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ennemi_Spirituel"]

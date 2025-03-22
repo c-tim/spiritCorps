@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @onready var zone_attaque: Area2D = $Zone_Attaque
+@onready var animation: AnimatedSprite2D = $AnimatedSprite2D
 
 const SPEED = 500.0
 const attack_delay = 0.3
@@ -10,6 +11,7 @@ var attacking = false
 func _physics_process(delta: float) -> void:
 	
 	if can_move:
+		animation.play("Face")
 		var direction_x := Input.get_axis("Gauche","Droite")
 		var direction_y := Input.get_axis("Haut","Bas")
 		
@@ -38,6 +40,8 @@ func _physics_process(delta: float) -> void:
 
 func is_waiting(is_body:bool)->void:
 	can_move=is_body
+	if !is_body:
+		animation.play("Soulless")
 
 func attack():
 	attacking=true

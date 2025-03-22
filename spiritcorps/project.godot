@@ -73,7 +73,7 @@ Attaque={
 2d_render/layer_5="Ennemi_Corps"
 2d_render/layer_6="Ennemi_Esprit"
 2d_render/layer_7="Esprit_A_Sauver"
-2d_physics/layer_1="Corps"
+2d_physics/layer_1="Corps_ContactDécor"
 2d_physics/layer_2="Ame"
 2d_physics/layer_3="Attaque"
 2d_physics/layer_4="Gouffre"
@@ -81,6 +81,7 @@ Attaque={
 2d_physics/layer_6="Mur"
 2d_physics/layer_7="Ennemis"
 2d_physics/layer_8="Attaque_Ennemi"
+2d_physics/layer_9="Corps_ContactEnnemi"
 
 [rendering]
 
