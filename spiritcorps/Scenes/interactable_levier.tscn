@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cmxwl43ugpbup"]
+[gd_scene load_steps=3 format=3 uid="uid://dk1chvruaggdb"]
 
-[ext_resource type="SpriteFrames" uid="uid://m1dmhpt8da33" path="res://Scenes/spriteframe_levier.tres" id="1_pv130"]
+[ext_resource type="SpriteFrames" uid="uid://deb8oybxbibcv" path="res://Scenes/spriteframe_levier.tres" id="1_pv130"]
 [ext_resource type="Script" uid="uid://cv2m47bsl526n" path="res://Scripts/interactable_levier.gd" id="2_0p0cr"]
 
 [node name="levier" type="AnimatedSprite2D"]
