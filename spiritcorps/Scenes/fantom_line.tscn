@@ -1,9 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://bb62k73dkvymt"]
+[gd_scene load_steps=2 format=3 uid="uid://bie8ajbhnveoq"]
 
 [ext_resource type="Script" uid="uid://bteugqhn2t8ln" path="res://Scripts/fantom_line.gd" id="1_iqvjy"]
 
-[node name="FantomLine" type="Node2D"]
+[node name="FantomLine" type="Node2D" node_paths=PackedStringArray("list_markers")]
 script = ExtResource("1_iqvjy")
+list_markers = [NodePath("FantomPlacement1"), NodePath("FantomPlacement2"), NodePath("FantomPlacement3"), NodePath("FantomPlacement3"), NodePath("FantomPlacement4"), NodePath("FantomPlacement5"), NodePath("FantomPlacement6"), NodePath("FantomPlacement7"), NodePath("FantomPlacement8"), NodePath("FantomPlacement9"), NodePath("FantomPlacement10")]
 
 [node name="FantomPlacement1" type="Marker2D" parent="."]
 
