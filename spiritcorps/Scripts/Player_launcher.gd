@@ -1,4 +1,4 @@
-extends Node2D
+class_name Player extends Node2D
 
 @onready var corps: CharacterBody2D = $Corps
 @onready var ame: CharacterBody2D = $Ame
