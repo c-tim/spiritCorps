@@ -1,0 +1,49 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://m1dmhpt8da33"]
+
+[ext_resource type="Texture2D" uid="uid://igpgwt0s1tbf" path="res://Assets/Tentaclick.png" id="1_b7byf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b7byf"]
+atlas = ExtResource("1_b7byf")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5vrj"]
+atlas = ExtResource("1_b7byf")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_75yj4"]
+atlas = ExtResource("1_b7byf")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_41dcg"]
+atlas = ExtResource("1_b7byf")
+region = Rect2(0, 32, 32, 32)
+
+[resource]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b7byf")
+}],
+"loop": true,
+"name": &"levier_activated",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5vrj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_75yj4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_41dcg")
+}],
+"loop": true,
+"name": &"levier_not_activated",
+"speed": 5.0
+}]
