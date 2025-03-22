@@ -1,9 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://ot7dirwhhmq"]
+[gd_scene load_steps=10 format=3 uid="uid://c4u3rrr7lleu1"]
 
 [ext_resource type="Texture2D" uid="uid://d12aes3ix5ghs" path="res://icon.svg" id="1_1cjko"]
-[ext_resource type="Script" uid="uid://b7gbi1k44ndgh" path="res://Scripts/ennemi_corps_main.gd" id="1_beife"]
-[ext_resource type="Script" uid="uid://b53ex4mss7ld7" path="res://Scripts/ennemi_corps.gd" id="1_psn6w"]
-[ext_resource type="Script" uid="uid://c7hwxgw88jh8u" path="res://Scripts/detection_zone.gd" id="2_icr0k"]
+[ext_resource type="Script" path="res://Scripts/ennemi_corps_main.gd" id="1_beife"]
+[ext_resource type="Script" path="res://Scripts/ennemi_corps.gd" id="1_psn6w"]
+[ext_resource type="Script" path="res://Scripts/detection_zone.gd" id="2_icr0k"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_icr0k"]
 atlas = ExtResource("1_1cjko")
