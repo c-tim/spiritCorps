@@ -2,10 +2,14 @@ extends Node2D
 
 @onready var corps: CharacterBody2D = $Corps
 @onready var ame: CharacterBody2D = $Ame
+@onready var fantom_line: Phantom_line = $FantomLine
 
-const LIMIT_DIST = 300.0
+const LIMIT_DIST = 500.0
 var is_body=true
 var ralentissement=1.0
+const COOLDOWN_SWITCH = 0.5
+var can_switch=true
+var pos_player:Vector2
 
 
 func _ready() -> void:
@@ -14,17 +18,23 @@ func _ready() -> void:
 	
 
 func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("Switch"):
+	if Input.is_action_just_pressed("Switch") and can_switch:
+		can_switch=false
 		ame.visible=!ame.visible
 		is_body=!is_body
 		switching(is_body)
 	limit_ame(ame.position.distance_to(corps.position))
+	pos_player = corps.position if is_body else ame.position
+	fantom_line.check_move_line_phantom(pos_player)
 		
 func switching(is_body:bool) :
 	ame.is_moving(is_body)
 	corps.is_waiting(is_body)
-	if is_body:
-		ame.position=corps.position
+	ame.position=corps.position
+	await get_tree().create_timer(COOLDOWN_SWITCH).timeout
+	can_switch=true
+	
+	
 
 func limit_ame(dist:float):
 	if dist >= LIMIT_DIST:

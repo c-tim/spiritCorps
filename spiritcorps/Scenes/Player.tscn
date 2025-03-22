@@ -1,7 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://c7m5tdiptnkuc"]
+[gd_scene load_steps=15 format=3 uid="uid://c7m5tdiptnkuc"]
 
 [ext_resource type="Script" uid="uid://lcfjww5w1o2f" path="res://Scripts/Player_launcher.gd" id="1_dewec"]
 [ext_resource type="Script" uid="uid://bhs657nddlqw2" path="res://Scripts/ame.gd" id="1_gntrk"]
+[ext_resource type="PackedScene" path="res://Scenes/fantom_line.tscn" id="2_nn08x"]
 [ext_resource type="Texture2D" uid="uid://cdudju41h1u4p" path="res://Assets/perso principal brouillon.png" id="3_5ixxa"]
 [ext_resource type="Texture2D" uid="uid://cihnibkj7wkb3" path="res://Assets/New Piskel(1).png" id="3_gntrk"]
 [ext_resource type="Script" uid="uid://dw6i42ddajfy4" path="res://Scripts/corps.gd" id="4_5ixxa"]
@@ -56,7 +57,10 @@ animations = [{
 [node name="Player" type="Node2D"]
 script = ExtResource("1_dewec")
 
+[node name="FantomLine" parent="." instance=ExtResource("2_nn08x")]
+
 [node name="Corps" type="CharacterBody2D" parent="."]
+collision_mask = 40
 motion_mode = 1
 script = ExtResource("4_5ixxa")
 
@@ -72,7 +76,7 @@ autoplay = "default"
 
 [node name="Zone_Attaque" type="Area2D" parent="Corps"]
 collision_layer = 4
-collision_mask = 4
+collision_mask = 64
 
 [node name="Collision_attaque" type="CollisionShape2D" parent="Corps/Zone_Attaque"]
 shape = SubResource("CircleShape2D_5ixxa")
@@ -80,7 +84,7 @@ debug_color = Color(0.588015, 0.535774, 0.337694, 0.42)
 
 [node name="Ame" type="CharacterBody2D" parent="."]
 collision_layer = 2
-collision_mask = 2
+collision_mask = 48
 script = ExtResource("1_gntrk")
 
 [node name="Collision_Ame" type="CollisionShape2D" parent="Ame"]
