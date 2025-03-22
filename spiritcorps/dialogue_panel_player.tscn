@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqtwwpt5k8sr7"]
+
+[ext_resource type="Script" uid="uid://c0mbf5c45sqwy" path="res://Scripts/dialogue_panel_player.gd" id="1_8obx4"]
+
+[node name="Dialogue_Panel" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_8obx4")
+metadata/_custom_type_script = "uid://c0mbf5c45sqwy"

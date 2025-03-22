@@ -2,7 +2,7 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://c0bwrhwrsaakb"
+uid="uid://dqfnp70jw008x"
 path="res://.godot/imported/Spirit-Regular.ttf-00443dbbfa075d73997b3178d6cdb3ad.fontdata"
 
 [deps]
@@ -22,9 +22,9 @@ msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
 hinting=1
-subpixel_positioning=4
+subpixel_positioning=0
 keep_rounding_remainders=true
-oversampling=0.0
+oversampling=8.0
 Fallbacks=null
 fallbacks=[]
 Compress=null
