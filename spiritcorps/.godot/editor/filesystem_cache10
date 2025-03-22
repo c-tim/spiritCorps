@@ -32,8 +32,9 @@ wavy_text_shader.gdshader::Shader/Shader::-1::1742655852::0::1::::<><><>0<>0<><>
 phantom_font_v1.tres::FontVariation/FontVariation::3281775477552725470::1742670432::0::1::::<><><>0<>0<><>::uid://dqfnp70jw008x::::res://Spirit-Regular.ttf
 Spirit-Regular2.otf::FontFile/FontFile::3117047171552947530::1742672509::1742672648::1::::<><><>0<>0<>470190522a2a523b3987907e5191f678<>res://.godot/imported/Spirit-Regular2.otf-3530ed54751aaabfc643857d1d090990.fontdata::
 Spirit-Regular.otf::FontFile/FontFile::6810233291551117759::1742673194::1742673234::1::::<><><>0<>0<>c0e803247689f66753b5a5c6c9c9a46a<>res://.godot/imported/Spirit-Regular.otf-7b88269c107cf59bc6f645c229aa994b.fontdata::
-::res://Assets/Tiles/::1742678494
+::res://Assets/Tiles/::1742679226
 Barrier.png::CompressedTexture2D::1219511925592701489::1742678494::1742678496::1::::<><><>0<>0<>f2683e56785c01c1aeef379852a9f7ac<>res://.godot/imported/Barrier.png-cf01bac0bf1b0ff8740f86716cf12bdb.ctex::
+Graves.png::CompressedTexture2D::4598374046640509224::1742679226::1742679227::1::::<><><>0<>0<>0caf9a1e1b6c330b94f0a98752fe580c<>res://.godot/imported/Graves.png-d92fff49ec53de71cb2bd692085d8625.ctex::
 TilesFloor.png::CompressedTexture2D/CompressedTexture2D::4672700485899796751::1742624053::1742639171::1::::<><><>0<>0<>c4fd9d9fb959801ca6df4f37e5db7db3<>res://.godot/imported/TilesFloor.png-7582a1870562222495b92e207545d4ed.ctex::
 TilesFog.png::CompressedTexture2D/CompressedTexture2D::4185923355290997397::1742629566::1742639171::1::::<><><>0<>0<>ac65fdfe2beaa30b022e1575951a3b96<>res://.godot/imported/TilesFog.png-dd10e8bc4b51c41067c86b7cc8a93972.ctex::
 TilesPit.png::CompressedTexture2D/CompressedTexture2D::5934571097174883308::1742623864::1742639171::1::::<><><>0<>0<>ad0111c7df1704b86f19b950283cfc7b<>res://.godot/imported/TilesPit.png-c4b8b56870d7634dcf120107beb27d61.ctex::
