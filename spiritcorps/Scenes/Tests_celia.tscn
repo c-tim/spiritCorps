@@ -1,10 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://bfhy4bmt45dsf"]
+[gd_scene load_steps=6 format=3 uid="uid://dj80c5vptv3j"]
 
 [ext_resource type="PackedScene" uid="uid://bs1u3mw0anqfw" path="res://Scenes/Player.tscn" id="1_485ms"]
-[ext_resource type="Script" path="res://Scripts/camera_2d.gd" id="2_4sw6q"]
-[ext_resource type="PackedScene" path="res://Scenes/ennemi_spirituel.tscn" id="3_a275c"]
-[ext_resource type="PackedScene" uid="uid://c4u3rrr7lleu1" path="res://Scenes/EnnemiCorps.tscn" id="4_3iy6c"]
-[ext_resource type="PackedScene" uid="uid://cmw4l44t6y50l" path="res://Scenes/Petit_fantome.tscn" id="5_aiv6v"]
+[ext_resource type="Script" uid="uid://h7664i7r7fsk" path="res://Scripts/camera_2d.gd" id="2_4sw6q"]
+[ext_resource type="PackedScene" uid="uid://campp0up8i6pr" path="res://Scenes/ennemi_spirituel.tscn" id="3_a275c"]
+[ext_resource type="PackedScene" uid="uid://ot7dirwhhmq" path="res://Scenes/EnnemiCorps.tscn" id="4_3iy6c"]
+[ext_resource type="PackedScene" uid="uid://cjk1fq7d1w761" path="res://Scenes/Petit_fantome.tscn" id="5_aiv6v"]
 
 [node name="TestsCelia" type="Node2D"]
 
@@ -18,7 +18,7 @@ script = ExtResource("2_4sw6q")
 
 [node name="EnnemiSpirituel" parent="." instance=ExtResource("3_a275c")]
 position = Vector2(-696, -220)
-base_position = Vector2(-696, -220)
+script = null
 
 [node name="EnnemiCorps" parent="." instance=ExtResource("4_3iy6c")]
 position = Vector2(566, -405)

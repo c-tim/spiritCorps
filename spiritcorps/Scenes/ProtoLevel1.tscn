@@ -4,9 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://b0qws46rp7wsy" path="res://Assets/Tiles/TilesWalls.png" id="2_y3fj8"]
 [ext_resource type="Texture2D" uid="uid://cqs0rv4t341ym" path="res://Assets/Tiles/TilesPit.png" id="3_ef3f6"]
 [ext_resource type="Texture2D" uid="uid://b0vxstjsrl43b" path="res://Assets/Tiles/TilesFog.png" id="4_tarqo"]
-[ext_resource type="PackedScene" uid="uid://c7m5tdiptnkuc" path="res://Scenes/Player.tscn" id="5_20oct"]
-[ext_resource type="PackedScene" uid="uid://dk1chvruaggdb" path="res://Scenes/interactable_levier.tscn" id="5_uhwdp"]
-[ext_resource type="PackedScene" uid="uid://rdywgv5igbpo" path="res://Scenes/ennemi_spirituel.tscn" id="7_uhwdp"]
+[ext_resource type="PackedScene" uid="uid://bs1u3mw0anqfw" path="res://Scenes/Player.tscn" id="5_20oct"]
+[ext_resource type="PackedScene" uid="uid://cmxwl43ugpbup" path="res://Scenes/interactable_levier.tscn" id="5_uhwdp"]
+[ext_resource type="PackedScene" uid="uid://campp0up8i6pr" path="res://Scenes/ennemi_spirituel.tscn" id="7_uhwdp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_watuw"]
 texture = ExtResource("1_p770e")
@@ -227,6 +227,7 @@ light_mask = 2
 visibility_layer = 2
 position = Vector2(296, 490)
 scale = Vector2(0.25, 0.25)
+script = null
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
