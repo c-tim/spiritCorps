@@ -1,6 +1,63 @@
-[gd_scene load_steps=2 format=3 uid="uid://cd5yhmqsjr14r"]
+[gd_scene load_steps=8 format=3 uid="uid://cd5yhmqsjr14r"]
 
-[ext_resource type="Script" uid="uid://m8a1mt277nm8" path="res://Scripts/levier.gd" id="1_kfbk1"]
+[ext_resource type="Texture2D" uid="uid://igpgwt0s1tbf" path="res://Assets/Tentaclick.png" id="1_kfbk1"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g7iva"]
+radius = 6.0
+height = 32.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j65aj"]
+atlas = ExtResource("1_kfbk1")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eiscc"]
+atlas = ExtResource("1_kfbk1")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nelh"]
+atlas = ExtResource("1_kfbk1")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kfbk1"]
+atlas = ExtResource("1_kfbk1")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3pwxl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j65aj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eiscc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0nelh")
+}],
+"loop": true,
+"name": &"Active",
+"speed": 2.5
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kfbk1")
+}],
+"loop": true,
+"name": &"Desactive",
+"speed": 5.0
+}]
 
 [node name="Levier" type="Node2D"]
-script = ExtResource("1_kfbk1")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(0, 7)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_g7iva")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="RigidBody2D"]
+sprite_frames = SubResource("SpriteFrames_3pwxl")
+animation = &"Desactive"
+autoplay = "Desactive"
