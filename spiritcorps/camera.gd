@@ -9,10 +9,12 @@ var current_cooldown :float = 0
 
 
 var start_pos : Vector2
-var current_ratio_translation_position 
+var current_ratio_translation_position = 0
 
+@export var player : Node
 
-
+#func _ready():
+	#change_follow(player)
 
 func _process(delta: float) -> void:
 	if not current_target:
