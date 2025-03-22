@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dirx53a3sm1ne"
-path="res://.godot/imported/TilesFloor-Sheet.png-36b504fc0cc1adbb9c241020383560ff.ctex"
+uid="uid://b7tqxuvjbhs2j"
+path="res://.godot/imported/TilesFloor.png-89b3220f01b738a2e73046ff640e7662.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TilesFloor-Sheet.png"
-dest_files=["res://.godot/imported/TilesFloor-Sheet.png-36b504fc0cc1adbb9c241020383560ff.ctex"]
+source_file="res://Assets/TilesFloor.png"
+dest_files=["res://.godot/imported/TilesFloor.png-89b3220f01b738a2e73046ff640e7662.ctex"]
 
 [params]
 
