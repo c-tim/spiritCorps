@@ -2,25 +2,19 @@ class_name presentation_panel extends Control
 
 
 @onready var phantom_officier: Phantom_Officier_Presentation = $Phantom_Officier
-@onready var cercueil: cercueil = $Cercueil
-@onready var cadavre: cadavre = $cadavre
 
 var pos_phantom : Vector2
-
-var is_doing_animation :bool
 
 var step_animation :int =0
 @export var offset_phantom: Vector2
 
 signal send_text_to_player(t : String)
-signal close_dialogue_panel()
 
 func _ready() -> void:
 	setup_presentation()
 
 func setup_presentation():
 	step_animation = 0
-	is_doing_animation = false
 	#print("position ", phantom_officier.position)
 
 
@@ -30,16 +24,15 @@ func setup_presentation():
 	'''tween.tween_property($Sprite, "scale", Vector2(), 1).set_trans(Tween.TRANS_BOUNCE)
 	tween.tween_callback($Sprite.queue_free)'''
 func next_step_animation():
-	if is_doing_animation:
-		return
 	step_animation += 1
 	match step_animation:
 		1 :
 			#phantom_officier.introduce_himself()
 			send_text_to_player.emit(":)")
 		2 : 
-<<<<<<< HEAD
+
 			send_text_to_player.emit(" texte 2")
+
 		
 		3: 
 			send_text_to_player.emit("rebalbal")
@@ -56,7 +49,7 @@ func next_step_animation():
 		
 		_ : 
 			print("launch_game")
-=======
+
 			send_text_to_player.emit("Nous avons repere un certain de fantomes perdus dans un manoir abandonne.")
 		3 :
 			send_text_to_player.emit("Votre mission si vous l'acceptez et daller sauver ces fantomes.")
@@ -70,4 +63,4 @@ func next_step_animation():
 			send_text_to_player.emit("Faites attention à ne pas trop l'endommager. On ne pourra pas vous recuperer si vous le perdez.")
 		8 : 
 			send_text_to_player.emit("Filez maintenant! Des fantomes en detresse vous attendent!")
->>>>>>> Jason
+

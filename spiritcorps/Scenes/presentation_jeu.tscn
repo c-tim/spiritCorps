@@ -1,13 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://broxv3n8nph3v"]
+[gd_scene load_steps=4 format=3 uid="uid://broxv3n8nph3v"]
 
 [ext_resource type="Script" uid="uid://8csyb1upxhvu" path="res://Scripts/presentation_jeu.gd" id="1_gmwbm"]
 [ext_resource type="Texture2D" uid="uid://chu862ysjtwwt" path="res://Scenes/fantôme capitaine.png" id="2_6fx6n"]
 [ext_resource type="Script" uid="uid://clqaltr0jpmrx" path="res://Scripts/phantom_officier.gd" id="3_6fx6n"]
-[ext_resource type="Texture2D" uid="uid://cqvgvyp34lif7" path="res://Assets/cercueil/Cercueil fermé.png" id="4_7lqm4"]
-[ext_resource type="Script" uid="uid://bgu7yxrl7nwqn" path="res://Scenes/cercueil.gd" id="5_p54h6"]
-[ext_resource type="Texture2D" uid="uid://bnjtxrmwtdcu6" path="res://Assets/cercueil/Cercueil ouvert.png" id="6_p54h6"]
-[ext_resource type="Texture2D" uid="uid://jjwfshy3psfk" path="res://Assets/perso principal avachi.png" id="7_fv3ra"]
-[ext_resource type="Script" uid="uid://ci6ffuyc3t02p" path="res://Scenes/cadavre_presentation.gd" id="8_ynffs"]
 
 [node name="Presentation_Jeu" type="Control"]
 self_modulate = Color(1, 1, 1, 0)
@@ -27,26 +22,3 @@ offset_right = 1108.0
 offset_bottom = 565.0
 texture = ExtResource("2_6fx6n")
 script = ExtResource("3_6fx6n")
-
-[node name="Cercueil" type="TextureRect" parent="."]
-layout_mode = 2
-offset_left = 87.0
-offset_top = 31.0
-offset_right = 386.0
-offset_bottom = 573.0
-texture = ExtResource("6_p54h6")
-expand_mode = 4
-script = ExtResource("5_p54h6")
-image_ferme = ExtResource("4_7lqm4")
-image_ouvert = ExtResource("6_p54h6")
-
-[node name="cadavre" type="TextureRect" parent="."]
-self_modulate = Color(0.62832, 0.596995, 0.552237, 1)
-layout_mode = 2
-offset_left = 215.0
-offset_top = 170.0
-offset_right = 399.0
-offset_bottom = 514.0
-texture = ExtResource("7_fv3ra")
-expand_mode = 4
-script = ExtResource("8_ynffs")

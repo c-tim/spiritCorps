@@ -59,7 +59,6 @@ func limit_ame(dist:float):
 func receive_new_fantom(phantom: Petit_fantome):
 	if phantom in list_phantom_following:
 		return
-
 	list_phantom_following.append(phantom)
 	phantom.set_line_id(len(list_phantom_following)-1)
 

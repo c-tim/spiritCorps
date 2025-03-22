@@ -8,10 +8,6 @@ const STEP_PHANTOM :int= 20
 const RANGE_SLIDE : int = 10
 var objective_pos : Vector2
 
-var dialogu_before_pickup : Array[String]
-
-var id_dialogue_pkaying : int
-
 @export var numerofantome:String
 @export var position_base:Vector2 
 

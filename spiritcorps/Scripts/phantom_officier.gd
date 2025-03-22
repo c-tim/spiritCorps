@@ -3,10 +3,6 @@ class_name Phantom_Officier_Presentation extends TextureRect
 var pos_phantom : Vector2
 var correction : int = 51
 
-func _ready() -> void:
-	visible = false
-
-
 func introduce_himself():
 	visible = true
 	self_modulate.a = 0

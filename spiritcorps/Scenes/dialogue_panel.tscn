@@ -15,11 +15,11 @@ shader_parameter/speed = 5.0
 
 [sub_resource type="Theme" id="Theme_v5qby"]
 default_font = ExtResource("4_v5qby")
-<<<<<<< HEAD
+
 default_font_size = 29
-=======
-default_font_size = 24
->>>>>>> Jason
+
+
+
 
 [node name="Control" type="Control"]
 layout_mode = 3
