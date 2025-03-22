@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0vxstjsrl43b"
-path="res://.godot/imported/TilesFog.png-405aa625e45c517841c642b78c31deee.ctex"
+uid="uid://igpgwt0s1tbf"
+path="res://.godot/imported/Tentaclick.png-0529cfb48897aa0244a0267207bd99f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TilesFog.png"
-dest_files=["res://.godot/imported/TilesFog.png-405aa625e45c517841c642b78c31deee.ctex"]
+source_file="res://Assets/Tentaclick.png"
+dest_files=["res://.godot/imported/Tentaclick.png-0529cfb48897aa0244a0267207bd99f6.ctex"]
 
 [params]
 

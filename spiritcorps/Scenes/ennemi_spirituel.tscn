@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://campp0up8i6pr"]
+
+[ext_resource type="Texture2D" uid="uid://cdudju41h1u4p" path="res://Assets/perso principal brouillon.png" id="1_lj4tk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ia6gf"]
+atlas = ExtResource("1_lj4tk")
+region = Rect2(0, 0, 252, 816)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w8r6q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ia6gf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="EnnemiSpirituel" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+rotation = 3.14159
+scale = Vector2(0.25, 0.25)
+sprite_frames = SubResource("SpriteFrames_w8r6q")
+
+[node name="DetectionArea" type="Area2D" parent="."]
