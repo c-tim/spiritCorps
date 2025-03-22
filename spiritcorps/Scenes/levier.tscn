@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cd5yhmqsjr14r"]
 
-[ext_resource type="Script" uid="uid://m8a1mt277nm8" path="res://levier.gd" id="1_kfbk1"]
+[ext_resource type="Script" uid="uid://m8a1mt277nm8" path="res://Scripts/levier.gd" id="1_kfbk1"]
 
 [node name="Levier" type="Node2D"]
 script = ExtResource("1_kfbk1")
