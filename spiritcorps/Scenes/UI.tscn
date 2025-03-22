@@ -1,12 +1,15 @@
-[gd_scene format=3 uid="uid://cv5ub8623y4i8"]
+[gd_scene load_steps=2 format=3 uid="uid://cv5ub8623y4i8"]
 
-[node name="Control" type="Control"]
+[ext_resource type="Script" uid="uid://cl50fp7mugub4" path="res://Scripts/ui_main.gd" id="1_w371h"]
+
+[node name="Main_Ui" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_w371h")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 1
@@ -15,3 +18,80 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Background_Menu" type="TextureRect" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="NinePatchRect/Background_Menu"]
+layout_mode = 2
+offset_left = 420.0
+offset_top = 185.0
+offset_right = 689.0
+offset_bottom = 277.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="RichTextLabel" type="RichTextLabel" parent="NinePatchRect/Background_Menu/Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = 2.0
+offset_right = -21.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "LOREM IPSUM "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button2" type="Button" parent="NinePatchRect/Background_Menu"]
+layout_mode = 2
+offset_left = 420.0
+offset_top = 302.0
+offset_right = 689.0
+offset_bottom = 394.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="RichTextLabel" type="RichTextLabel" parent="NinePatchRect/Background_Menu/Button2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = 2.0
+offset_right = -21.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "LOREM IPSUM "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button3" type="Button" parent="NinePatchRect/Background_Menu"]
+layout_mode = 2
+offset_left = 420.0
+offset_top = 421.0
+offset_right = 689.0
+offset_bottom = 513.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="RichTextLabel" type="RichTextLabel" parent="NinePatchRect/Background_Menu/Button3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = 2.0
+offset_right = -21.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "LOREM IPSUM "
+horizontal_alignment = 1
+vertical_alignment = 1
