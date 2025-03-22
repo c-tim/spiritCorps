@@ -29,8 +29,8 @@ size = Vector2(57, 113)
 radius = 145.121
 
 [sub_resource type="Gradient" id="Gradient_5ixxa"]
-offsets = PackedFloat32Array(0, 0.755952)
-colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+offsets = PackedFloat32Array(0, 0.75)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_nn08x"]
 gradient = SubResource("Gradient_5ixxa")
@@ -102,7 +102,8 @@ script = ExtResource("1_gntrk")
 [node name="PointLight2D" type="PointLight2D" parent="Ame"]
 position = Vector2(0, 40)
 color = Color(0.845063, 0.545218, 0.999999, 1)
-energy = 4.0
+energy = 2.0
+range_item_cull_mask = 5
 shadow_enabled = true
 shadow_filter = 1
 texture = SubResource("GradientTexture2D_nn08x")
@@ -113,7 +114,7 @@ position = Vector2(-4, -44)
 shape = SubResource("CapsuleShape2D_qbkls")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Ame"]
-light_mask = 4
+light_mask = 2
 position = Vector2(-4, -40)
 scale = Vector2(2.96875, 2.65625)
 sprite_frames = SubResource("SpriteFrames_nn08x")
