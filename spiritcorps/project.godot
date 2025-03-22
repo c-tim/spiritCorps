@@ -79,6 +79,7 @@ Attaque={
 2d_physics/layer_5="Brume"
 2d_physics/layer_6="Mur"
 2d_physics/layer_7="Ennemis"
+2d_physics/layer_8="Attaque_Ennemi"
 
 [rendering]
 

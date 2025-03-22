@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dj80c5vptv3j"]
+[gd_scene load_steps=4 format=3 uid="uid://dj80c5vptv3j"]
 
 [ext_resource type="PackedScene" uid="uid://c7m5tdiptnkuc" path="res://Scenes/Player.tscn" id="1_485ms"]
 [ext_resource type="Script" uid="uid://h7664i7r7fsk" path="res://Scripts/camera_2d.gd" id="2_4sw6q"]
+[ext_resource type="PackedScene" uid="uid://rdywgv5igbpo" path="res://Scenes/ennemi_spirituel.tscn" id="3_a275c"]
 
 [node name="TestsCelia" type="Node2D"]
 
@@ -12,3 +13,7 @@ position = Vector2(133, 136)
 zoom = Vector2(0.5, 0.5)
 editor_draw_limits = true
 script = ExtResource("2_4sw6q")
+
+[node name="EnnemiSpirituel" parent="." instance=ExtResource("3_a275c")]
+position = Vector2(-476, -206)
+base_position = Vector2(5, 5)

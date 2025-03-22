@@ -14,6 +14,7 @@ var pos_player:Vector2
 
 func _ready() -> void:
 	ame.visible=false
+	ame.set_collision_layer_value(2,false)
 	ame.position=corps.position
 	
 

@@ -15,7 +15,7 @@ func get_pos_phantom(id : int)-> Vector2:
 
 
 func check_move_line_phantom(pos_player : Vector2):
-	if len(list_markers)==0:
+	if !list_markers[0]:
 		return
 	#if abs(pos_player - list_markers[0].position)>SPACING_PHANTOM_IN_LINE:
 	if pos_player.distance_to(list_markers[0].position)>SPACING_PHANTOM_IN_LINE:

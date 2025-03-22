@@ -26,6 +26,7 @@ func _physics_process(delta: float) -> void:
 
 func is_moving(is_body:bool)->void:
 	collision_ame.disabled=is_body
+	set_collision_layer_value(2,!is_body)
 
 func eloignement(k:float)->void:
 	real_SPEED=k*SPEED
