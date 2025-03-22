@@ -27,12 +27,12 @@ base_position = Vector2(566, -405)
 [node name="PetitFantome" parent="." instance=ExtResource("5_aiv6v")]
 position = Vector2(541, 316)
 numerofantome = "3"
-position_base = Vector2(50, 0)
+postion_base = null
 
 [node name="PetitFantome2" parent="." instance=ExtResource("5_aiv6v")]
 position = Vector2(-618, 289)
 numerofantome = "2"
-position_base = Vector2(-50, 0)
+postion_base = null
 
 [connection signal="send_petitFantom_to_player" from="PetitFantome" to="Player" method="receive_new_fantom"]
 [connection signal="send_petitFantom_to_player" from="PetitFantome2" to="Player" method="receive_new_fantom"]

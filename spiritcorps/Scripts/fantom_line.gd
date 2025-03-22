@@ -1,9 +1,16 @@
 class_name Phantom_line extends Node2D
 
-const SPACING_PHANTOM_IN_LINE = 25
+const SPACING_PHANTOM_IN_LINE = 50
 
 @export var list_markers : Array[Marker2D]
 var number_phantom_following := 0
+
+func _ready() -> void:
+	create_list_markers()
+
+func create_list_markers():
+	for child in get_children():
+		list_markers.append(child)
 
 func add_phantom_and_get_position() -> Vector2:
 	number_phantom_following+=1
@@ -11,7 +18,7 @@ func add_phantom_and_get_position() -> Vector2:
 	return list_markers[number_phantom_following-1].position
 
 func get_pos_phantom(id : int)-> Vector2:
-	return list_markers[id].position
+	return list_markers[id+1].global_position
 
 
 func check_move_line_phantom(pos_player : Vector2):
@@ -25,5 +32,5 @@ func update_line_pos(new_pos: Vector2):
 	var n:= len(list_markers)
 	for i in range(n):
 		list_markers[n-i-1].position = list_markers[n-i-2].position
-	list_markers[0].position=new_pos
+	list_markers[0].position=(new_pos)
 	
