@@ -52,3 +52,6 @@ func next_step_animation():
 			await get_tree().create_timer(1).timeout 
 			cadavre.introduce()
 			is_doing_animation = false
+		
+		_ : 
+			print("launch_game")
