@@ -1,11 +1,22 @@
-[gd_scene load_steps=18 format=3 uid="uid://c7m5tdiptnkuc"]
+[gd_scene load_steps=23 format=3 uid="uid://c7m5tdiptnkuc"]
 
 [ext_resource type="Script" uid="uid://lcfjww5w1o2f" path="res://Scripts/Player_launcher.gd" id="1_dewec"]
 [ext_resource type="Script" uid="uid://bhs657nddlqw2" path="res://Scripts/ame.gd" id="1_gntrk"]
 [ext_resource type="PackedScene" uid="uid://bie8ajbhnveoq" path="res://Scenes/fantom_line.tscn" id="2_nn08x"]
 [ext_resource type="Texture2D" uid="uid://cdudju41h1u4p" path="res://Assets/perso principal brouillon.png" id="3_5ixxa"]
-[ext_resource type="Texture2D" uid="uid://cihnibkj7wkb3" path="res://Assets/New Piskel(1).png" id="3_gntrk"]
 [ext_resource type="Script" uid="uid://dw6i42ddajfy4" path="res://Scripts/corps.gd" id="4_5ixxa"]
+[ext_resource type="Texture2D" uid="uid://dxvte6e5lx11j" path="res://Assets/perso principal avec pelle.png" id="4_megsn"]
+[ext_resource type="Texture2D" uid="uid://jjwfshy3psfk" path="res://Assets/perso principal avachi.png" id="5_yoq75"]
+[ext_resource type="Texture2D" uid="uid://b0kpd4q32sa3" path="res://Assets/esprit dos.png" id="6_52ee3"]
+[ext_resource type="Texture2D" uid="uid://bfwoqukr6fo2a" path="res://Assets/esprit face.png" id="7_bhhdu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ksbbd"]
+atlas = ExtResource("4_megsn")
+region = Rect2(0, 0, 327, 847)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_glx4g"]
+atlas = ExtResource("5_yoq75")
+region = Rect2(0, 0, 388, 835)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nn08x"]
 atlas = ExtResource("3_5ixxa")
@@ -13,6 +24,22 @@ region = Rect2(0, 0, 252, 816)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_52ee3"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ksbbd")
+}],
+"loop": true,
+"name": &"Face",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_glx4g")
+}],
+"loop": true,
+"name": &"Soulless",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_nn08x")
@@ -23,10 +50,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nn08x"]
-size = Vector2(61, 254)
+size = Vector2(56.5, 233)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rpqav"]
-size = Vector2(63.5, 104.5)
+size = Vector2(55.5, 80)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5ixxa"]
 radius = 145.121
@@ -45,26 +72,31 @@ fill_to = Vector2(0, 0)
 radius = 36.0
 height = 72.0
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_dewec"]
-atlas = ExtResource("3_gntrk")
-region = Rect2(0, 0, 32, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_megsn"]
+atlas = ExtResource("6_52ee3")
+region = Rect2(0, 0, 255, 268)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5ixxa"]
-atlas = ExtResource("3_gntrk")
-region = Rect2(0, 32, 32, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_yoq75"]
+atlas = ExtResource("7_bhhdu")
+region = Rect2(0, 0, 292, 268)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nn08x"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_dewec")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5ixxa")
+"texture": SubResource("AtlasTexture_megsn")
 }],
 "loop": true,
-"name": &"default",
-"speed": 6.0
+"name": &"Dos",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yoq75")
+}],
+"loop": true,
+"name": &"Face",
+"speed": 5.0
 }]
 
 [node name="Player" type="Node2D"]
@@ -80,21 +112,22 @@ script = ExtResource("4_5ixxa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Corps"]
 light_mask = 2
-scale = Vector2(0.35, 0.35)
+scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_52ee3")
-autoplay = "default"
+animation = &"Face"
+autoplay = "Face"
 
 [node name="StaticCollision" type="StaticBody2D" parent="Corps"]
 collision_layer = 256
 collision_mask = 0
 
 [node name="Collision_ennemis" type="CollisionShape2D" parent="Corps/StaticCollision"]
-position = Vector2(3.5, -1)
+position = Vector2(-0.75, -4.5)
 shape = SubResource("RectangleShape2D_nn08x")
 debug_color = Color(0.816772, 0.38667, 0.337788, 0.42)
 
 [node name="Collision_Décor" type="CollisionShape2D" parent="Corps"]
-position = Vector2(-0.75, 74.25)
+position = Vector2(1, 62)
 shape = SubResource("RectangleShape2D_rpqav")
 debug_color = Color(6.73831e-07, 0.565365, 0.865738, 0.42)
 
@@ -107,7 +140,6 @@ shape = SubResource("CircleShape2D_5ixxa")
 debug_color = Color(0.588015, 0.535774, 0.337694, 0.42)
 
 [node name="Ame" type="CharacterBody2D" parent="."]
-visible = false
 collision_layer = 2
 collision_mask = 48
 script = ExtResource("1_gntrk")
@@ -127,6 +159,7 @@ shape = SubResource("CapsuleShape2D_qbkls")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Ame"]
 light_mask = 4
 position = Vector2(-4, -40)
-scale = Vector2(2.96875, 2.65625)
+scale = Vector2(0.4, 0.358)
 sprite_frames = SubResource("SpriteFrames_nn08x")
-autoplay = "default"
+animation = &"Face"
+autoplay = "Face"
