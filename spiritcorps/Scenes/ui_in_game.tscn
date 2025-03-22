@@ -1,0 +1,73 @@
+[gd_scene load_steps=0 format=3 uid="uid://b64cnpfi6kbk1"]
+
+[node name="UI_InGame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="in_play" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button_pause" type="Button" parent="in_play"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -183.0
+offset_top = 19.0
+offset_right = -9.0
+offset_bottom = 70.0
+grow_horizontal = 0
+text = "csqdsqd"
+
+[node name="in_play2" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button_unpause" type="Button" parent="in_play2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -87.0
+offset_top = -25.5
+offset_right = 87.0
+offset_bottom = 25.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "fdsqfd"
+
+[node name="Button_quit" type="Button" parent="in_play2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -87.0
+offset_top = 45.0
+offset_right = 87.0
+offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "fdsqfdsq"
