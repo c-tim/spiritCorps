@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b0qws46rp7wsy" path="res://Assets/Tiles/TilesWalls.png" id="2_y3fj8"]
 [ext_resource type="Texture2D" uid="uid://cqs0rv4t341ym" path="res://Assets/Tiles/TilesPit.png" id="3_ef3f6"]
 [ext_resource type="Texture2D" uid="uid://b0vxstjsrl43b" path="res://Assets/Tiles/TilesFog.png" id="4_tarqo"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://bs1u3mw0anqfw" path="res://Scenes/Player.tscn" id="5_20oct"]
 <<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://cmxwl43ugpbup" path="res://Scenes/interactable_levier.tscn" id="5_uhwdp"]
@@ -13,6 +14,11 @@
 [ext_resource type="PackedScene" uid="uid://rdywgv5igbpo" path="res://Scenes/ennemi_spirituel.tscn" id="7_uhwdp"]
 [ext_resource type="PackedScene" uid="uid://cjk1fq7d1w761" path="res://Scenes/Petit_fantome.tscn" id="8_26bw2"]
 >>>>>>> origin/Gillian=)
+=======
+[ext_resource type="PackedScene" uid="uid://c7m5tdiptnkuc" path="res://Scenes/Player.tscn" id="5_20oct"]
+[ext_resource type="PackedScene" uid="uid://cmxwl43ugpbup" path="res://Scenes/interactable_levier.tscn" id="5_uhwdp"]
+[ext_resource type="PackedScene" path="res://Scenes/ennemi_spirituel.tscn" id="7_uhwdp"]
+>>>>>>> Jason
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_watuw"]
 texture = ExtResource("1_p770e")
@@ -213,6 +219,7 @@ position = Vector2(294, 486)
 scale = Vector2(0.25, 0.25)
 script = null
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 [node name="EnnemiSpirituel2" parent="." instance=ExtResource("7_uhwdp")]
@@ -246,6 +253,8 @@ scale = Vector2(0.35, 0.35)
 numerofantome = "5"
 position_base = Vector2(72, 580)
 >>>>>>> origin/Gillian=)
+=======
+>>>>>>> Jason
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

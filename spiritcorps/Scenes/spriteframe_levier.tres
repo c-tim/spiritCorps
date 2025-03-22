@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://m1dmhpt8da33"]
 =======
 [gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://deb8oybxbibcv"]
 >>>>>>> origin/Gillian=)
+=======
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://m1dmhpt8da33"]
+>>>>>>> Jason
 
 [ext_resource type="Texture2D" uid="uid://igpgwt0s1tbf" path="res://Assets/Tentaclick.png" id="1_b7byf"]
 
