@@ -14,12 +14,13 @@ var can_switch=true
 var pos_player:Vector2
 
 var list_phantom_following : Array[Petit_fantome]
-
+signal transmit_ame_node_to_main_level(n : Node2D)
 
 func _ready() -> void:
 	ame.animated_sprite_2d.visible=false
 	ame.set_collision_layer_value(2,false)
 	ame.position=corps.position
+	transmit_ame_node_to_main_level.emit(ame)
 	
 
 func _process(delta: float) -> void:

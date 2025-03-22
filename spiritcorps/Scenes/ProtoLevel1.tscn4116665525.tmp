@@ -244,14 +244,12 @@ numerofantome = "5"
 position_base = Vector2(72, 580)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-follow_viewport_enabled = true
 
 [node name="Player" parent="CanvasLayer" instance=ExtResource("5_20oct")]
 position = Vector2(28, 66)
 scale = Vector2(0.25, 0.25)
 
 [node name="Camera" parent="." instance=ExtResource("10_k5nvh")]
-zoom = Vector2(2, 2)
 
 [connection signal="send_petitFantom_to_player" from="PetitFantome" to="CanvasLayer/Player" method="receive_new_fantom"]
 [connection signal="send_petitFantom_to_player" from="PetitFantome2" to="CanvasLayer/Player" method="receive_new_fantom"]
