@@ -1,7 +1,11 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
+@onready var zone_attaque: Area2D = $Zone_Attaque
+
+const SPEED = 600.0
+const attack_delay = 0.3
 var can_move = true
+var attacking = false
 
 func _physics_process(delta: float) -> void:
 	
@@ -17,6 +21,9 @@ func _physics_process(delta: float) -> void:
 			velocity.y = direction_y * SPEED
 		else:
 			velocity.y = move_toward(velocity.y,0,SPEED)
+		
+		if Input.is_action_just_pressed("Attaque") and !attacking:
+			attack()
 	else :
 		velocity.x=0
 		velocity.y=0
@@ -26,3 +33,12 @@ func _physics_process(delta: float) -> void:
 
 func is_waiting(is_body:bool)->void:
 	can_move=is_body
+
+func attack():
+	attacking=true
+	zone_attaque.monitoring=true
+	await get_tree().create_timer(attack_delay)
+	zone_attaque.monitoring=false
+	attacking=false
+	
+	

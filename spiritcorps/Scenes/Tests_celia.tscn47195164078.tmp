@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dj80c5vptv3j"]
+[gd_scene load_steps=2 format=3 uid="uid://dj80c5vptv3j"]
 
 [ext_resource type="PackedScene" uid="uid://c7m5tdiptnkuc" path="res://Scenes/Player.tscn" id="1_485ms"]
-[ext_resource type="Script" uid="uid://d4meyfkvhtlg5" path="res://Scripts/camera_2d.gd" id="2_4sw6q"]
 
 [node name="TestsCelia" type="Node2D"]
 
@@ -10,4 +9,3 @@ position = Vector2(133, 136)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 editor_draw_limits = true
-script = ExtResource("2_4sw6q")

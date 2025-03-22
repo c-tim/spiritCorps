@@ -2,38 +2,34 @@
 
 [ext_resource type="Script" uid="uid://lcfjww5w1o2f" path="res://Scripts/Player_launcher.gd" id="1_dewec"]
 [ext_resource type="Script" uid="uid://bhs657nddlqw2" path="res://Scripts/ame.gd" id="1_gntrk"]
+[ext_resource type="Texture2D" uid="uid://cdudju41h1u4p" path="res://Assets/perso principal brouillon.png" id="3_5ixxa"]
 [ext_resource type="Texture2D" uid="uid://cihnibkj7wkb3" path="res://Assets/New Piskel(1).png" id="3_gntrk"]
 [ext_resource type="Script" uid="uid://dw6i42ddajfy4" path="res://Scripts/corps.gd" id="4_5ixxa"]
-[ext_resource type="Texture2D" uid="uid://dubiqpmnd3omi" path="res://Assets/New Piskel(2).png" id="5_nn08x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rpqav"]
-size = Vector2(43, 110)
+size = Vector2(222, 728)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_52ee3"]
-atlas = ExtResource("5_nn08x")
-region = Rect2(0, 0, 32, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_nn08x"]
+atlas = ExtResource("3_5ixxa")
+region = Rect2(0, 0, 252, 816)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bhhdu"]
-atlas = ExtResource("5_nn08x")
-region = Rect2(0, 32, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_megsn"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_52ee3"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_52ee3")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bhhdu")
+"texture": SubResource("AtlasTexture_nn08x")
 }],
 "loop": true,
 "name": &"default",
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_5ixxa"]
+radius = 428.117
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qbkls"]
-radius = 29.0
-height = 58.0
+radius = 116.0
+height = 252.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dewec"]
 atlas = ExtResource("3_gntrk")
@@ -64,15 +60,23 @@ script = ExtResource("1_dewec")
 motion_mode = 1
 script = ExtResource("4_5ixxa")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Corps"]
-position = Vector2(-0.5, -6)
+[node name="Collision_Corps" type="CollisionShape2D" parent="Corps"]
+position = Vector2(-8, 17)
 shape = SubResource("RectangleShape2D_rpqav")
+debug_color = Color(6.73831e-07, 0.565365, 0.865738, 0.42)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Corps"]
-position = Vector2(-1, -7)
-scale = Vector2(2.125, 3.9375)
-sprite_frames = SubResource("SpriteFrames_megsn")
+sprite_frames = SubResource("SpriteFrames_52ee3")
 autoplay = "default"
+
+[node name="Zone_Attaque" type="Area2D" parent="Corps"]
+collision_layer = 4
+collision_mask = 4
+
+[node name="Collision_attaque" type="CollisionShape2D" parent="Corps/Zone_Attaque"]
+position = Vector2(2, 2)
+shape = SubResource("CircleShape2D_5ixxa")
+debug_color = Color(0.588015, 0.535774, 0.337694, 0.42)
 
 [node name="Ame" type="CharacterBody2D" parent="."]
 collision_layer = 2
@@ -83,7 +87,7 @@ script = ExtResource("1_gntrk")
 shape = SubResource("CapsuleShape2D_qbkls")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Ame"]
-position = Vector2(2.38419e-07, 3)
-scale = Vector2(2.34375, 2.15625)
+position = Vector2(1, 12)
+scale = Vector2(10.1875, 9.75)
 sprite_frames = SubResource("SpriteFrames_nn08x")
 autoplay = "default"
