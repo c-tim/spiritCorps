@@ -7,7 +7,7 @@ uniform float speed = 10.0;
 
 
 void vertex() {
-	
+
 	VERTEX.y += amplitude * sin(( frequency * UV.x) + (speed* TIME));
 	/*vec2 new_uv = SCREEN_UV;
 	new_uv.y+= sin(new_uv.x*frequency+TIME)*amplitude;

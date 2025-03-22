@@ -63,4 +63,3 @@ func next_step_animation():
 			send_text_to_player.emit("Faites attention à ne pas trop l'endommager. On ne pourra pas vous recuperer si vous le perdez.")
 		8 : 
 			send_text_to_player.emit("Filez maintenant! Des fantomes en detresse vous attendent!")
-
