@@ -1,20 +1,21 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1742630804
+::res://::1742633034
 icon.svg::CompressedTexture2D/CompressedTexture2D::9039918317273610360::1742588283::1742588283::1::::<><><>0<>0<>a7ebf7c64ce550e1ff8a0ae9c100db3b<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://Assets/::1742630318
 assets.txt::TextFile/TextFile::-1::1742590077::0::1::::<><><>0<>0<><>::
 New Piskel(1).png::CompressedTexture2D/CompressedTexture2D::5349606436450034998::1742593835::1742593835::1::::<><><>0<>0<>3048fe8d893ca48aa1e56bdae9b875bd<>res://.godot/imported/New Piskel(1).png-29a4070677fbbc0a23738fbe480f452c.ctex::
 New Piskel(2).png::CompressedTexture2D/CompressedTexture2D::8565618417222312456::1742594351::1742594351::1::::<><><>0<>0<>5a14b984b07fe287347bdf17c0e3bb87<>res://.godot/imported/New Piskel(2).png-002ea75bee21ddd9e1c1d162d6781a21.ctex::
-perso principal brouillon.png::CompressedTexture2D::5024894772962990585::1742630318::1742630318::1::::<><><>0<>0<>4e9b8e208b4913f471f4dcafecdc354f<>res://.godot/imported/perso principal brouillon.png-b113ae149d780c74775bdeb9b5488f9e.ctex::
+perso principal brouillon.png::CompressedTexture2D/CompressedTexture2D::5024894772962990585::1742630318::1742630318::1::::<><><>0<>0<>4e9b8e208b4913f471f4dcafecdc354f<>res://.godot/imported/perso principal brouillon.png-b113ae149d780c74775bdeb9b5488f9e.ctex::
 place_holder.png::CompressedTexture2D/CompressedTexture2D::5249402431014331358::1742591167::1742591167::1::::<><><>0<>0<>d7da3cd51b3de3f709a05331edf03c52<>res://.godot/imported/place_holder.png-4c8490e0cd4b7ebf4cdce01578a36fa7.ctex::
 place_holder_corps.png::CompressedTexture2D/CompressedTexture2D::4832250539010010133::1742591163::1742591163::1::::<><><>0<>0<>e8bf36ba8d2f04d5c55ecc50a9a9ba67<>res://.godot/imported/place_holder_corps.png-5d22c76f8dc105d46994054a02196f7d.ctex::
-::res://Scenes/::1742632958
-Player.tscn::PackedScene::7045512507355073354::1742632958::0::1::::<><><>0<>0<><>::uid://lcfjww5w1o2f::::res://Scripts/Player_launcher.gd<>uid://bhs657nddlqw2::::res://Scripts/ame.gd<>uid://cdudju41h1u4p::::res://Assets/perso principal brouillon.png<>uid://cihnibkj7wkb3::::res://Assets/New Piskel(1).png<>uid://dw6i42ddajfy4::::res://Scripts/corps.gd
-camera_2d.gd::GDScript::9219797055684795838::1742633027::0::1::::<>Camera2D<><>0<>0<><>::
+::res://Scenes/::1742633690
+Player.tscn::PackedScene::7045512507355073354::1742633294::0::1::::<><><>0<>0<><>::uid://lcfjww5w1o2f::::res://Scripts/Player_launcher.gd<>uid://bhs657nddlqw2::::res://Scripts/ame.gd<>uid://cdudju41h1u4p::::res://Assets/perso principal brouillon.png<>uid://cihnibkj7wkb3::::res://Assets/New Piskel(1).png<>uid://dw6i42ddajfy4::::res://Scripts/corps.gd
+camera_2d.gd::GDScript::559321116996456594::1742633716::0::1::::<>Camera2D<><>0<>0<><>::
 scenes.txt::TextFile/TextFile::-1::1742590077::0::1::::<><><>0<>0<><>::
-Tests_celia.tscn::PackedScene::231194388675344573::1742632958::0::1::::<><><>0<>0<><>::uid://c7m5tdiptnkuc::::res://Scenes/Player.tscn
-::res://Scripts/::1742632918
+Tests_celia.tscn::PackedScene::231194388675344573::1742633690::0::1::::<><><>0<>0<><>::uid://c7m5tdiptnkuc::::res://Scenes/Player.tscn
+::res://Scripts/::1742633464
 ame.gd::GDScript::2916838890295739887::1742632917::0::1::::<>CharacterBody2D<><>0<>0<><>::
 corps.gd::GDScript::8767951268358776137::1742632913::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Player_launcher.gd::GDScript::776526883528353603::1742596553::0::1::::<>Node2D<><>0<>0<><>::
+Player_launcher.gd::GDScript/GDScript::776526883528353603::1742596553::0::1::::<>Node2D<><>0<>0<><>::
+tests_celia.gd::GDScript::6490932759215875141::1742633464::0::1::::<>Node2D<><>0<>0<><>::
 scripts.txt::TextFile/TextFile::-1::1742590077::0::1::::<><><>0<>0<><>::

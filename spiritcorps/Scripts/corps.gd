@@ -12,15 +12,16 @@ func _physics_process(delta: float) -> void:
 	if can_move:
 		var direction_x := Input.get_axis("Gauche","Droite")
 		var direction_y := Input.get_axis("Haut","Bas")
-		if direction_x:
-			velocity.x = direction_x * SPEED
-		else:
-			velocity.x = move_toward(velocity.x, 0, SPEED)
-		
-		if direction_y:
+		if direction_x and direction_y:
+			velocity.x = (direction_x * SPEED)/2**(1/2)
+			velocity.y = (direction_y * SPEED)/2**(1/2)
+		elif direction_x:
+			velocity.x= direction_x*SPEED
+		elif direction_y:
 			velocity.y = direction_y * SPEED
 		else:
 			velocity.y = move_toward(velocity.y,0,SPEED)
+			velocity.x = move_toward(velocity.x, 0, SPEED)
 		
 		if Input.is_action_just_pressed("Attaque") and !attacking:
 			attack()
