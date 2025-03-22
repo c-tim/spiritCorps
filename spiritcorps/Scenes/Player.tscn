@@ -2,12 +2,10 @@
 
 [ext_resource type="Script" uid="uid://lcfjww5w1o2f" path="res://Scripts/Player_launcher.gd" id="1_dewec"]
 [ext_resource type="Script" uid="uid://bhs657nddlqw2" path="res://Scripts/ame.gd" id="1_gntrk"]
+[ext_resource type="PackedScene" uid="uid://bie8ajbhnveoq" path="res://Scenes/fantom_line.tscn" id="2_nn08x"]
 [ext_resource type="Texture2D" uid="uid://cdudju41h1u4p" path="res://Assets/perso principal brouillon.png" id="3_5ixxa"]
 [ext_resource type="Texture2D" uid="uid://cihnibkj7wkb3" path="res://Assets/New Piskel(1).png" id="3_gntrk"]
 [ext_resource type="Script" uid="uid://dw6i42ddajfy4" path="res://Scripts/corps.gd" id="4_5ixxa"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rpqav"]
-size = Vector2(63, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nn08x"]
 atlas = ExtResource("3_5ixxa")
@@ -23,6 +21,9 @@ animations = [{
 "name": &"default",
 "speed": 5.0
 }]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rpqav"]
+size = Vector2(57, 127)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5ixxa"]
 radius = 145.121
@@ -66,14 +67,13 @@ animations = [{
 [node name="Player" type="Node2D"]
 script = ExtResource("1_dewec")
 
+[node name="FantomLine" parent="." node_paths=PackedStringArray("list_markers") instance=ExtResource("2_nn08x")]
+list_markers = [null]
+
 [node name="Corps" type="CharacterBody2D" parent="."]
+collision_mask = 40
 motion_mode = 1
 script = ExtResource("4_5ixxa")
-
-[node name="Collision_Corps" type="CollisionShape2D" parent="Corps"]
-position = Vector2(-1.5, -3)
-shape = SubResource("RectangleShape2D_rpqav")
-debug_color = Color(6.73831e-07, 0.565365, 0.865738, 0.42)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Corps"]
 light_mask = 2
@@ -81,9 +81,14 @@ scale = Vector2(0.35, 0.35)
 sprite_frames = SubResource("SpriteFrames_52ee3")
 autoplay = "default"
 
+[node name="Collision_Corps" type="CollisionShape2D" parent="Corps"]
+position = Vector2(-4.5, 61.5)
+shape = SubResource("RectangleShape2D_rpqav")
+debug_color = Color(6.73831e-07, 0.565365, 0.865738, 0.42)
+
 [node name="Zone_Attaque" type="Area2D" parent="Corps"]
 collision_layer = 4
-collision_mask = 4
+collision_mask = 64
 
 [node name="Collision_attaque" type="CollisionShape2D" parent="Corps/Zone_Attaque"]
 shape = SubResource("CircleShape2D_5ixxa")
@@ -91,7 +96,7 @@ debug_color = Color(0.588015, 0.535774, 0.337694, 0.42)
 
 [node name="Ame" type="CharacterBody2D" parent="."]
 collision_layer = 2
-collision_mask = 2
+collision_mask = 48
 script = ExtResource("1_gntrk")
 
 [node name="PointLight2D" type="PointLight2D" parent="Ame"]
