@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://bs1u3mw0anqfw"]
+[gd_scene load_steps=24 format=3 uid="uid://bs1u3mw0anqfw"]
 
 [ext_resource type="Script" uid="uid://lcfjww5w1o2f" path="res://Scripts/Player_launcher.gd" id="1_dewec"]
 [ext_resource type="Script" uid="uid://bhs657nddlqw2" path="res://Scripts/ame.gd" id="1_gntrk"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://jjwfshy3psfk" path="res://Assets/perso principal avachi.png" id="5_yoq75"]
 [ext_resource type="Texture2D" uid="uid://b0kpd4q32sa3" path="res://Assets/esprit dos.png" id="6_52ee3"]
 [ext_resource type="Texture2D" uid="uid://bfwoqukr6fo2a" path="res://Assets/esprit face.png" id="7_bhhdu"]
+[ext_resource type="PackedScene" uid="uid://dfimigy2vdivy" path="res://Scenes/player_health_component.tscn" id="10_yoq75"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ksbbd"]
 atlas = ExtResource("4_megsn")
@@ -165,3 +166,5 @@ scale = Vector2(0.4, 0.358)
 sprite_frames = SubResource("SpriteFrames_nn08x")
 animation = &"Face"
 autoplay = "Face"
+
+[node name="player_health_component" parent="." instance=ExtResource("10_yoq75")]

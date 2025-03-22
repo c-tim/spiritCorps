@@ -1,4 +1,4 @@
-extends Node2D
+class_name Ennemi_Spirituel extends Node2D
 
 @onready var ennemi_spirituel: CharacterBody2D = $Ennemi_Spirituel
 
