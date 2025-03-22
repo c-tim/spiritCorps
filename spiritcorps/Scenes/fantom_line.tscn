@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://bie8ajbhnveoq"]
+
+[ext_resource type="Script" uid="uid://bteugqhn2t8ln" path="res://Scripts/fantom_line.gd" id="1_iqvjy"]
+[ext_resource type="Texture2D" uid="uid://c0hi1qwwkjq1h" path="res://white_square.png" id="2_5snh6"]
+
+[node name="FantomLine" type="Node2D"]
+script = ExtResource("1_iqvjy")
+
+[node name="FantomPlacement1" type="Marker2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="FantomPlacement1"]
+visible = false
+modulate = Color(0, 0.333443, 0.0317478, 1)
+texture = ExtResource("2_5snh6")
+
+[node name="FantomPlacement2" type="Marker2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="FantomPlacement2"]
+visible = false
+modulate = Color(0.380392, 0.345098, 0.509804, 1)
+texture = ExtResource("2_5snh6")
+
+[node name="FantomPlacement3" type="Marker2D" parent="."]
+
+[node name="FantomPlacement4" type="Marker2D" parent="."]
+
+[node name="FantomPlacement5" type="Marker2D" parent="."]
+
+[node name="FantomPlacement6" type="Marker2D" parent="."]
+
+[node name="FantomPlacement7" type="Marker2D" parent="."]
+
+[node name="FantomPlacement8" type="Marker2D" parent="."]
+
+[node name="FantomPlacement9" type="Marker2D" parent="."]
+
+[node name="FantomPlacement10" type="Marker2D" parent="."]

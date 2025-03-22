@@ -1,0 +1,69 @@
+[gd_scene load_steps=10 format=3 uid="uid://c4u3rrr7lleu1"]
+
+[ext_resource type="Texture2D" uid="uid://d12aes3ix5ghs" path="res://icon.svg" id="1_1cjko"]
+[ext_resource type="Script" path="res://Scripts/ennemi_corps_main.gd" id="1_beife"]
+[ext_resource type="Script" path="res://Scripts/ennemi_corps.gd" id="1_psn6w"]
+[ext_resource type="Script" path="res://Scripts/detection_zone.gd" id="2_icr0k"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_icr0k"]
+atlas = ExtResource("1_1cjko")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_psn6w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_icr0k")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1cjko"]
+radius = 73.0
+height = 226.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1cjko"]
+radius = 180.4
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_icr0k"]
+radius = 312.271
+
+[node name="EnnemiCorps" type="Node2D"]
+script = ExtResource("1_beife")
+
+[node name="ennemi_corps" type="CharacterBody2D" parent="."]
+collision_layer = 64
+collision_mask = 296
+script = ExtResource("1_psn6w")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="ennemi_corps"]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(-6, -7)
+scale = Vector2(1.20703, 1.27344)
+sprite_frames = SubResource("SpriteFrames_psn6w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ennemi_corps"]
+position = Vector2(0, -4)
+shape = SubResource("CapsuleShape2D_1cjko")
+
+[node name="AttackZone" type="Area2D" parent="ennemi_corps"]
+collision_layer = 128
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ennemi_corps/AttackZone"]
+shape = SubResource("CircleShape2D_1cjko")
+debug_color = Color(0.89439, 0.271721, 0.440035, 0.42)
+
+[node name="DetectionZone" type="Area2D" parent="ennemi_corps"]
+collision_layer = 128
+collision_mask = 256
+script = ExtResource("2_icr0k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ennemi_corps/DetectionZone"]
+shape = SubResource("CircleShape2D_icr0k")
+debug_color = Color(0.577657, 0.541616, 0.319503, 0.42)
+
+[connection signal="corps" from="ennemi_corps/DetectionZone" to="ennemi_corps" method="targeting"]
+[connection signal="exited" from="ennemi_corps/DetectionZone" to="ennemi_corps" method="no_target"]

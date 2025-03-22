@@ -1,0 +1,8 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://bm0ymlhjojuta"]
+
+[ext_resource type="FontFile" uid="uid://dqfnp70jw008x" path="res://Spirit-Regular.ttf" id="1_6g2pm"]
+
+[resource]
+base_font = ExtResource("1_6g2pm")
+spacing_space = 6
+spacing_top = 5

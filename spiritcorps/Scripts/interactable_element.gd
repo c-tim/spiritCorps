@@ -20,10 +20,10 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 func test_to_interract_with_body(player : Node):
 	if not is_interactable:
 		return
-	interact()
+	interact(player)
 
-func interact():
+func interact(player: Node):
 	if not child_interracted.has_method("action_interract"):
 		push_error("erreur pas de fonction a interragir")
-	child_interracted.action_interract()
+	child_interracted.action_interract(player)
 	
