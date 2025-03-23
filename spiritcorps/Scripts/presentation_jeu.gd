@@ -27,7 +27,19 @@ func next_step_animation():
 	step_animation += 1
 	match step_animation:
 		1 :
-			phantom_officier.introduce_himself()
-			send_text_to_player.emit("texte 1")
+			#phantom_officier.introduce_himself()
+			send_text_to_player.emit(":)")
 		2 : 
-			send_text_to_player.emit(" texte 2")
+			send_text_to_player.emit("Nous avons repere un certain de fantomes perdus dans un manoir abandonne.")
+		3 :
+			send_text_to_player.emit("Votre mission si vous l'acceptez et daller sauver ces fantomes.")
+		4 : 
+			send_text_to_player.emit("J'ai proposé par politesse mais vous n’avez pas le choix.")
+		5 :
+			send_text_to_player.emit("Voici votre habitacle.")
+		6 : 
+			send_text_to_player.emit("Nous savons a quel point vous appreciez votre pilosite. Nous vous faisons une fleur et avons selectionne ce corps specialement pour vous.")
+		7 :
+			send_text_to_player.emit("Faites attention à ne pas trop l'endommager. On ne pourra pas vous recuperer si vous le perdez.")
+		8 : 
+			send_text_to_player.emit("Filez maintenant! Des fantomes en detresse vous attendent!")

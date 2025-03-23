@@ -11,13 +11,13 @@ config_version=5
 [application]
 
 config/name="spiritCorps"
-run/main_scene="uid://bvff6y277bs5"
+run/main_scene="uid://bov1gdhcm5cu4"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/script-ide/plugin.cfg")
+enabled=PackedStringArray()
 
 [file_customization]
 

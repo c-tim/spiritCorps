@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://c0mbf5c45sqwy" path="res://Scripts/dialogue_panel_player.gd" id="1_0g7dl"]
 [ext_resource type="Texture2D" uid="uid://c0hi1qwwkjq1h" path="res://white_square.png" id="2_0se77"]
 [ext_resource type="Shader" uid="uid://cwkafw6srtks2" path="res://Assets/wavy_text_shader.gdshader" id="3_0se77"]
-[ext_resource type="FontVariation" uid="uid://bm0ymlhjojuta" path="res://Assets/fonts/phantom_font_v1.tres" id="4_v5qby"]
+[ext_resource type="FontFile" uid="uid://c4a6suybgehln" path="res://Assets/fonts/Spirit-Regular.otf" id="4_v5qby"]
 
 [sub_resource type="Theme" id="Theme_aqjh3"]
 
@@ -15,7 +15,7 @@ shader_parameter/speed = 5.0
 
 [sub_resource type="Theme" id="Theme_v5qby"]
 default_font = ExtResource("4_v5qby")
-default_font_size = 12
+default_font_size = 24
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -33,7 +33,7 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_top = -158.0
+offset_top = -189.0
 grow_horizontal = 2
 grow_vertical = 0
 
@@ -45,9 +45,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -479.0
-offset_top = -155.0
-offset_right = 479.0
+offset_left = -494.0
+offset_top = -207.0
+offset_right = 494.0
 grow_horizontal = 2
 grow_vertical = 0
 theme = SubResource("Theme_aqjh3")
@@ -59,8 +59,8 @@ material = SubResource("ShaderMaterial_v5qby")
 layout_mode = 0
 offset_left = 21.0
 offset_top = 16.0
-offset_right = 1114.0
-offset_bottom = 142.0
+offset_right = 968.0
+offset_bottom = 192.0
 theme = SubResource("Theme_v5qby")
 text = "COUCOU COMMENT CA VA "
 
