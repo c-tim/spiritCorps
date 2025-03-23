@@ -1,10 +1,19 @@
-class_name interactable_levier extends AnimatedSprite2D
+class_name interactable_levier extends Node2D
 
 signal levier_activated()
 
+var lever_is_activate : bool = false
+var sprite : AnimatedSprite2D 
+
+
 func _ready() -> void:
-	play("levier_not_activated")
+	sprite = $AnimatedSprite2D
 
 func action_interract():
-	play("levier_not_activated")
-	levier_activated.emit()
+	
+	if lever_is_activate :
+		sprite.play("Desactivate")
+		
+	else :
+		sprite.play("Activate")
+		levier_activated.emit()
