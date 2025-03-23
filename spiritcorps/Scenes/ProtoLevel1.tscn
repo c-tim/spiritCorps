@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bs1u3mw0anqfw" path="res://Scenes/Player.tscn" id="5_20oct"]
 [ext_resource type="PackedScene" uid="uid://dk1chvruaggdb" path="res://Scenes/interactable_levier.tscn" id="5_uhwdp"]
 [ext_resource type="PackedScene" uid="uid://rdywgv5igbpo" path="res://Scenes/ennemi_spirituel.tscn" id="7_uhwdp"]
-[ext_resource type="PackedScene" uid="uid://cjk1fq7d1w761" path="res://Scenes/Petit_fantome.tscn" id="8_26bw2"]
+[ext_resource type="PackedScene" uid="uid://cmw4l44t6y50l" path="res://Scenes/Petit_fantome.tscn" id="8_26bw2"]
 [ext_resource type="PackedScene" uid="uid://brehraqdh2kug" path="res://Scenes/camera.tscn" id="10_k5nvh"]
 [ext_resource type="PackedScene" uid="uid://b0ophc8bs8rmt" path="res://Scenes/zone_fin_niveau.tscn" id="11_k5nvh"]
 

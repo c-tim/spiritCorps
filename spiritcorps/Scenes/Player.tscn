@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://bs1u3mw0anqfw"]
+[gd_scene load_steps=25 format=3 uid="uid://bs1u3mw0anqfw"]
 
 [ext_resource type="Script" uid="uid://lcfjww5w1o2f" path="res://Scripts/Player_launcher.gd" id="1_dewec"]
 [ext_resource type="Script" uid="uid://bhs657nddlqw2" path="res://Scripts/ame.gd" id="1_gntrk"]
@@ -168,12 +168,13 @@ sprite_frames = SubResource("SpriteFrames_nn08x")
 animation = &"Face"
 autoplay = "Face"
 
-[node name="player_health_component" parent="." instance=ExtResource("10_yoq75")]
-position = Vector2(-495, -313)
 [node name="Rangelever" type="Area2D" parent="Ame"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ame/Rangelever"]
 shape = SubResource("CircleShape2D_megsn")
+
+[node name="player_health_component" parent="." instance=ExtResource("10_yoq75")]
+position = Vector2(-495, -313)
 
 [connection signal="body_entered" from="Ame/Rangelever" to="." method="lever_in_range"]
 [connection signal="body_exited" from="Ame/Rangelever" to="." method="lever_out_range"]

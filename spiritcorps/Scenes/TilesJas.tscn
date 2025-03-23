@@ -1,11 +1,10 @@
-[gd_scene load_steps=15 format=4 uid="uid://cwjbpj6ph6f75"]
+[gd_scene load_steps=14 format=4 uid="uid://cwjbpj6ph6f75"]
 
 [ext_resource type="Texture2D" uid="uid://b0qws46rp7wsy" path="res://Assets/Tiles/TilesWalls.png" id="1_7o35m"]
 [ext_resource type="Texture2D" uid="uid://b7tqxuvjbhs2j" path="res://Assets/Tiles/TilesFloor.png" id="1_riebr"]
 [ext_resource type="Texture2D" uid="uid://cqs0rv4t341ym" path="res://Assets/Tiles/TilesPit.png" id="3_riebr"]
 [ext_resource type="Texture2D" uid="uid://b0vxstjsrl43b" path="res://Assets/Tiles/TilesFog.png" id="4_v7kcv"]
 [ext_resource type="PackedScene" uid="uid://bs1u3mw0anqfw" path="res://Scenes/Player.tscn" id="5_5tuhi"]
-[ext_resource type="PackedScene" uid="uid://cd5yhmqsjr14r" path="res://Scenes/levier.tscn" id="6_watuw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_watuw"]
 texture = ExtResource("1_riebr")
@@ -102,8 +101,18 @@ tile_set = SubResource("TileSet_riebr")
 position = Vector2(24, 66)
 scale = Vector2(0.25, 0.25)
 
-[node name="Levier" parent="." instance=ExtResource("6_watuw")]
+[node name="Levier" parent="."]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(163, 580)
+script = null
 
 [node name="fantome" type="Node2D" parent="."]
 

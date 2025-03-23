@@ -28,7 +28,8 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if is_body:
-		ame.position = corps.position
+		ame.position.x = corps.position.x
+		ame.position.y = corps.position.y+60
 	if Input.is_action_just_pressed("Switch"):
 		ame.animated_sprite_2d.visible=!ame.animated_sprite_2d.visible
 		can_switch=false
@@ -51,7 +52,8 @@ func update_fantom_in_line_positions():
 func switching(is_body:bool) :
 	ame.is_moving(is_body)
 	corps.is_waiting(is_body)
-	ame.position=corps.position
+	ame.position.x = corps.position.x
+	ame.position.y = corps.position.y+60
 	await get_tree().create_timer(COOLDOWN_SWITCH).timeout
 	can_switch=true
 	
