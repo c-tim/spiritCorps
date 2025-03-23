@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cmw4l44t6y50l"]
+[gd_scene load_steps=18 format=3 uid="uid://cmw4l44t6y50l"]
 
 [ext_resource type="Script" uid="uid://couvu8morwb08" path="res://Scripts/petit_fantome_main.gd" id="1_cjj6o"]
 [ext_resource type="Texture2D" uid="uid://c7kb6p6mtig8e" path="res://Assets/fantôme neutre.png" id="1_fy7ob"]
@@ -11,6 +11,9 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8pbnj"]
 radius = 36.0139
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_quwn4"]
+light_mode = 2
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ac3or"]
 atlas = ExtResource("1_fy7ob")
@@ -76,20 +79,24 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_c210w"]
-radius = 156.205
+radius = 68.0
 
 [node name="PetitFantome" type="Node2D"]
 script = ExtResource("1_cjj6o")
 
 [node name="Petit_fantome" type="CharacterBody2D" parent="."]
+collision_layer = 2
+collision_mask = 16
 script = ExtResource("2_c210w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Petit_fantome"]
 shape = SubResource("CircleShape2D_8pbnj")
-disabled = true
 debug_color = Color(0.640533, 0.477624, 0.58788, 0.42)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Petit_fantome"]
+light_mask = 4
+visibility_layer = 4
+material = SubResource("CanvasItemMaterial_quwn4")
 scale = Vector2(0.35, 0.323)
 sprite_frames = SubResource("SpriteFrames_ji01w")
 animation = &"5"
