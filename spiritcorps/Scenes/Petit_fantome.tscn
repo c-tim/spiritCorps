@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cmw4l44t6y50l"]
+[gd_scene load_steps=18 format=3 uid="uid://cjk1fq7d1w761"]
 
 [ext_resource type="Script" uid="uid://couvu8morwb08" path="res://Scripts/petit_fantome_main.gd" id="1_cjj6o"]
 [ext_resource type="Texture2D" uid="uid://c7kb6p6mtig8e" path="res://Assets/fantôme neutre.png" id="1_fy7ob"]

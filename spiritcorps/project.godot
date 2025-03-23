@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="spiritCorps"
-run/main_scene="uid://bfhy4bmt45dsf"
+run/main_scene="uid://bvff6y277bs5"
 config/features=PackedStringArray("4.4", "Mobile")
+run/max_fps=60
 config/icon="res://icon.svg"
 
 [editor_plugins]
