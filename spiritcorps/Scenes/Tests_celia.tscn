@@ -1,10 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://dj80c5vptv3j"]
+[gd_scene load_steps=8 format=3 uid="uid://dj80c5vptv3j"]
 
 [ext_resource type="PackedScene" uid="uid://bs1u3mw0anqfw" path="res://Scenes/Player.tscn" id="1_485ms"]
 [ext_resource type="Script" uid="uid://h7664i7r7fsk" path="res://Scripts/camera_2d.gd" id="2_4sw6q"]
 [ext_resource type="PackedScene" uid="uid://rdywgv5igbpo" path="res://Scenes/ennemi_spirituel.tscn" id="3_a275c"]
 [ext_resource type="PackedScene" uid="uid://c4u3rrr7lleu1" path="res://Scenes/EnnemiCorps.tscn" id="4_3iy6c"]
 [ext_resource type="PackedScene" uid="uid://cmw4l44t6y50l" path="res://Scenes/Petit_fantome.tscn" id="5_aiv6v"]
+[ext_resource type="Texture2D" uid="uid://c0hi1qwwkjq1h" path="res://white_square.png" id="6_wao0r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aiv6v"]
+size = Vector2(244, 93)
 
 [node name="TestsCelia" type="Node2D"]
 
@@ -34,6 +38,20 @@ position_base = Vector2(50, 0)
 position = Vector2(-9, 214)
 numerofantome = "2"
 position_base = Vector2(-50, 0)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 16
+collision_mask = 0
+
+[node name="WhiteSquare" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(103.25, -36.5)
+scale = Vector2(1.97934, 1.43548)
+texture = ExtResource("6_wao0r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(104, -36.5)
+shape = SubResource("RectangleShape2D_aiv6v")
+debug_color = Color(0.810974, 0.00213585, 0.984783, 0.42)
 
 [connection signal="send_petitFantom_to_player" from="PetitFantome" to="Player" method="receive_new_fantom"]
 [connection signal="send_petitFantom_to_player" from="PetitFantome2" to="Player" method="receive_new_fantom"]

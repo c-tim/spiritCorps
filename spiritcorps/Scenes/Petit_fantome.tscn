@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cmw4l44t6y50l"]
+[gd_scene load_steps=20 format=3 uid="uid://cmw4l44t6y50l"]
 
 [ext_resource type="Script" uid="uid://couvu8morwb08" path="res://Scripts/petit_fantome_main.gd" id="1_cjj6o"]
 [ext_resource type="Texture2D" uid="uid://c7kb6p6mtig8e" path="res://Assets/fantôme neutre.png" id="1_fy7ob"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bno6tj3wlrmlv" path="res://Assets/fantôme capitaine.png" id="4_quwn4"]
 [ext_resource type="Texture2D" uid="uid://b6yiadytp0bsl" path="res://Assets/fantôme3_couteau.png" id="5_5myjd"]
 [ext_resource type="Script" uid="uid://dgj5h1klfnoxg" path="res://Scripts/detection_area_fantom.gd" id="8_quwn4"]
+[ext_resource type="Script" uid="uid://fyauw1r6up4w" path="res://Scripts/detection_brume.gd" id="9_5myjd"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8pbnj"]
 radius = 36.0139
@@ -81,12 +82,15 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_c210w"]
 radius = 68.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_ac3or"]
+radius = 59.0
+
 [node name="PetitFantome" type="Node2D"]
 script = ExtResource("1_cjj6o")
 
 [node name="Petit_fantome" type="CharacterBody2D" parent="."]
 collision_layer = 0
-collision_mask = 32
+collision_mask = 48
 script = ExtResource("2_c210w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Petit_fantome"]
@@ -109,6 +113,13 @@ script = ExtResource("8_quwn4")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Petit_fantome/detection_area"]
 shape = SubResource("CircleShape2D_c210w")
 debug_color = Color(0.499489, 0.538509, 0.603078, 0.42)
+
+[node name="Brume" type="Area2D" parent="Petit_fantome"]
+script = ExtResource("9_5myjd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Petit_fantome/Brume"]
+shape = SubResource("CircleShape2D_ac3or")
+debug_color = Color(0.659744, 0.429387, 0.742753, 0.42)
 
 [connection signal="look_at_player" from="Petit_fantome/detection_area" to="." method="change_sprite"]
 [connection signal="player_detected" from="Petit_fantome/detection_area" to="." method="_on_detection_area_player_detected"]

@@ -8,10 +8,12 @@ var id_in_phantom_list : int
 const STEP_PHANTOM :int= 5
 const RANGE_SLIDE : int = 10
 var objective_pos : Vector2
-var update_pos = false
+var update_sprite = false
 var dialogu_before_pickup : Array[String]
 var target
 var id_dialogue_pkaying : int
+var waiting = false
+const layer_brume = 5
 
 @export var numerofantome:String
 @export var position_base:Vector2 
@@ -28,9 +30,11 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if update_pos:
+	if update_sprite:
 		anim.flip_h=(target.global_position.x-global_position.x)>=0
-		
+	if _is_waiting():
+		return
+	
 	var distance = position.distance_to(objective_pos)
 	if distance <= STEP_PHANTOM:
 		position = objective_pos
@@ -40,6 +44,7 @@ func _process(delta: float) -> void:
 	position.y = move_toward(position.y, objective_pos.y, STEP_PHANTOM/sqrt(2))
 	#position.x += randf_range(-5 * distance/(10*STEP_PHANTOM), 5*distance/(10*STEP_PHANTOM))
 	#position.y += randf_range(-5*distance/(10*STEP_PHANTOM), 5*distance/(10*STEP_PHANTOM))
+	_is_touching_brume()
 	
 
 func set_position_phantom(pos: Vector2):
@@ -54,6 +59,33 @@ func _on_detection_area_player_detected(body: Variant) -> void:
 	send_petitFantom_to_player.emit(self)
 
 func change_sprite(body):
-	update_pos=true
+	update_sprite=true
 	target=body
+
+func _is_waiting():
+	return waiting
+
+func change_following():
+	waiting = !waiting
 	
+
+func _is_touching_brume():
+	print('dans la fonction')
+	var motion=petit_fantome.velocity
+	var collision = petit_fantome.move_and_collide(motion,true)
+	if collision:
+		print('collision')
+		var collider = collision.get_collider()
+		print(collider)
+		if collider is TileMapLayer:
+			print("collider")
+			print(collider.get_cell_source_id(collision.get_position()))
+			var tile_data=collider.get_cell_tile_data(collision.get_position())
+			
+			if tile_data:
+				print("tiledata")
+				for layer_index in range(tile_data.get_collision_layer_count()):
+					var collision_layer = tile_data.get_collision_layer(layer_index)
+					if collision_layer == (1 << layer_brume):
+						print('collision avec brume')
+			
