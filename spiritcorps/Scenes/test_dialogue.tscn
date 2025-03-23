@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://p1llv5rupalk"]
+
+[ext_resource type="Script" uid="uid://bp3wgifr13882" path="res://Scenes/faux_joueur.gd" id="1_t2sjb"]
+[ext_resource type="PackedScene" uid="uid://ckgtijybjo6at" path="res://Scenes/dialogue_panel.tscn" id="2_uguus"]
+[ext_resource type="PackedScene" uid="uid://broxv3n8nph3v" path="res://Scenes/presentation_jeu.tscn" id="3_yk6hg"]
+
+[node name="TEstDialogu" type="Node2D"]
+
+[node name="faux_joueur" type="Node2D" parent="."]
+script = ExtResource("1_t2sjb")
+
+[node name="Control" type="Control" parent="faux_joueur"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="dialogue_panel" parent="faux_joueur/Control" instance=ExtResource("2_uguus")]
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 584.0
+offset_top = 625.0
+offset_right = 584.0
+offset_bottom = 625.0
+grow_horizontal = 1
+grow_vertical = 1
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="Presentation_Jeu" parent="faux_joueur/Control" instance=ExtResource("3_yk6hg")]
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 69.0
+offset_top = -81.0
+offset_right = 903.0
+offset_bottom = -81.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(571, 326)
+
+[node name="CanvasGroup" type="CanvasGroup" parent="."]
+
+[connection signal="send_text_to_player" from="faux_joueur/Control/Presentation_Jeu" to="faux_joueur" method="_on_presentation_panel_send_text_to_player"]
