@@ -1,46 +1,32 @@
-[gd_scene load_steps=16 format=3 uid="uid://xqd3saxuyiql"]
+[gd_scene load_steps=12 format=3 uid="uid://xqd3saxuyiql"]
 
-[ext_resource type="Script" path="res://Scripts/ui_main_menu.gd" id="1_2c6nj"]
-[ext_resource type="Texture2D" path="res://Assets/MainMenu/cimetiere.png" id="2_l5aex"]
-[ext_resource type="Texture2D" path="res://Assets/MainMenu/StarterSign.png" id="3_g7p7f"]
-[ext_resource type="Texture2D" path="res://Assets/MainMenu/OptionSign.png" id="4_5ccwo"]
-[ext_resource type="Texture2D" path="res://Assets/MainMenu/ExitSign.png" id="5_rq8wh"]
+[ext_resource type="Script" uid="uid://dhdnbgo86sq8e" path="res://Scenes/ui_menu.gd" id="1_qfypt"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wunin"]
-texture = ExtResource("2_l5aex")
 modulate_color = Color(0.881937, 0.881937, 0.881936, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xjg7p"]
-texture = ExtResource("3_g7p7f")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b1goy"]
-texture = ExtResource("3_g7p7f")
 modulate_color = Color(1, 0.466667, 0.501961, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qwshj"]
-texture = ExtResource("3_g7p7f")
 modulate_color = Color(0.753984, 0.753984, 0.753984, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_48q88"]
-texture = ExtResource("4_5ccwo")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n04ve"]
-texture = ExtResource("4_5ccwo")
 modulate_color = Color(0.998827, 0.466573, 0.500313, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mg6lk"]
-texture = ExtResource("4_5ccwo")
 modulate_color = Color(0.74978, 0.74978, 0.74978, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wi7yl"]
-texture = ExtResource("5_rq8wh")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vqx31"]
-texture = ExtResource("5_rq8wh")
 modulate_color = Color(0.996078, 0.14902, 0.317647, 0.866667)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j04uc"]
-texture = ExtResource("5_rq8wh")
 modulate_color = Color(0.74978, 0.74978, 0.74978, 1)
 
 [node name="Main_Ui" type="Control"]
@@ -50,7 +36,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_2c6nj")
+script = ExtResource("1_qfypt")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 1
@@ -122,7 +108,3 @@ size_flags_vertical = 4
 theme_override_styles/hover = SubResource("StyleBoxTexture_wi7yl")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_vqx31")
 theme_override_styles/normal = SubResource("StyleBoxTexture_j04uc")
-
-[connection signal="pressed" from="NinePatchRect/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="NinePatchRect/Options" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="NinePatchRect/Quit" to="." method="_on_quit_pressed"]
