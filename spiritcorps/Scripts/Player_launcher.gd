@@ -59,6 +59,8 @@ func limit_ame(dist:float):
 		ame.eloignement(1)
 
 func receive_new_fantom(phantom: Petit_fantome):
+	if phantom._is_waiting():
+		phantom.change_following()
 	if phantom in list_phantom_following:
 		return
 

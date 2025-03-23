@@ -11,3 +11,7 @@ func _physics_process(delta: float) -> void:
 
 func sprite(nom:String):
 	anim.play(nom)
+
+	
+
+	
