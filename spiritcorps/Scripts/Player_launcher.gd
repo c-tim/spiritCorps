@@ -17,6 +17,8 @@ var pos_player:Vector2
 var list_phantom_following : Array[Petit_fantome]
 signal transmit_ame_node_to_main_level(n : Node2D)
 
+var lever_active : Node2D = null
+
 func _ready() -> void:
 	ame.animated_sprite_2d.visible=false
 	ame.set_collision_layer_value(2,false)
@@ -36,6 +38,11 @@ func _process(delta: float) -> void:
 	pos_player = (corps.position) if is_body else (ame.position)
 	fantom_line.check_move_line_phantom(pos_player)
 	update_fantom_in_line_positions()
+	
+	if Input.is_action_just_pressed("Interact") :
+		if lever_active != null :
+			lever_active.action_interract()
+	
 
 func update_fantom_in_line_positions():
 	for phantom in list_phantom_following:
@@ -73,3 +80,15 @@ func take_damage(damage : int):
 
 	
 	
+
+
+
+
+func lever_in_range(body: Node2D) -> void:
+	if body.is_in_group("lever") :
+		lever_active = body
+
+
+func lever_out_range(body: Node2D) -> void:
+	if body == lever_active :
+		lever_active = null

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://lcfjww5w1o2f" path="res://Scripts/Player_launcher.gd" id="1_dewec"]
 [ext_resource type="Script" uid="uid://bhs657nddlqw2" path="res://Scripts/ame.gd" id="1_gntrk"]
-[ext_resource type="PackedScene" uid="uid://b7q3kyh3decmk" path="res://Assets/fantom_line.tscn" id="2_nn08x"]
+[ext_resource type="PackedScene" uid="uid://bie8ajbhnveoq" path="res://Scenes/fantom_line.tscn" id="2_nn08x"]
 [ext_resource type="Texture2D" uid="uid://cdudju41h1u4p" path="res://Assets/perso principal brouillon.png" id="3_5ixxa"]
 [ext_resource type="Script" uid="uid://dw6i42ddajfy4" path="res://Scripts/corps.gd" id="4_5ixxa"]
 [ext_resource type="Texture2D" uid="uid://dxvte6e5lx11j" path="res://Assets/perso principal avec pelle.png" id="4_megsn"]
@@ -100,6 +100,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_megsn"]
+radius = 100.0
+
 [node name="Player" type="Node2D"]
 script = ExtResource("1_dewec")
 
@@ -140,12 +143,12 @@ shape = SubResource("CircleShape2D_5ixxa")
 debug_color = Color(0.588015, 0.535774, 0.337694, 0.42)
 
 [node name="Ame" type="CharacterBody2D" parent="."]
+position = Vector2(0, 60)
 collision_layer = 2
 collision_mask = 48
 script = ExtResource("1_gntrk")
 
 [node name="PointLight2D" type="PointLight2D" parent="Ame"]
-position = Vector2(0, 40)
 color = Color(0.845063, 0.545218, 0.999999, 1)
 energy = 2.0
 range_item_cull_mask = 5
@@ -156,12 +159,10 @@ texture = SubResource("GradientTexture2D_nn08x")
 texture_scale = 50.0
 
 [node name="Collision_Ame" type="CollisionShape2D" parent="Ame"]
-position = Vector2(2.4, 58.972)
 shape = SubResource("CapsuleShape2D_qbkls")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Ame"]
 light_mask = 2
-position = Vector2(2.4, 62.972)
 scale = Vector2(0.4, 0.358)
 sprite_frames = SubResource("SpriteFrames_nn08x")
 animation = &"Face"
@@ -169,3 +170,10 @@ autoplay = "Face"
 
 [node name="player_health_component" parent="." instance=ExtResource("10_yoq75")]
 position = Vector2(-495, -313)
+[node name="Rangelever" type="Area2D" parent="Ame"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ame/Rangelever"]
+shape = SubResource("CircleShape2D_megsn")
+
+[connection signal="body_entered" from="Ame/Rangelever" to="." method="lever_in_range"]
+[connection signal="body_exited" from="Ame/Rangelever" to="." method="lever_out_range"]

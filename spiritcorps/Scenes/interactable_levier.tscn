@@ -1,12 +1,61 @@
-[gd_scene load_steps=3 format=3 uid="uid://dk1chvruaggdb"]
+[gd_scene load_steps=9 format=3 uid="uid://dk1chvruaggdb"]
 
-[ext_resource type="SpriteFrames" uid="uid://deb8oybxbibcv" path="res://Scenes/spriteframe_levier.tres" id="1_pv130"]
 [ext_resource type="Script" uid="uid://cv2m47bsl526n" path="res://Scripts/interactable_levier.gd" id="2_0p0cr"]
+[ext_resource type="Texture2D" uid="uid://igpgwt0s1tbf" path="res://Assets/Tentaclick.png" id="2_h778g"]
 
-[node name="levier" type="AnimatedSprite2D"]
-sprite_frames = ExtResource("1_pv130")
-animation = &"levier_not_activated"
-frame = 2
-frame_progress = 0.464823
-speed_scale = 0.75
+[sub_resource type="AtlasTexture" id="AtlasTexture_810of"]
+atlas = ExtResource("2_h778g")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0arn8"]
+atlas = ExtResource("2_h778g")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x3c32"]
+atlas = ExtResource("2_h778g")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_805ix"]
+atlas = ExtResource("2_h778g")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_syeno"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_810of")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0arn8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x3c32")
+}],
+"loop": true,
+"name": &"Activate",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_805ix")
+}],
+"loop": true,
+"name": &"Desactivate",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0p0cr"]
+radius = 8.0
+
+[node name="levier" type="StaticBody2D" groups=["lever"]]
 script = ExtResource("2_0p0cr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_syeno")
+animation = &"Desactivate"
+autoplay = "Desactivate"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_0p0cr")
