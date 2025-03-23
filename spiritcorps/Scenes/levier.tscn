@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://cd5yhmqsjr14r"]
+[gd_scene load_steps=10 format=3 uid="uid://bkf23awjommpw"]
 
+[ext_resource type="Script" uid="uid://ct71v07mibf15" path="res://Scripts/levier.gd" id="1_g7iva"]
 [ext_resource type="Texture2D" uid="uid://igpgwt0s1tbf" path="res://Assets/Tentaclick.png" id="1_kfbk1"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g7iva"]
@@ -47,17 +48,23 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Levier" type="Node2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_j65aj"]
+radius = 32.0
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
-gravity_scale = 0.0
+[node name="Levier" type="RigidBody2D"]
+script = ExtResource("1_g7iva")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 7)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_g7iva")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="RigidBody2D"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_3pwxl")
 animation = &"Desactive"
 autoplay = "Desactive"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_j65aj")
