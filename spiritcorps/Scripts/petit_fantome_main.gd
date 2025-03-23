@@ -44,7 +44,8 @@ func _process(delta: float) -> void:
 	position.y = move_toward(position.y, objective_pos.y, STEP_PHANTOM/sqrt(2))
 	#position.x += randf_range(-5 * distance/(10*STEP_PHANTOM), 5*distance/(10*STEP_PHANTOM))
 	#position.y += randf_range(-5*distance/(10*STEP_PHANTOM), 5*distance/(10*STEP_PHANTOM))
-	_is_touching_brume()
+	if _is_touching_brume():
+		waiting=true
 	
 
 func set_position_phantom(pos: Vector2):
@@ -70,22 +71,11 @@ func change_following():
 	
 
 func _is_touching_brume():
-	print('dans la fonction')
 	var motion=petit_fantome.velocity
 	var collision = petit_fantome.move_and_collide(motion,true)
 	if collision:
-		print('collision')
 		var collider = collision.get_collider()
-		print(collider)
 		if collider is TileMapLayer:
-			print("collider")
-			print(collider.get_cell_source_id(collision.get_position()))
-			var tile_data=collider.get_cell_tile_data(collision.get_position())
-			
-			if tile_data:
-				print("tiledata")
-				for layer_index in range(tile_data.get_collision_layer_count()):
-					var collision_layer = tile_data.get_collision_layer(layer_index)
-					if collision_layer == (1 << layer_brume):
-						print('collision avec brume')
-			
+			if str(collider).substr(0,3)=="Fog":
+				return true
+	return false
