@@ -10,3 +10,6 @@ func _ready() -> void:
 
 func _on_button_quit_pressed() -> void:
 	get_tree().quit()
+	
+func _on_start_pressed() -> void:
+	pass # Replace with function body.
