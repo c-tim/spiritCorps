@@ -35,20 +35,7 @@ offset_right = 689.0
 offset_bottom = 277.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-
-[node name="RichTextLabel" type="RichTextLabel" parent="NinePatchRect/Background_Menu/Button"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 25.0
-offset_top = 2.0
-offset_right = -21.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "LOREM IPSUM "
-horizontal_alignment = 1
-vertical_alignment = 1
+text = "PLAY"
 
 [node name="Button2" type="Button" parent="NinePatchRect/Background_Menu"]
 layout_mode = 2
@@ -81,17 +68,6 @@ offset_right = 689.0
 offset_bottom = 513.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
+text = "Ne clique pas dessus"
 
-[node name="RichTextLabel" type="RichTextLabel" parent="NinePatchRect/Background_Menu/Button3"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 25.0
-offset_top = 2.0
-offset_right = -21.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "LOREM IPSUM "
-horizontal_alignment = 1
-vertical_alignment = 1
+[connection signal="pressed" from="NinePatchRect/Background_Menu/Button3" to="." method="_on_button_quit_pressed"]

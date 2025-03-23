@@ -5,6 +5,7 @@ class_name Player extends Node2D
 @onready var corps: CharacterBody2D = $Corps
 @onready var ame: CharacterBody2D = $Ame
 @onready var fantom_line: Phantom_line = $FantomLine
+@onready var player_health_component: Health_Component = $player_health_component
 
 const LIMIT_DIST = 500.0
 var is_body=true
@@ -14,12 +15,13 @@ var can_switch=true
 var pos_player:Vector2
 
 var list_phantom_following : Array[Petit_fantome]
-
+signal transmit_ame_node_to_main_level(n : Node2D)
 
 func _ready() -> void:
 	ame.animated_sprite_2d.visible=false
 	ame.set_collision_layer_value(2,false)
 	ame.position=corps.position
+	transmit_ame_node_to_main_level.emit(ame)
 	
 
 func _process(delta: float) -> void:
@@ -59,10 +61,12 @@ func limit_ame(dist:float):
 func receive_new_fantom(phantom: Petit_fantome):
 	if phantom in list_phantom_following:
 		return
+
 	list_phantom_following.append(phantom)
 	phantom.set_line_id(len(list_phantom_following)-1)
 
-
+func take_damage(damage : int):
+	player_health_component.take_damage(damage)
 		
 
 	
