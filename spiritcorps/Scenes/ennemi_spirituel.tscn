@@ -85,5 +85,6 @@ collision_mask = 2
 shape = SubResource("CircleShape2D_w8r6q")
 debug_color = Color(0.474505, 0.586133, 0.170654, 0.42)
 
+[connection signal="send_attacj_to_parent" from="Ennemi_Spirituel" to="." method="take_damage"]
 [connection signal="ame" from="Ennemi_Spirituel/DetectionArea" to="Ennemi_Spirituel" method="follow"]
 [connection signal="exited" from="Ennemi_Spirituel/DetectionArea" to="Ennemi_Spirituel" method="not_target"]

@@ -55,10 +55,9 @@ func attack():
 		print("detected ", col_detected)
 		if col_detected.get_parent().is_in_group("ennemi"):
 			print("ksfdnskLFNMKDQSLFNKDSQJNFJDSQK ", col_detected.get_parent().name)
-			var ennemi :Ennemi_Spirituel = col_detected.get_parent() as Ennemi_Spirituel
-			if ennemi is Ennemi_Spirituel:
-				print("ennimi spiit :!!!!")
-				ennemi.take_damage(DAMAGE_DEALT)
+			var ennemi :Ennemi_Spirituel_CharacterBody = col_detected as Ennemi_Spirituel_CharacterBody
+			print("ennimi spiit :!!!!")
+			ennemi.take_damage(DAMAGE_DEALT)
 			print("detected ennemi ")
 	attacking=false
 	

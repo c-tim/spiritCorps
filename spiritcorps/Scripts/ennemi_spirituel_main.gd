@@ -1,4 +1,5 @@
-class_name Ennemi_Spirituel extends Node2D
+extends Node2D
+class_name Ennemi_Spirituel_Main
 
 @onready var ennemi_spirituel: CharacterBody2D = $Ennemi_Spirituel
 
@@ -24,6 +25,7 @@ func initialize():
 	
 func take_damage(damage : int):
 	health -= damage
+	print("arrrrf ennemi a ", health)
 	if health <=0 :
 		ennemi_died()
 

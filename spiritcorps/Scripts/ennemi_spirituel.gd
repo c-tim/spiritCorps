@@ -1,8 +1,12 @@
-extends CharacterBody2D
+class_name Ennemi_Spirituel_CharacterBody extends CharacterBody2D
 
 @onready var detection_area: Area2D = $DetectionArea
 @onready var attack_area: Area2D = $AttackArea
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
+
+#oui cest deguelass mais le parent marche pas
+@onready var ennemi_spirituel: Ennemi_Spirituel_Main = $".."
+
 
 const SPEED = 300.0
 const DIST_MIN = 30.0
@@ -13,6 +17,7 @@ const DIST_ATT = 55.0
 const ATT_DELAY = 3.0
 var attacking=false
 
+signal send_attacj_to_parent(damage : int)
 
 func _physics_process(delta: float) -> void:
 	if targeting :
@@ -48,7 +53,8 @@ func attack():
 	attacking=false
 	
 	
-
+func take_damage(damage : int):
+	ennemi_spirituel.take_damage(damage)
 	
 func _is_targeting():
 	return targeting
