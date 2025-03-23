@@ -1,28 +1,15 @@
-<<<<<<< HEAD
-[gd_scene load_steps=31 format=4 uid="uid://bvff6y277bs5"]
-=======
 [gd_scene load_steps=34 format=4 uid="uid://bvff6y277bs5"]
->>>>>>> gilian-tim_test
 
 [ext_resource type="Script" uid="uid://b2aevn8up7i85" path="res://Scenes/proto_level_1.gd" id="1_jr06i"]
 [ext_resource type="Texture2D" uid="uid://b7tqxuvjbhs2j" path="res://Assets/Tiles/TilesFloor.png" id="1_p770e"]
 [ext_resource type="Texture2D" uid="uid://b0qws46rp7wsy" path="res://Assets/Tiles/TilesWalls.png" id="2_y3fj8"]
 [ext_resource type="Texture2D" uid="uid://cqs0rv4t341ym" path="res://Assets/Tiles/TilesPit.png" id="3_ef3f6"]
 [ext_resource type="Texture2D" uid="uid://b0vxstjsrl43b" path="res://Assets/Tiles/TilesFog.png" id="4_tarqo"]
-
 [ext_resource type="PackedScene" uid="uid://bs1u3mw0anqfw" path="res://Scenes/Player.tscn" id="5_20oct"]
 [ext_resource type="PackedScene" uid="uid://cmxwl43ugpbup" path="res://Scenes/interactable_levier.tscn" id="5_uhwdp"]
-<<<<<<< HEAD
-[ext_resource type="PackedScene" uid="uid://campp0up8i6pr" path="res://Scenes/ennemi_spirituel.tscn" id="7_uhwdp"]
-
-[ext_resource type="PackedScene" uid="uid://c7m5tdiptnkuc" path="res://Scenes/Player.tscn" id="5_20oct"]
-[ext_resource type="PackedScene" uid="uid://cmxwl43ugpbup" path="res://Scenes/interactable_levier.tscn" id="5_uhwdp"]
-[ext_resource type="PackedScene" path="res://Scenes/ennemi_spirituel.tscn" id="7_uhwdp"]
-=======
 [ext_resource type="PackedScene" uid="uid://rdywgv5igbpo" path="res://Scenes/ennemi_spirituel.tscn" id="7_uhwdp"]
 [ext_resource type="PackedScene" uid="uid://cmw4l44t6y50l" path="res://Scenes/Petit_fantome.tscn" id="8_26bw2"]
 [ext_resource type="PackedScene" uid="uid://b5ncj5noulad2" path="res://Scenes/camera.tscn" id="10_k5nvh"]
->>>>>>> gilian-tim_test
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_watuw"]
 texture = ExtResource("1_p770e")
@@ -218,32 +205,10 @@ tile_set = SubResource("TileSet_riebr")
 [node name="levier" parent="." instance=ExtResource("5_uhwdp")]
 position = Vector2(162, 558)
 
-[node name="fantome" type="Node2D" parent="."]
-
-[node name="Fantome1" type="Node2D" parent="fantome"]
-position = Vector2(225, 238)
-
-[node name="Fantome2" type="Node2D" parent="fantome"]
-position = Vector2(73, 584)
-
-[node name="Fantome3" type="Node2D" parent="fantome"]
-position = Vector2(915, 152)
-
-[node name="Fantome4" type="Node2D" parent="fantome"]
-position = Vector2(238, 597)
-
-[node name="Monstre" type="Node2D" parent="."]
-
-[node name="Monstre 1" type="Node2D" parent="Monstre"]
-position = Vector2(538, 583)
-
-[node name="Monstre2" type="Node2D" parent="Monstre"]
-position = Vector2(306, 496)
-
 [node name="EnnemiSpirituel" parent="." instance=ExtResource("7_uhwdp")]
 light_mask = 2
 visibility_layer = 2
-position = Vector2(296, 490)
+position = Vector2(294, 486)
 scale = Vector2(0.25, 0.25)
 script = null
 
@@ -279,20 +244,15 @@ numerofantome = "5"
 position_base = Vector2(72, 580)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-follow_viewport_enabled = true
 
 [node name="Player" parent="CanvasLayer" instance=ExtResource("5_20oct")]
-position = Vector2(23, 66)
+position = Vector2(28, 66)
 scale = Vector2(0.25, 0.25)
-<<<<<<< HEAD
-=======
 
 [node name="Camera" parent="." instance=ExtResource("10_k5nvh")]
-zoom = Vector2(2, 2)
 
 [connection signal="send_petitFantom_to_player" from="PetitFantome" to="CanvasLayer/Player" method="receive_new_fantom"]
 [connection signal="send_petitFantom_to_player" from="PetitFantome2" to="CanvasLayer/Player" method="receive_new_fantom"]
 [connection signal="send_petitFantom_to_player" from="PetitFantome3" to="CanvasLayer/Player" method="receive_new_fantom"]
 [connection signal="send_petitFantom_to_player" from="PetitFantome4" to="CanvasLayer/Player" method="receive_new_fantom"]
 [connection signal="transmit_ame_node_to_main_level" from="CanvasLayer/Player" to="." method="get_ame_child_to_pass_to_camera"]
->>>>>>> gilian-tim_test

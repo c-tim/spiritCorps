@@ -5,6 +5,8 @@ extends CharacterBody2D
 
 const SPEED = 500.0
 const attack_delay = 0.3
+const DAMAGE_DEALT : int = 20
+
 var can_move = true
 var attacking = false
 
@@ -46,9 +48,18 @@ func is_waiting(is_body:bool)->void:
 func attack():
 	attacking=true
 	print("attaque joueur")
-	zone_attaque.monitoring=true
+	'''zone_attaque.monitoring=true
 	await get_tree().create_timer(attack_delay).timeout
-	zone_attaque.monitoring=false
+	zone_attaque.monitoring=false'''
+	for col_detected in zone_attaque.get_overlapping_bodies():
+		print("detected ", col_detected)
+		if col_detected.get_parent().is_in_group("ennemi"):
+			print("ksfdnskLFNMKDQSLFNKDSQJNFJDSQK ", col_detected.get_parent().name)
+			var ennemi :Ennemi_Spirituel = col_detected.get_parent() as Ennemi_Spirituel
+			if ennemi is Ennemi_Spirituel:
+				print("ennimi spiit :!!!!")
+				ennemi.take_damage(DAMAGE_DEALT)
+			print("detected ennemi ")
 	attacking=false
 	
 	

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=3 format=3 uid="uid://pli7mgkjpx0b"]
+=======
+[gd_scene load_steps=3 format=3 uid="uid://b7q3kyh3decmk"]
+>>>>>>> gilian-tim_test
 
 [ext_resource type="Script" uid="uid://bteugqhn2t8ln" path="res://Scripts/fantom_line.gd" id="1_iqvjy"]
 [ext_resource type="Texture2D" uid="uid://c0hi1qwwkjq1h" path="res://white_square.png" id="2_5snh6"]
