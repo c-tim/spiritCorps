@@ -9,7 +9,7 @@ player_health_component.gd::GDScript/GDScript::-1::1742655852::0::1::::Health_Co
 preentation_panel_player.tscn::PackedScene/PackedScene::6696727551999665302::1742670452::0::1::::<><><>0<>0<><>::uid://8csyb1upxhvu::::res://Scripts/presentation_jeu.gd
 Spirit-Regular.ttf::FontFile/FontFile::8293423265679303525::1742655793::1742670452::1::::<><><>0<>0<>8caf8bdf58967fc29d6a7c8085f32a84<>res://.godot/imported/Spirit-Regular.ttf-00443dbbfa075d73997b3178d6cdb3ad.fontdata::
 white_square.png::CompressedTexture2D/CompressedTexture2D::6542546144571704419::1742639098::1742639110::1::::<><><>0<>0<>3c36f0d3087ad0eb8d40fe22f53bdfb1<>res://.godot/imported/white_square.png-e465f834c3326600ef22d38d86fadadd.ctex::
-::res://Assets/::1742715458
+::res://Assets/::1742715685
 assets.txt::TextFile/TextFile::-1::1742591309::0::1::::<><><>0<>0<><>::
 esprit dos.png::CompressedTexture2D/CompressedTexture2D::122432447460609596::1742670432::1742670452::1::::<><><>0<>0<>edd78599c28e30194195dede3f834b9a<>res://.godot/imported/esprit dos.png-0350630bdafe2f12b7eec3d79731fc91.ctex::
 esprit face.png::CompressedTexture2D/CompressedTexture2D::2783660889802876166::1742670432::1742670452::1::::<><><>0<>0<>e121817fb3d3ce8d449d7390fd12e7a7<>res://.godot/imported/esprit face.png-59c770c6e1b2a493ae67bd84cb60a7be.ctex::
@@ -32,6 +32,10 @@ wavy_text_shader.gdshader::Shader::6337649838176991183::1742715458::0::1::::<><>
 phantom_font_v1.tres::FontVariation/FontVariation::3281775477552725470::1742670432::0::1::::<><><>0<>0<><>::uid://dqfnp70jw008x::::res://Spirit-Regular.ttf
 Spirit-Regular2.otf::FontFile/FontFile::3117047171552947530::1742715267::1742715267::1::::<><><>0<>0<>470190522a2a523b3987907e5191f678<>res://.godot/imported/Spirit-Regular2.otf-3530ed54751aaabfc643857d1d090990.fontdata::
 Spirit-Regular.otf::FontFile/FontFile::6810233291551117759::1742715267::1742715267::1::::<><><>0<>0<>c0e803247689f66753b5a5c6c9c9a46a<>res://.godot/imported/Spirit-Regular.otf-7b88269c107cf59bc6f645c229aa994b.fontdata::
+::res://Assets/MainMenu/::1742715896
+ExitSign.png::CompressedTexture2D::4572971052107934880::1742715894::1742715896::1::::<><><>0<>0<>6af3191963d3c0525a8acaf2573412f8<>res://.godot/imported/ExitSign.png-680df5a89f1ea85424c9de5ee9c2247c.ctex::
+OptionSign.png::CompressedTexture2D::2898458514709211470::1742715827::1742715829::1::::<><><>0<>0<>b0452c0ce9a7413caa62f20f970fbd61<>res://.godot/imported/OptionSign.png-444fd4e1489ea49787b89e92232fc33c.ctex::
+StarterSign.png::CompressedTexture2D::1676174619635288863::1742715776::1742715777::1::::<><><>0<>0<>076523e4eb3c3ca4954845551af6e842<>res://.godot/imported/StarterSign.png-5323231e630f038eca0aa52f796c1d7b.ctex::
 ::res://Assets/Tiles/::1742715267
 Barrier.png::CompressedTexture2D/CompressedTexture2D::1219511925592701489::1742715267::1742715267::1::::<><><>0<>0<>f2683e56785c01c1aeef379852a9f7ac<>res://.godot/imported/Barrier.png-cf01bac0bf1b0ff8740f86716cf12bdb.ctex::
 Graves.png::CompressedTexture2D/CompressedTexture2D::4598374046640509224::1742715267::1742715267::1::::<><><>0<>0<>0caf9a1e1b6c330b94f0a98752fe580c<>res://.godot/imported/Graves.png-d92fff49ec53de71cb2bd692085d8625.ctex::
@@ -39,10 +43,10 @@ TilesFloor.png::CompressedTexture2D/CompressedTexture2D::4672700485899796751::17
 TilesFog.png::CompressedTexture2D/CompressedTexture2D::4185923355290997397::1742629566::1742639171::1::::<><><>0<>0<>ac65fdfe2beaa30b022e1575951a3b96<>res://.godot/imported/TilesFog.png-dd10e8bc4b51c41067c86b7cc8a93972.ctex::
 TilesPit.png::CompressedTexture2D/CompressedTexture2D::5934571097174883308::1742623864::1742639171::1::::<><><>0<>0<>ad0111c7df1704b86f19b950283cfc7b<>res://.godot/imported/TilesPit.png-c4b8b56870d7634dcf120107beb27d61.ctex::
 TilesWalls.png::CompressedTexture2D/CompressedTexture2D::4175541308699839524::1742641766::1742641767::1::::<><><>0<>0<>0e810ff10537eef59b43fb711324b26a<>res://.godot/imported/TilesWalls.png-318955c119940872d274cbf75c5421e8.ctex::
-::res://Scenes/::1742715458
+::res://Scenes/::1742715951
 camera.tscn::PackedScene::4519062006213743513::1742715200::0::1::::<><><>0<>0<><>::uid://wsq8rlbgh2bt::::res://camera.gd
-dialogue_commandant.tscn::PackedScene::3418943731220567722::1742715267::0::1::::<><><>0<>0<><>::res://Scenes/faux_joueur.gd<>uid://ckgtijybjo6at::::res://Scenes/dialogue_panel.tscn<>uid://broxv3n8nph3v::::res://Scenes/presentation_jeu.tscn
-dialogue_panel.tscn::PackedScene::5488284489348192431::1742715458::0::1::::<><><>0<>0<><>::res://Scripts/dialogue_panel_player.gd<>uid://c0hi1qwwkjq1h::::res://white_square.png<>res://Assets/wavy_text_shader.gdshader<>uid://c4a6suybgehln::::res://Assets/fonts/Spirit-Regular.otf
+dialogue_commandant.tscn::PackedScene::3418943731220567722::1742715507::0::1::::<><><>0<>0<><>::res://Scenes/faux_joueur.gd<>uid://ckgtijybjo6at::::res://Scenes/dialogue_panel.tscn<>uid://broxv3n8nph3v::::res://Scenes/presentation_jeu.tscn
+dialogue_panel.tscn::PackedScene::5488284489348192431::1742715507::0::1::::<><><>0<>0<><>::uid://c0mbf5c45sqwy::::res://Scripts/dialogue_panel_player.gd<>uid://c0hi1qwwkjq1h::::res://white_square.png<>uid://cwkafw6srtks2::::res://Assets/wavy_text_shader.gdshader<>uid://c4a6suybgehln::::res://Assets/fonts/Spirit-Regular.otf
 EnnemiCorps.tscn::PackedScene::6851336742891879450::1742715267::0::1::::<><><>0<>0<><>::uid://d12aes3ix5ghs::::res://icon.svg<>res://Scripts/ennemi_corps_main.gd<>res://Scripts/ennemi_corps.gd<>res://Scripts/detection_zone.gd
 ennemi_spirituel.tscn::PackedScene::1200900319356017216::1742715267::0::1::::<><><>0<>0<><>::uid://byduu20461tf::::res://Scripts/ennemi_spirituel.gd<>uid://cdudju41h1u4p::::res://Assets/perso principal brouillon.png<>res://Scenes/ennemi_spirituel_main.gd<>uid://d4m252waqhxcn::::res://Assets/monstre fantôme.png<>res://Scripts/detection_area.gd<>uid://c7m5tdiptnkuc::::res://Scenes/Player.tscn
 fantom_line.tscn::PackedScene/PackedScene::2958193079166099092::1742671985::0::1::::<><><>0<>0<><>::uid://bteugqhn2t8ln::::res://Scripts/fantom_line.gd<>uid://c0hi1qwwkjq1h::::res://white_square.png
@@ -51,7 +55,7 @@ faux_joueur.gd::GDScript/GDScript::-1::1742670432::0::1::::<>Node2D<><>0<>0<><>:
 interactable_dialogu.tscn::PackedScene/PackedScene::3206515208702499245::1742670452::0::1::::<><><>0<>0<><>::uid://blpiabmu5nj6r::::res://Scripts/interactable_dialogu.gd
 interactable_element.tscn::PackedScene/PackedScene::8704658220517103170::1742639097::0::1::::<><><>0<>0<><>::uid://cf6vjabituiw8::::res://Scenes/interactable_element.gd<>uid://0okcus4pma1n::::res://area_2d.gd
 interactable_levier.tscn::PackedScene::7914959373769027823::1742715267::0::1::::<><><>0<>0<><>::uid://dhvdpamn00ccw::::res://Scenes/spriteframe_levier.tres<>uid://cv2m47bsl526n::::res://Scripts/interactable_levier.gd
-levier.tscn::PackedScene/PackedScene::5046809595133458219::1742675833::0::1::::<><><>0<>0<><>::uid://igpgwt0s1tbf::::res://Assets/Tentaclick.png
+levier.tscn::PackedScene::5046809595133458219::1742715507::0::1::::<><><>0<>0<><>::uid://igpgwt0s1tbf::::res://Assets/Tentaclick.png
 main_game_manager.tscn::PackedScene/PackedScene::1003284328405594926::1742671953::0::1::::<><><>0<>0<><>::res://Scenes/UI.tscn
 Petit_fantome.tscn::PackedScene::5662305807037247653::1742715458::0::1::::<><><>0<>0<><>::uid://couvu8morwb08::::res://Scripts/petit_fantome_main.gd<>uid://c7kb6p6mtig8e::::res://Assets/fantôme neutre.png<>res://Scripts/petit_fantome.gd<>uid://co3ihq6xl2s6q::::res://Assets/fantôme1_sucette.png<>uid://bxgk2ybo4yats::::res://Assets/fantôme2_banane.png<>uid://bno6tj3wlrmlv::::res://Assets/fantôme capitaine.png<>uid://b6yiadytp0bsl::::res://Assets/fantôme3_couteau.png<>res://Scripts/detection_area_fantom.gd
 Player.tscn::PackedScene::3704758698270218632::1742715267::0::1::::<><><>0<>0<><>::uid://lcfjww5w1o2f::::res://Scripts/Player_launcher.gd<>uid://bhs657nddlqw2::::res://Scripts/ame.gd<>uid://bie8ajbhnveoq::::res://Assets/fantom_line.tscn<>uid://cdudju41h1u4p::::res://Assets/perso principal brouillon.png<>uid://dw6i42ddajfy4::::res://Scripts/corps.gd<>uid://dxvte6e5lx11j::::res://Assets/perso principal avec pelle.png<>uid://jjwfshy3psfk::::res://Assets/perso principal avachi.png<>uid://b0kpd4q32sa3::::res://Assets/esprit dos.png<>uid://bfwoqukr6fo2a::::res://Assets/esprit face.png
@@ -63,10 +67,12 @@ spriteframe_levier.tres::SpriteFrames::896143917510109212::1742715458::0::1::::<
 TestGillian.tscn::PackedScene::6472590637425771526::1742715267::0::1::::<><><>0<>0<><>::uid://b7tqxuvjbhs2j::::res://Assets/Tiles/TilesFloor.png<>uid://b0qws46rp7wsy::::res://Assets/Tiles/TilesWalls.png<>uid://cqs0rv4t341ym::::res://Assets/Tiles/TilesPit.png<>uid://b0vxstjsrl43b::::res://Assets/Tiles/TilesFog.png<>uid://c7m5tdiptnkuc::::res://Scenes/Player.tscn<>uid://cd5yhmqsjr14r::::res://Scenes/levier.tscn
 Tests_celia.tscn::PackedScene::2753324613975531669::1742715458::0::1::::<><><>0<>0<><>::uid://bs1u3mw0anqfw::::res://Scenes/Player.tscn<>res://Scripts/camera_2d.gd<>res://Scenes/ennemi_spirituel.tscn<>uid://c4u3rrr7lleu1::::res://Scenes/EnnemiCorps.tscn<>uid://cmw4l44t6y50l::::res://Scenes/Petit_fantome.tscn
 testTim.tscn::PackedScene/PackedScene::2047947540897300849::1742670452::0::1::::<><><>0<>0<><>::uid://dkbpvgntcjwpp::::res://Scripts/character_body_2d.gd<>uid://yjra4570ceap::::res://Scripts/test_tim.gd<>uid://c0hi1qwwkjq1h::::res://white_square.png<>uid://b5ncj5noulad2::::res://Scenes/camera.tscn
-test_dialogue.tscn::PackedScene::3414005952527937533::1742715267::0::1::::<><><>0<>0<><>::res://Scenes/faux_joueur.gd<>uid://ckgtijybjo6at::::res://Scenes/dialogue_panel.tscn<>uid://broxv3n8nph3v::::res://Scenes/presentation_jeu.tscn
-TilesJas.tscn::PackedScene::4016979491494882172::1742715267::0::1::::<><><>0<>0<><>::uid://b0qws46rp7wsy::::res://Assets/Tiles/TilesWalls.png<>uid://b7tqxuvjbhs2j::::res://Assets/Tiles/TilesFloor.png<>uid://cqs0rv4t341ym::::res://Assets/Tiles/TilesPit.png<>uid://b0vxstjsrl43b::::res://Assets/Tiles/TilesFog.png<>uid://rm0gh3elk4b2::::res://Assets/Tiles/Barrier.png<>uid://cd5yhmqsjr14r::::res://Scenes/levier.tscn<>uid://b6rqswk1x1jd5::::res://Assets/Tiles/Graves.png
+test_dialogue.tscn::PackedScene::3414005952527937533::1742715507::0::1::::<><><>0<>0<><>::res://Scenes/faux_joueur.gd<>uid://ckgtijybjo6at::::res://Scenes/dialogue_panel.tscn<>uid://broxv3n8nph3v::::res://Scenes/presentation_jeu.tscn
+TilesJas.tscn::PackedScene::4016979491494882172::1742715507::0::1::::<><><>0<>0<><>::uid://b0qws46rp7wsy::::res://Assets/Tiles/TilesWalls.png<>uid://b7tqxuvjbhs2j::::res://Assets/Tiles/TilesFloor.png<>uid://cqs0rv4t341ym::::res://Assets/Tiles/TilesPit.png<>uid://b0vxstjsrl43b::::res://Assets/Tiles/TilesFog.png<>uid://rm0gh3elk4b2::::res://Assets/Tiles/Barrier.png<>uid://cd5yhmqsjr14r::::res://Scenes/levier.tscn<>uid://b6rqswk1x1jd5::::res://Assets/Tiles/Graves.png
 UI.tscn::PackedScene::6309956324480552261::1742715267::0::1::::<><><>0<>0<><>::uid://cl50fp7mugub4::::res://Scripts/ui_main.gd
 ui_in_game.tscn::PackedScene/PackedScene::4622287236625713650::1742670452::0::1::::<><><>0<>0<><>::
+::res://Scenes/ProtoJas/::1742715951
+MainMenuProtoJas.tscn::PackedScene::6237517204433642174::1742715955::0::1::::<><><>0<>0<><>::uid://x47l64mrfg5t::::res://Assets/MainMenu/StarterSign.png<>uid://bhkbgnvwg1wyw::::res://Assets/MainMenu/OptionSign.png<>uid://b6fgfu4o2w5no::::res://Assets/MainMenu/ExitSign.png
 ::res://Scripts/::1742715458
 ame.gd::GDScript/GDScript::2916838890295739887::1742671954::0::1::::<>CharacterBody2D<><>0<>0<><>::
 camera_2d.gd::GDScript/GDScript::-1::1742639098::0::1::::<>Camera2D<><>0<>0<><>::
