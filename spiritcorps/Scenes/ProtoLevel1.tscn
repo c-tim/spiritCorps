@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=4 uid="uid://bvff6y277bs5"]
+[gd_scene load_steps=36 format=4 uid="uid://bvff6y277bs5"]
 
 [ext_resource type="Script" path="res://Scenes/proto_level_1.gd" id="1_jr06i"]
 [ext_resource type="Texture2D" uid="uid://b7tqxuvjbhs2j" path="res://Assets/Tiles/TilesFloor.png" id="1_p770e"]
@@ -6,10 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://cqs0rv4t341ym" path="res://Assets/Tiles/TilesPit.png" id="3_ef3f6"]
 [ext_resource type="Texture2D" uid="uid://b0vxstjsrl43b" path="res://Assets/Tiles/TilesFog.png" id="4_tarqo"]
 [ext_resource type="PackedScene" uid="uid://bs1u3mw0anqfw" path="res://Scenes/Player.tscn" id="5_20oct"]
-[ext_resource type="PackedScene" path="res://Scenes/interactable_levier.tscn" id="5_uhwdp"]
+[ext_resource type="PackedScene" uid="uid://dk1chvruaggdb" path="res://Scenes/interactable_levier.tscn" id="5_uhwdp"]
 [ext_resource type="PackedScene" uid="uid://rdywgv5igbpo" path="res://Scenes/ennemi_spirituel.tscn" id="7_uhwdp"]
 [ext_resource type="PackedScene" uid="uid://cmw4l44t6y50l" path="res://Scenes/Petit_fantome.tscn" id="8_26bw2"]
-[ext_resource type="PackedScene" uid="uid://b5ncj5noulad2" path="res://Scenes/camera.tscn" id="10_k5nvh"]
+[ext_resource type="PackedScene" uid="uid://brehraqdh2kug" path="res://Scenes/camera.tscn" id="10_k5nvh"]
+[ext_resource type="PackedScene" uid="uid://b0ophc8bs8rmt" path="res://Scenes/zone_fin_niveau.tscn" id="11_k5nvh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_watuw"]
 texture = ExtResource("1_p770e")
@@ -179,6 +180,9 @@ physics_layer_0/collision_layer = 16
 physics_layer_0/collision_mask = 2
 sources/0 = SubResource("TileSetAtlasSource_hqnah")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_78ta7"]
+size = Vector2(64, 26)
+
 [node name="TilesSets2" type="Node2D" node_paths=PackedStringArray("camera")]
 script = ExtResource("1_jr06i")
 camera = NodePath("Camera")
@@ -252,6 +256,20 @@ scale = Vector2(0.25, 0.25)
 
 [node name="Camera" parent="." instance=ExtResource("10_k5nvh")]
 zoom = Vector2(2, 2)
+
+[node name="Area2D" parent="." instance=ExtResource("11_k5nvh")]
+position = Vector2(1088, 147)
+fantomes_requis = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_78ta7")
+
+[node name="ColorRect" type="ColorRect" parent="Area2D"]
+offset_left = -32.0
+offset_top = -13.0
+offset_right = 32.0
+offset_bottom = 13.0
+color = Color(0, 1, 0, 0.113725)
 
 [connection signal="send_petitFantom_to_player" from="PetitFantome" to="CanvasLayer/Player" method="receive_new_fantom"]
 [connection signal="send_petitFantom_to_player" from="PetitFantome2" to="CanvasLayer/Player" method="receive_new_fantom"]

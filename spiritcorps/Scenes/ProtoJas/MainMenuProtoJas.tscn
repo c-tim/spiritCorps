@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://cu4q85t3i7ewc"]
+
+[ext_resource type="Texture2D" uid="uid://x47l64mrfg5t" path="res://Assets/MainMenu/StarterSign.png" id="1_v22qd"]
+[ext_resource type="Texture2D" uid="uid://bhkbgnvwg1wyw" path="res://Assets/MainMenu/OptionSign.png" id="2_do673"]
+[ext_resource type="Texture2D" uid="uid://b6fgfu4o2w5no" path="res://Assets/MainMenu/ExitSign.png" id="3_5d3uc"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StarterSign" type="Sprite2D" parent="."]
+position = Vector2(889, 535)
+texture = ExtResource("1_v22qd")
+
+[node name="OptionSign" type="Sprite2D" parent="."]
+position = Vector2(570, 536)
+texture = ExtResource("2_do673")
+
+[node name="ExitSign" type="Sprite2D" parent="."]
+position = Vector2(246, 535)
+texture = ExtResource("3_5d3uc")

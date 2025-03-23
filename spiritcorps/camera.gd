@@ -1,6 +1,6 @@
 class_name Camera_follow extends Camera2D
 
-const COOLDOWN_FOLLOW : float = 0.3
+const COOLDOWN_FOLLOW : float = 0.15
 const RANGE_STOP_MOVING := 20
 const STEP_MOVING_CAMERA : float =5
 
