@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @onready var detection_area: Area2D = $DetectionArea
 @onready var attack_area: Area2D = $AttackArea
+@onready var animation: AnimatedSprite2D = $AnimatedSprite2D
 
 const SPEED = 300.0
 const DIST_MIN = 30.0
@@ -22,7 +23,9 @@ func _physics_process(delta: float) -> void:
 			velocity = direction * SPEED
 	else:
 		velocity=Vector2.ZERO
-
+	
+	if velocity.x:
+		animation.flip_h=position.x>0
 
 	move_and_slide()
 

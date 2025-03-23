@@ -21,15 +21,17 @@ position = Vector2(-696, -220)
 script = null
 
 [node name="EnnemiCorps" parent="." instance=ExtResource("4_3iy6c")]
-position = Vector2(566, -405)
+position = Vector2(588, -284)
 base_position = Vector2(566, -405)
 
 [node name="PetitFantome" parent="." instance=ExtResource("5_aiv6v")]
+visible = false
 position = Vector2(541, 316)
 numerofantome = "3"
 position_base = Vector2(50, 0)
 
 [node name="PetitFantome2" parent="." instance=ExtResource("5_aiv6v")]
+visible = false
 position = Vector2(-618, 289)
 numerofantome = "2"
 position_base = Vector2(-50, 0)
