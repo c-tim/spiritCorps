@@ -5,7 +5,7 @@ class_name Petit_fantome extends Node2D
 
 var id_in_phantom_list : int
 
-const STEP_PHANTOM :int= 5
+const STEP_PHANTOM :int = 6
 const RANGE_SLIDE : int = 10
 var objective_pos : Vector2
 var update_pos = false
