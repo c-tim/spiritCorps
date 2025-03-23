@@ -41,7 +41,7 @@ height = 172.0
 radius = 121.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_icr0k"]
-radius = 415.159
+radius = 337.654
 
 [node name="EnnemiCorps" type="Node2D"]
 script = ExtResource("1_beife")

@@ -85,8 +85,8 @@ radius = 68.0
 script = ExtResource("1_cjj6o")
 
 [node name="Petit_fantome" type="CharacterBody2D" parent="."]
-collision_layer = 2
-collision_mask = 16
+collision_layer = 0
+collision_mask = 32
 script = ExtResource("2_c210w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Petit_fantome"]
@@ -110,4 +110,5 @@ script = ExtResource("8_quwn4")
 shape = SubResource("CircleShape2D_c210w")
 debug_color = Color(0.499489, 0.538509, 0.603078, 0.42)
 
+[connection signal="look_at_player" from="Petit_fantome/detection_area" to="." method="change_sprite"]
 [connection signal="player_detected" from="Petit_fantome/detection_area" to="." method="_on_detection_area_player_detected"]

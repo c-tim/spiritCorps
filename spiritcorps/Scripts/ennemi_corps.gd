@@ -4,7 +4,7 @@ extends CharacterBody2D
 @onready var attack_zone: Area2D = $AttackZone
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
 
-const SPEED = 260.0
+const SPEED = 200.0
 var target
 var is_targeting=false
 const DIST_MIN = 150.0
@@ -20,7 +20,6 @@ func _physics_process(delta: float) -> void:
 		if target.global_position.distance_to(global_position)<DIST_ATT and !attacking:
 			attack()
 		elif target.global_position.distance_to(global_position)>DIST_MIN:
-			print( target.global_position.distance_to(global_position))
 			var direction=(target.global_position - global_position).normalized()
 			velocity = direction * SPEED
 

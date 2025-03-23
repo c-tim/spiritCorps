@@ -1,12 +1,12 @@
 [gd_scene load_steps=34 format=4 uid="uid://bvff6y277bs5"]
 
-[ext_resource type="Script" uid="uid://b2aevn8up7i85" path="res://Scenes/proto_level_1.gd" id="1_jr06i"]
+[ext_resource type="Script" path="res://Scenes/proto_level_1.gd" id="1_jr06i"]
 [ext_resource type="Texture2D" uid="uid://b7tqxuvjbhs2j" path="res://Assets/Tiles/TilesFloor.png" id="1_p770e"]
 [ext_resource type="Texture2D" uid="uid://b0qws46rp7wsy" path="res://Assets/Tiles/TilesWalls.png" id="2_y3fj8"]
 [ext_resource type="Texture2D" uid="uid://cqs0rv4t341ym" path="res://Assets/Tiles/TilesPit.png" id="3_ef3f6"]
 [ext_resource type="Texture2D" uid="uid://b0vxstjsrl43b" path="res://Assets/Tiles/TilesFog.png" id="4_tarqo"]
 [ext_resource type="PackedScene" uid="uid://bs1u3mw0anqfw" path="res://Scenes/Player.tscn" id="5_20oct"]
-[ext_resource type="PackedScene" uid="uid://cmxwl43ugpbup" path="res://Scenes/interactable_levier.tscn" id="5_uhwdp"]
+[ext_resource type="PackedScene" path="res://Scenes/interactable_levier.tscn" id="5_uhwdp"]
 [ext_resource type="PackedScene" uid="uid://rdywgv5igbpo" path="res://Scenes/ennemi_spirituel.tscn" id="7_uhwdp"]
 [ext_resource type="PackedScene" uid="uid://cmw4l44t6y50l" path="res://Scenes/Petit_fantome.tscn" id="8_26bw2"]
 [ext_resource type="PackedScene" uid="uid://b5ncj5noulad2" path="res://Scenes/camera.tscn" id="10_k5nvh"]
@@ -235,7 +235,7 @@ position_base = Vector2(915, 148)
 position = Vector2(241, 590)
 scale = Vector2(0.35, 0.35)
 numerofantome = "3"
-position_base = Vector2(538, 577)
+position_base = Vector2(241, 590)
 
 [node name="PetitFantome4" parent="." instance=ExtResource("8_26bw2")]
 position = Vector2(72.0001, 580)

@@ -4,7 +4,7 @@ extends CharacterBody2D
 @onready var attack_area: Area2D = $AttackArea
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
 
-const SPEED = 300.0
+const SPEED = 250.0
 const DIST_MIN = 30.0
 var targeting=false
 var target

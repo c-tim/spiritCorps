@@ -9,7 +9,7 @@
 [node name="TestsCelia" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_485ms")]
-position = Vector2(867, 362)
+position = Vector2(398, 381)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.5, 0.5)
@@ -26,13 +26,12 @@ base_position = Vector2(566, -405)
 
 [node name="PetitFantome" parent="." instance=ExtResource("5_aiv6v")]
 visible = false
-position = Vector2(541, 316)
+position = Vector2(198, 179)
 numerofantome = "3"
 position_base = Vector2(50, 0)
 
 [node name="PetitFantome2" parent="." instance=ExtResource("5_aiv6v")]
-visible = false
-position = Vector2(-618, 289)
+position = Vector2(-9, 214)
 numerofantome = "2"
 position_base = Vector2(-50, 0)
 

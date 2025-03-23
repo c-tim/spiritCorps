@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1742671267
-camera.gd::GDScript/GDScript::-1::1742655061::0::1::::Camera<>Camera2D<><>0<>0<><>::
+::res://::1742721502
+camera.gd::GDScript/GDScript::-1::1742721502::0::1::::Camera<>Camera2D<><>0<>0<><>::
 default_bus_layout.tres::AudioBusLayout::-1::1742671188::0::1::::<><><>0<>0<><>::
 dialogue_panel_player.tscn::PackedScene::-1::1742671188::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::9039918317273610360::1742588283::1742588283::1::::<><><>0<>0<>a7ebf7c64ce550e1ff8a0ae9c100db3b<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
@@ -9,10 +9,11 @@ player_health_component.gd::GDScript/GDScript::-1::1742655061::0::1::::Health_Co
 preentation_panel_player.tscn::PackedScene::-1::1742671188::0::1::::<><><>0<>0<><>::
 Spirit-Regular.ttf::FontFile::8293423265679303525::1742671171::1742671189::1::::<><><>0<>0<>8caf8bdf58967fc29d6a7c8085f32a84<>res://.godot/imported/Spirit-Regular.ttf-00443dbbfa075d73997b3178d6cdb3ad.fontdata::
 white_square.png::CompressedTexture2D/CompressedTexture2D::6542546144571704419::1742638951::1742639057::1::::<><><>0<>0<>3c36f0d3087ad0eb8d40fe22f53bdfb1<>res://.godot/imported/white_square.png-e465f834c3326600ef22d38d86fadadd.ctex::
-::res://Assets/::1742719688
+::res://Assets/::1742721502
 assets.txt::TextFile/TextFile::-1::1742590077::0::1::::<><><>0<>0<><>::
 esprit dos.png::CompressedTexture2D/CompressedTexture2D::122432447460609596::1742661457::1742661525::1::::<><><>0<>0<>edd78599c28e30194195dede3f834b9a<>res://.godot/imported/esprit dos.png-0350630bdafe2f12b7eec3d79731fc91.ctex::
 esprit face.png::CompressedTexture2D/CompressedTexture2D::2783660889802876166::1742661447::1742661447::1::::<><><>0<>0<>e121817fb3d3ce8d449d7390fd12e7a7<>res://.godot/imported/esprit face.png-59c770c6e1b2a493ae67bd84cb60a7be.ctex::
+fantom_line.tscn::PackedScene::-1::1742721502::0::1::::<><><>0<>0<><>::
 fantôme1_sucette.png::CompressedTexture2D/CompressedTexture2D::5813786881255131934::1742663268::1742663268::1::::<><><>0<>0<>4acc13d04bd0bf9865ce374e6516ceac<>res://.godot/imported/fantôme1_sucette.png-014cd18605c0b561881af8ca00cd6c94.ctex::
 fantôme2_banane.png::CompressedTexture2D/CompressedTexture2D::4013807003036302888::1742663245::1742663245::1::::<><><>0<>0<>615638d15a2e74a19ca2d82d70a5c6d1<>res://.godot/imported/fantôme2_banane.png-0322963d9dd7ddc75953b14151a12e6a.ctex::
 fantôme3_couteau.png::CompressedTexture2D/CompressedTexture2D::4612305834041330187::1742663233::1742663233::1::::<><><>0<>0<>2f196b0df1100d30cf1fae08872538dd<>res://.godot/imported/fantôme3_couteau.png-70dd52d204460ceb619930781fa2c7e3.ctex::
@@ -29,6 +30,9 @@ place_holder.png::CompressedTexture2D/CompressedTexture2D::5249402431014331358::
 place_holder_corps.png::CompressedTexture2D/CompressedTexture2D::4832250539010010133::1742638944::1742638944::1::::<><><>0<>0<>e8bf36ba8d2f04d5c55ecc50a9a9ba67<>res://.godot/imported/place_holder_corps.png-5d22c76f8dc105d46994054a02196f7d.ctex::
 Tentaclick.png::CompressedTexture2D/CompressedTexture2D::574819671309514691::1742644695::1742644714::1::::<><><>0<>0<>82722164cdd62b37270fededd3d8340f<>res://.godot/imported/Tentaclick.png-0529cfb48897aa0244a0267207bd99f6.ctex::
 wavy_text_shader.gdshader::Shader/Shader::-1::1742655061::0::1::::<><><>0<>0<><>::
+::res://Assets/cercueil/::1742721502
+Cercueil fermé.png::CompressedTexture2D::5939617887102434258::1742721502::1742721541::1::::<><><>0<>0<>2dc03c341088e2beefa361635e697137<>res://.godot/imported/Cercueil fermé.png-204b841c5e56c6ad212680289ce618d6.ctex::
+Cercueil ouvert.png::CompressedTexture2D::3318650659356131543::1742721502::1742721541::1::::<><><>0<>0<>762b31b423041a03b2773b6e0ba1b71d<>res://.godot/imported/Cercueil ouvert.png-2c1f19f48bdb28f09890ff76d1e74bfe.ctex::
 ::res://Assets/fonts/::1742671171
 phantom_font_v1.tres::FontVariation::3281775477552725470::1742671171::0::1::::<><><>0<>0<><>::uid://dqfnp70jw008x::::res://Spirit-Regular.ttf
 ::res://Assets/Tiles/::1742661525
@@ -36,60 +40,63 @@ TilesFloor.png::CompressedTexture2D/CompressedTexture2D::4672700485899796751::17
 TilesFog.png::CompressedTexture2D/CompressedTexture2D::4185923355290997397::1742644695::1742644714::1::::<><><>0<>0<>ac65fdfe2beaa30b022e1575951a3b96<>res://.godot/imported/TilesFog.png-dd10e8bc4b51c41067c86b7cc8a93972.ctex::
 TilesPit.png::CompressedTexture2D/CompressedTexture2D::5934571097174883308::1742644695::1742644714::1::::<><><>0<>0<>ad0111c7df1704b86f19b950283cfc7b<>res://.godot/imported/TilesPit.png-c4b8b56870d7634dcf120107beb27d61.ctex::
 TilesWalls.png::CompressedTexture2D/CompressedTexture2D::4175541308699839524::1742655061::1742655291::1::::<><><>0<>0<>0e810ff10537eef59b43fb711324b26a<>res://.godot/imported/TilesWalls.png-318955c119940872d274cbf75c5421e8.ctex::
-::res://Scenes/::1742671998
+::res://Scenes/::1742721502
+cadavre_presentation.gd::GDScript::-1::1742721502::0::1::::cadavre<>TextureRect<><>0<>0<><>::
 camera.tscn::PackedScene/PackedScene::4519062006213743513::1742655291::0::1::::<><><>0<>0<><>::uid://wsq8rlbgh2bt::::res://camera.gd
-dialogue_panel.tscn::PackedScene/PackedScene::-1::1742671171::0::1::::<><><>0<>0<><>::
-EnnemiCorps.tscn::PackedScene::6851336742891879450::1742671267::0::1::::<><><>0<>0<><>::uid://d12aes3ix5ghs::::res://icon.svg<>uid://b7gbi1k44ndgh::::res://Scripts/ennemi_corps_main.gd<>uid://b53ex4mss7ld7::::res://Scripts/ennemi_corps.gd<>uid://c7hwxgw88jh8u::::res://Scripts/detection_zone.gd
-ennemi_spirituel.tscn::PackedScene::1200900319356017216::1742671998::0::1::::<><><>0<>0<><>::uid://byduu20461tf::::res://Scripts/ennemi_spirituel.gd<>uid://cdudju41h1u4p::::res://Assets/perso principal brouillon.png<>uid://dxq0piw085h03::::res://Scripts/ennemi_spirituel_main.gd<>uid://d4m252waqhxcn::::res://Assets/monstre fantôme.png<>uid://ykvagj4ypdr2::::res://Scripts/detection_area.gd<>uid://bs1u3mw0anqfw::::res://Scenes/Player.tscn
+cercueil.gd::GDScript::-1::1742721502::0::1::::cercueil<>TextureRect<><>0<>0<><>::
+dialogue_panel.tscn::PackedScene/PackedScene::-1::1742721502::0::1::::<><><>0<>0<><>::
+EnnemiCorps.tscn::PackedScene::6851336742891879450::1742721351::0::1::::<><><>0<>0<><>::uid://d12aes3ix5ghs::::res://icon.svg<>uid://b7gbi1k44ndgh::::res://Scripts/ennemi_corps_main.gd<>uid://b53ex4mss7ld7::::res://Scripts/ennemi_corps.gd<>uid://c7hwxgw88jh8u::::res://Scripts/detection_zone.gd<>uid://3qu4tckkeirg::::res://Assets/monstre zombie.png
+ennemi_spirituel.tscn::PackedScene::1200900319356017216::1742721351::0::1::::<><><>0<>0<><>::uid://byduu20461tf::::res://Scripts/ennemi_spirituel.gd<>uid://cdudju41h1u4p::::res://Assets/perso principal brouillon.png<>uid://dxq0piw085h03::::res://Scripts/ennemi_spirituel_main.gd<>uid://d4m252waqhxcn::::res://Assets/monstre fantôme.png<>uid://ykvagj4ypdr2::::res://Scripts/detection_area.gd<>uid://bs1u3mw0anqfw::::res://Scenes/Player.tscn
 fantom_line.tscn::PackedScene::2958193079166099092::1742671267::0::1::::<><><>0<>0<><>::uid://bteugqhn2t8ln::::res://Scripts/fantom_line.gd<>uid://c0hi1qwwkjq1h::::res://white_square.png
 fantôme capitaine.png::CompressedTexture2D::5307511304342366911::1742671171::1742671189::1::::<><><>0<>0<>693f34b2d2a71731d94f793833bc1041<>res://.godot/imported/fantôme capitaine.png-dd84f0b3d196e596086677033513b9e9.ctex::
 faux_joueur.gd::GDScript::-1::1742671171::0::1::::<>Node2D<><>0<>0<><>::
 interactable_dialogu.tscn::PackedScene::-1::1742671188::0::1::::<><><>0<>0<><>::
 interactable_element.tscn::PackedScene/PackedScene::-1::1742638951::0::1::::<><><>0<>0<><>::
-interactable_levier.tscn::PackedScene::-1::1742671188::0::1::::<><><>0<>0<><>::
+interactable_levier.tscn::PackedScene::-1::1742721502::0::1::::<><><>0<>0<><>::
 levier.tscn::PackedScene/PackedScene::-1::1742655061::0::1::::<><><>0<>0<><>::
 main_game_manager.tscn::PackedScene/PackedScene::1003284328405594926::1742671171::0::1::::<><><>0<>0<><>::res://Scenes/UI.tscn
-Petit_fantome.tscn::PackedScene::5662305807037247653::1742671998::0::1::::<><><>0<>0<><>::uid://couvu8morwb08::::res://Scripts/petit_fantome_main.gd<>uid://c7kb6p6mtig8e::::res://Assets/fantôme neutre.png<>uid://b1b8u0vakhm1p::::res://Scripts/petit_fantome.gd<>uid://co3ihq6xl2s6q::::res://Assets/fantôme1_sucette.png<>uid://bxgk2ybo4yats::::res://Assets/fantôme2_banane.png<>uid://bno6tj3wlrmlv::::res://Assets/fantôme capitaine.png<>uid://b6yiadytp0bsl::::res://Assets/fantôme3_couteau.png<>uid://dgj5h1klfnoxg::::res://Scripts/detection_area_fantom.gd
-Player.tscn::PackedScene::3704758698270218632::1742671267::0::1::::<><><>0<>0<><>::uid://lcfjww5w1o2f::::res://Scripts/Player_launcher.gd<>uid://bhs657nddlqw2::::res://Scripts/ame.gd<>uid://bie8ajbhnveoq::::res://Scenes/fantom_line.tscn<>uid://cdudju41h1u4p::::res://Assets/perso principal brouillon.png<>uid://dw6i42ddajfy4::::res://Scripts/corps.gd<>uid://dxvte6e5lx11j::::res://Assets/perso principal avec pelle.png<>uid://jjwfshy3psfk::::res://Assets/perso principal avachi.png<>uid://b0kpd4q32sa3::::res://Assets/esprit dos.png<>uid://bfwoqukr6fo2a::::res://Assets/esprit face.png
+Petit_fantome.tscn::PackedScene::5662305807037247653::1742721502::0::1::::<><><>0<>0<><>::uid://couvu8morwb08::::res://Scripts/petit_fantome_main.gd<>uid://c7kb6p6mtig8e::::res://Assets/fantôme neutre.png<>uid://b1b8u0vakhm1p::::res://Scripts/petit_fantome.gd<>uid://co3ihq6xl2s6q::::res://Assets/fantôme1_sucette.png<>uid://bxgk2ybo4yats::::res://Assets/fantôme2_banane.png<>uid://bno6tj3wlrmlv::::res://Assets/fantôme capitaine.png<>uid://b6yiadytp0bsl::::res://Assets/fantôme3_couteau.png<>uid://dgj5h1klfnoxg::::res://Scripts/detection_area_fantom.gd
+Player.tscn::PackedScene::3704758698270218632::1742721502::0::1::::<><><>0<>0<><>::uid://lcfjww5w1o2f::::res://Scripts/Player_launcher.gd<>uid://bhs657nddlqw2::::res://Scripts/ame.gd<>uid://bie8ajbhnveoq::::res://Scenes/fantom_line.tscn<>uid://cdudju41h1u4p::::res://Assets/perso principal brouillon.png<>uid://dw6i42ddajfy4::::res://Scripts/corps.gd<>uid://dxvte6e5lx11j::::res://Assets/perso principal avec pelle.png<>uid://jjwfshy3psfk::::res://Assets/perso principal avachi.png<>uid://b0kpd4q32sa3::::res://Assets/esprit dos.png<>uid://bfwoqukr6fo2a::::res://Assets/esprit face.png
 player_health_component.tscn::PackedScene/PackedScene::7527464535036734282::1742671171::0::1::::<><><>0<>0<><>::uid://d0li0u6gx7njv::::res://player_health_component.gd<>uid://ctnbwu3d8ejr3::::res://Scenes/progressbar_health.gd<>uid://c0hi1qwwkjq1h::::res://white_square.png
-presentation_jeu.tscn::PackedScene::-1::1742671188::0::1::::<><><>0<>0<><>::
-ProtoLevel1.tscn::PackedScene::113854956976583654::1742671998::0::1::::<><><>0<>0<><>::uid://b7tqxuvjbhs2j::::res://Assets/Tiles/TilesFloor.png<>uid://b0qws46rp7wsy::::res://Assets/Tiles/TilesWalls.png<>uid://cqs0rv4t341ym::::res://Assets/Tiles/TilesPit.png<>uid://b0vxstjsrl43b::::res://Assets/Tiles/TilesFog.png<>uid://bs1u3mw0anqfw::::res://Scenes/Player.tscn<>res://Scenes/interactable_levier.tscn<>uid://rdywgv5igbpo::::res://Scenes/ennemi_spirituel.tscn<>uid://cmw4l44t6y50l::::res://Scenes/Petit_fantome.tscn
+presentation_jeu.tscn::PackedScene::-1::1742721502::0::1::::<><><>0<>0<><>::
+ProtoLevel1.tscn::PackedScene::113854956976583654::1742721502::0::1::::<><><>0<>0<><>::uid://b7tqxuvjbhs2j::::res://Assets/Tiles/TilesFloor.png<>uid://b0qws46rp7wsy::::res://Assets/Tiles/TilesWalls.png<>uid://cqs0rv4t341ym::::res://Assets/Tiles/TilesPit.png<>uid://b0vxstjsrl43b::::res://Assets/Tiles/TilesFog.png<>uid://bs1u3mw0anqfw::::res://Scenes/Player.tscn<>res://Scenes/interactable_levier.tscn<>uid://rdywgv5igbpo::::res://Scenes/ennemi_spirituel.tscn<>uid://cmw4l44t6y50l::::res://Scenes/Petit_fantome.tscn
+proto_level_1.gd::GDScript::-1::1742721502::0::1::::<>Node2D<><>0<>0<><>::
 scenes.txt::TextFile/TextFile::-1::1742590077::0::1::::<><><>0<>0<><>::
-spriteframe_levier.tres::SpriteFrames::7444111728413328973::1742671462::0::1::::<><><>0<>0<><>::uid://igpgwt0s1tbf::::res://Assets/Tentaclick.png
-TestGillian.tscn::PackedScene/PackedScene::6472590637425771526::1742671171::0::1::::<><><>0<>0<><>::uid://b7tqxuvjbhs2j::::res://Assets/Tiles/TilesFloor.png<>uid://b0qws46rp7wsy::::res://Assets/Tiles/TilesWalls.png<>uid://cqs0rv4t341ym::::res://Assets/Tiles/TilesPit.png<>uid://b0vxstjsrl43b::::res://Assets/Tiles/TilesFog.png<>uid://c7m5tdiptnkuc::::res://Scenes/Player.tscn<>uid://cd5yhmqsjr14r::::res://Scenes/levier.tscn
-Tests_celia.tscn::PackedScene::231194388675344573::1742671267::0::1::::<><><>0<>0<><>::uid://bs1u3mw0anqfw::::res://Scenes/Player.tscn<>uid://h7664i7r7fsk::::res://Scripts/camera_2d.gd<>uid://rdywgv5igbpo::::res://Scenes/ennemi_spirituel.tscn<>uid://c4u3rrr7lleu1::::res://Scenes/EnnemiCorps.tscn<>uid://cmw4l44t6y50l::::res://Scenes/Petit_fantome.tscn
+spriteframe_levier.tres::SpriteFrames::7444111728413328973::1742721502::0::1::::<><><>0<>0<><>::uid://igpgwt0s1tbf::::res://Assets/Tentaclick.png
+TestGillian.tscn::PackedScene/PackedScene::6472590637425771526::1742721502::0::1::::<><><>0<>0<><>::uid://b7tqxuvjbhs2j::::res://Assets/Tiles/TilesFloor.png<>uid://b0qws46rp7wsy::::res://Assets/Tiles/TilesWalls.png<>uid://cqs0rv4t341ym::::res://Assets/Tiles/TilesPit.png<>uid://b0vxstjsrl43b::::res://Assets/Tiles/TilesFog.png<>uid://c7m5tdiptnkuc::::res://Scenes/Player.tscn<>uid://cd5yhmqsjr14r::::res://Scenes/levier.tscn
+Tests_celia.tscn::PackedScene::231194388675344573::1742721443::0::1::::<><><>0<>0<><>::uid://bs1u3mw0anqfw::::res://Scenes/Player.tscn<>uid://h7664i7r7fsk::::res://Scripts/camera_2d.gd<>uid://rdywgv5igbpo::::res://Scenes/ennemi_spirituel.tscn<>uid://c4u3rrr7lleu1::::res://Scenes/EnnemiCorps.tscn<>uid://cmw4l44t6y50l::::res://Scenes/Petit_fantome.tscn
 testTim.tscn::PackedScene/PackedScene::2047947540897300849::1742655291::0::1::::<><><>0<>0<><>::uid://dkbpvgntcjwpp::::res://Scripts/character_body_2d.gd<>uid://yjra4570ceap::::res://Scripts/test_tim.gd<>uid://c0hi1qwwkjq1h::::res://white_square.png<>uid://b5ncj5noulad2::::res://Scenes/camera.tscn
-TilesJas.tscn::PackedScene/PackedScene::-1::1742655061::0::1::::<><><>0<>0<><>::
-t_est_dialogu.tscn::PackedScene::-1::1742671188::0::1::::<><><>0<>0<><>::
-UI.tscn::PackedScene/PackedScene::6309956324480552261::1742655291::0::1::::<><><>0<>0<><>::uid://cl50fp7mugub4::::res://Scripts/ui_main.gd
+TilesJas.tscn::PackedScene/PackedScene::-1::1742721502::0::1::::<><><>0<>0<><>::
+t_est_dialogu.tscn::PackedScene::-1::1742721502::0::1::::<><><>0<>0<><>::
+UI.tscn::PackedScene/PackedScene::6309956324480552261::1742721502::0::1::::<><><>0<>0<><>::uid://cl50fp7mugub4::::res://Scripts/ui_main.gd
 ui_in_game.tscn::PackedScene/PackedScene::4622287236625713650::1742655291::0::1::::<><><>0<>0<><>::
-::res://Scripts/::1742671994
+::res://Scripts/::1742721502
 ame.gd::GDScript::2916838890295739887::1742671171::0::1::::<>CharacterBody2D<><>0<>0<><>::
 camera_2d.gd::GDScript/GDScript::559321116996456594::1742638944::0::1::::<>Camera2D<><>0<>0<><>::
 character_body_2d.gd::GDScript/GDScript::-1::1742655061::0::1::::<>CharacterBody2D<><>0<>0<><>::
-corps.gd::GDScript/GDScript::8767951268358776137::1742661846::0::1::::<>CharacterBody2D<><>0<>0<><>::
+corps.gd::GDScript/GDScript::8767951268358776137::1742721502::0::1::::<>CharacterBody2D<><>0<>0<><>::
 detection_area.gd::GDScript/GDScript::1706451412095104321::1742653668::0::1::::<>Area2D<><>0<>0<><>::
 detection_zone.gd::GDScript/GDScript::7034712205851960714::1742657216::0::1::::<>Area2D<><>0<>0<><>::
-dialogue_panel_player.gd::GDScript::-1::1742671171::0::1::::Dialogue_Panel<>Control<><>0<>0<><>::
+dialogue_panel_player.gd::GDScript::-1::1742721502::0::1::::Dialogue_Panel<>Control<><>0<>0<><>::
 easings.gd::GDScript/GDScript::-1::1742655061::0::1::::Easings<>Node<><>0<>0<><>::
-ennemi_corps.gd::GDScript/GDScript::4550174053736594194::1742659735::0::1::::<>CharacterBody2D<><>0<>0<><>::
+ennemi_corps.gd::GDScript::4550174053736594194::1742721443::0::1::::<>CharacterBody2D<><>0<>0<><>::
 ennemi_corps_main.gd::GDScript::4644926332390545207::1742671332::0::1::::<>Node2D<><>0<>0<><>::
-ennemi_spirituel.gd::GDScript/GDScript::119952869944474907::1742657594::0::1::::<>CharacterBody2D<><>0<>0<><>::
-ennemi_spirituel_main.gd::GDScript/GDScript::8808180665900410538::1742652804::0::1::::<>Node2D<><>0<>0<><>::
+ennemi_spirituel.gd::GDScript::119952869944474907::1742720404::0::1::::<>CharacterBody2D<><>0<>0<><>::
+ennemi_spirituel_main.gd::GDScript/GDScript::8808180665900410538::1742721502::0::1::::<>Node2D<><>0<>0<><>::
 fantom_line.gd::GDScript::3729492130265474223::1742671171::0::1::::Phantom_line<>Node2D<><>0<>0<><>::
 interactable_dialogu.gd::GDScript/GDScript::-1::1742655061::0::1::::Dialogu_Interactable<>Node2D<><>0<>0<><>::
 interactable_element.gd::GDScript::5189072426879931197::1742671171::0::1::::Interactable_Element_Holder<>Node2D<><>0<>0<><>::
 interactable_levier.gd::GDScript::-1::1742671171::0::1::::interactable_levier<>AnimatedSprite2D<><>0<>0<><>::
 levier.gd::GDScript/GDScript::-1::1742638951::0::1::::Levier<>Node2D<><>0<>0<><>::
-petit_fantome_main.gd::GDScript::5798085258593932791::1742671171::0::1::::Petit_fantome<>Node2D<><>0<>0<><>::
-phantom_officier.gd::GDScript::-1::1742671171::0::1::::Phantom_Officier_Presentation<>TextureRect<><>0<>0<><>::
-Player_launcher.gd::GDScript::776526883528353603::1742671994::0::1::::Player<>Node2D<><>0<>0<><>::
-presentation_jeu.gd::GDScript::-1::1742671171::0::1::::presentation_panel<>Control<><>0<>0<><>::
+petit_fantome_main.gd::GDScript::5798085258593932791::1742721502::0::1::::Petit_fantome<>Node2D<><>0<>0<><>::
+phantom_officier.gd::GDScript::-1::1742721502::0::1::::Phantom_Officier_Presentation<>TextureRect<><>0<>0<><>::
+Player_launcher.gd::GDScript::776526883528353603::1742721502::0::1::::Player<>Node2D<><>0<>0<><>::
+presentation_jeu.gd::GDScript::-1::1742721502::0::1::::presentation_panel<>Control<><>0<>0<><>::
 progressbar_health.gd::GDScript/GDScript::6133367405672368786::1742655061::0::1::::ProgressBar_Health<>Control<><>0<>0<><>::
 petit_fantome.gd::GDScript::4215435718213693643::1742665000::0::1::::<>CharacterBody2D<><>0<>0<><>::
-detection_area_fantom.gd::GDScript::7600809904596510820::1742664129::0::1::::<>Area2D<><>0<>0<><>::
+detection_area_fantom.gd::GDScript::7600809904596510820::1742721502::0::1::::<>Area2D<><>0<>0<><>::
 scripts.txt::TextFile/TextFile::-1::1742590077::0::1::::<><><>0<>0<><>::
 tests_celia.gd::GDScript/GDScript::6490932759215875141::1742638944::0::1::::<>Node2D<><>0<>0<><>::
 test_characterbody.gd::GDScript/GDScript::-1::1742655061::0::1::::<>CharacterBody2D<><>0<>0<><>::
 test_tim.gd::GDScript/GDScript::-1::1742655061::0::1::::<>Node2D<><>0<>0<><>::
-ui_main.gd::GDScript/GDScript::-1::1742655061::0::1::::UI_Main<>Control<><>0<>0<><>::
+ui_main.gd::GDScript/GDScript::-1::1742721502::0::1::::UI_Main<>Control<><>0<>0<><>::
