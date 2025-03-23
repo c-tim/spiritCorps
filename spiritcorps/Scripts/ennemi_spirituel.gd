@@ -3,7 +3,7 @@ extends CharacterBody2D
 @onready var detection_area: Area2D = $DetectionArea
 @onready var attack_area: Area2D = $AttackArea
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
-@onready var ennemi_spirituel: Ennemi_Spirituel = $".."
+
 
 const SPEED = 250.0
 const DIST_MIN = 30.0

@@ -11,7 +11,6 @@ var attacking = false
 func _physics_process(delta: float) -> void:
 	
 	if can_move:
-		animation.play("Face")
 		var direction_x := Input.get_axis("Gauche","Droite")
 		var direction_y := Input.get_axis("Haut","Bas")
 		
@@ -45,11 +44,13 @@ func is_waiting(is_body:bool)->void:
 
 func attack():
 	attacking=true
-	print("attaque joueur")
+	animation.play("attaque")
 	zone_attaque.monitoring=true
 	await get_tree().create_timer(attack_delay).timeout
 	zone_attaque.monitoring=false
 	attacking=false
+	await get_tree().create_timer(1.5).timeout
+	animation.play("Face")
 	
 	
 	

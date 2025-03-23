@@ -44,8 +44,10 @@ func _process(delta: float) -> void:
 	position.y = move_toward(position.y, objective_pos.y, STEP_PHANTOM/sqrt(2))
 	#position.x += randf_range(-5 * distance/(10*STEP_PHANTOM), 5*distance/(10*STEP_PHANTOM))
 	#position.y += randf_range(-5*distance/(10*STEP_PHANTOM), 5*distance/(10*STEP_PHANTOM))
-	#if _is_touching_brume():
-	#	waiting=true
+	if _is_touching_brume():
+		waiting=true
+	else:
+		waiting=false
 	
 
 func set_position_phantom(pos: Vector2):

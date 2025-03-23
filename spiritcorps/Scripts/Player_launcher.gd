@@ -2,6 +2,8 @@ class_name Player extends Node2D
 
 
 
+@onready var animated_sprite_2d: AnimatedSprite2D = $Corps/AnimatedSprite2D
+
 @onready var corps: CharacterBody2D = $Corps
 @onready var ame: CharacterBody2D = $Ame
 @onready var fantom_line: Phantom_line = $FantomLine
@@ -24,6 +26,7 @@ func _ready() -> void:
 	ame.set_collision_layer_value(2,false)
 	ame.position=corps.position
 	transmit_ame_node_to_main_level.emit(ame)
+	
 	
 
 func _process(delta: float) -> void:
