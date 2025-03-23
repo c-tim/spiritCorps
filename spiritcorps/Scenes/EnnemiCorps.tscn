@@ -1,9 +1,14 @@
-[gd_scene load_steps=10 format=3 uid="uid://c4u3rrr7lleu1"]
+[gd_scene load_steps=12 format=3 uid="uid://c4u3rrr7lleu1"]
 
 [ext_resource type="Texture2D" uid="uid://d12aes3ix5ghs" path="res://icon.svg" id="1_1cjko"]
 [ext_resource type="Script" uid="uid://b7gbi1k44ndgh" path="res://Scripts/ennemi_corps_main.gd" id="1_beife"]
 [ext_resource type="Script" uid="uid://b53ex4mss7ld7" path="res://Scripts/ennemi_corps.gd" id="1_psn6w"]
 [ext_resource type="Script" uid="uid://c7hwxgw88jh8u" path="res://Scripts/detection_zone.gd" id="2_icr0k"]
+[ext_resource type="Texture2D" uid="uid://3qu4tckkeirg" path="res://Assets/monstre zombie.png" id="3_3t0x7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iwemb"]
+atlas = ExtResource("3_3t0x7")
+region = Rect2(0, 0, 398, 654)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_icr0k"]
 atlas = ExtResource("1_1cjko")
@@ -11,6 +16,14 @@ region = Rect2(0, 0, 128, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_psn6w"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iwemb")
+}],
+"loop": true,
+"name": &"Face",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_icr0k")
@@ -21,14 +34,14 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1cjko"]
-radius = 73.0
-height = 226.0
+radius = 43.0
+height = 172.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1cjko"]
-radius = 180.4
+radius = 121.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_icr0k"]
-radius = 312.271
+radius = 337.654
 
 [node name="EnnemiCorps" type="Node2D"]
 script = ExtResource("1_beife")
@@ -41,12 +54,12 @@ script = ExtResource("1_psn6w")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="ennemi_corps"]
 light_mask = 2
 visibility_layer = 2
-position = Vector2(-6, -7)
-scale = Vector2(1.20703, 1.27344)
+scale = Vector2(0.3, 0.317)
 sprite_frames = SubResource("SpriteFrames_psn6w")
+animation = &"Face"
+autoplay = "Face"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ennemi_corps"]
-position = Vector2(0, -4)
 shape = SubResource("CapsuleShape2D_1cjko")
 
 [node name="AttackZone" type="Area2D" parent="ennemi_corps"]
