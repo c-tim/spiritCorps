@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bov1gdhcm5cu4"]
+[gd_scene load_steps=4 format=3 uid="uid://doq57l3j16gdb"]
 
 [ext_resource type="Script" path="res://Scenes/faux_joueur.gd" id="1_t2sjb"]
 [ext_resource type="PackedScene" uid="uid://ckgtijybjo6at" path="res://Scenes/dialogue_panel.tscn" id="2_uguus"]
