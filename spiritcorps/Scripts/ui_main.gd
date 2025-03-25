@@ -5,6 +5,10 @@ class_name UI_Main extends Control
 
 
 func _ready() -> void:
+	initialize()
+
+
+func initialize(): 
 	background_menu.visible = true
 
 
